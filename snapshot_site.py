@@ -11,7 +11,7 @@ with open("pages.txt") as f:
 ok = fail = 0
 
 for url in urls:
-    slug = url.rstrip("/").split("/")[-1] or "homepage"
+    slug = url.replace("https://www.torustree.com","").strip("/") or "homepage"
     try:
         req = urllib.request.Request(url + ("?" if "?" not in url else "&") + "v=snapshot",
                                      headers={"User-Agent": "TorusTree-Archive-Bot/1.0"})
