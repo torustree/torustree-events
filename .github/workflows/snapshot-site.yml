@@ -1,0 +1,26 @@
+name: Nightly site snapshot
+
+on:
+  schedule:
+    - cron: "15 3 * * *"    # 03:15 UTC nightly
+  workflow_dispatch:         # manual run button
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Snapshot live pages
+        run: python3 snapshot_site.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "site-archive-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add site-archive/
+          git diff --cached --quiet || git commit -m "Site snapshot $(date -u +%F)"
+          git push
