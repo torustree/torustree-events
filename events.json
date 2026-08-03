@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-03T12:18:59.607329Z",
+ "updated": "2026-08-03T15:24:48.100534Z",
  "events": [
   {
    "id": "ev-su6nu-20260815093000",
@@ -205,6 +205,32 @@
    "url": "https://bookwhen.com/torustree/e/ev-smrxg-20261011100000"
   },
   {
+   "id": "ev-s52qu-20261019183000",
+   "title": "COURSE | The Power Path: Rise into Freedom | DUNKELD",
+   "start": "2026-10-19T18:30:00.000+01:00",
+   "end": "2026-10-19T20:30:00.000+01:00",
+   "venue": "",
+   "tags": [
+    "course",
+    "dunkeld",
+    "perth"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-s52qu-20261019183000"
+  },
+  {
+   "id": "ev-svwzf-20261020183000",
+   "title": "COURSE | The Reset Path: Return to Self | DUNKELD",
+   "start": "2026-10-20T18:30:00.000+01:00",
+   "end": "2026-10-20T20:30:00.000+01:00",
+   "venue": "",
+   "tags": [
+    "course",
+    "dunkeld",
+    "perth"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-svwzf-20261020183000"
+  },
+  {
    "id": "ev-syugo-20261024100000",
    "title": "IMMERSION - FULL DAY | 9DMT Breathwork & Nervous System Reset | DUNKELD",
    "start": "2026-10-24T10:00:00.000+01:00",
@@ -217,32 +243,6 @@
     "perth"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-syugo-20261024100000"
-  },
-  {
-   "id": "ev-s52qu-20261102183000",
-   "title": "COURSE | The Power Path: Rise into Freedom | DUNKELD",
-   "start": "2026-11-02T18:30:00.000+00:00",
-   "end": "2026-11-02T20:30:00.000+00:00",
-   "venue": "",
-   "tags": [
-    "course",
-    "dunkeld",
-    "perth"
-   ],
-   "url": "https://bookwhen.com/torustree/e/ev-s52qu-20261102183000"
-  },
-  {
-   "id": "ev-svwzf-20261103183000",
-   "title": "COURSE | The Reset Path: Return to Self | DUNKELD",
-   "start": "2026-11-03T18:30:00.000+00:00",
-   "end": "2026-11-03T20:30:00.000+00:00",
-   "venue": "",
-   "tags": [
-    "course",
-    "dunkeld",
-    "perth"
-   ],
-   "url": "https://bookwhen.com/torustree/e/ev-svwzf-20261103183000"
   }
  ]
 }
