@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-05T17:00:37.499585Z",
+ "updated": "2026-08-05T19:00:20.240888Z",
  "events": [
   {
    "id": "ev-su6nu-20260815093000",
@@ -190,6 +190,18 @@
     "perth"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-scw83-20261003110000"
+  },
+  {
+   "id": "ev-s8akr-20261004103000",
+   "title": "Signature | The Origin | Stirling",
+   "start": "2026-10-04T10:30:00.000+01:00",
+   "end": "2026-10-04T12:30:00.000+01:00",
+   "venue": "",
+   "tags": [
+    "signature",
+    "stirling"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-s8akr-20261004103000"
   },
   {
    "id": "ev-smrxg-20261011100000",
