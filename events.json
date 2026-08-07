@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-07T15:25:26.881792Z",
+ "updated": "2026-08-07T16:22:35.183451Z",
  "events": [
   {
    "id": "ev-su6nu-20260815093000",
@@ -72,6 +72,21 @@
    "url": "https://bookwhen.com/torustree/e/ev-src9d-20260827183000"
   },
   {
+   "id": "ev-szyyz-20260903193000",
+   "title": "INTRO | 9D Breathwork - Calm & Reset | PERTH",
+   "start": "2026-09-03T19:30:00.000+01:00",
+   "end": "2026-09-03T21:00:00.000+01:00",
+   "venue": "",
+   "tags": [
+    "Intro Sessions",
+    "thur_perth",
+    "Intro",
+    "intros",
+    "perth"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-szyyz-20260903193000"
+  },
+  {
    "id": "ev-sikve-20260905103000",
    "title": "SIGNATURE | Letting Go | STIRLING",
    "start": "2026-09-05T10:30:00.000+01:00",
@@ -137,6 +152,21 @@
    "url": "https://bookwhen.com/torustree/e/ev-sibzo-20260908183000"
   },
   {
+   "id": "ev-sb6vv-20260910193000",
+   "title": "INTRO | 9D Breathwork - Awaken | PERTH",
+   "start": "2026-09-10T19:30:00.000+01:00",
+   "end": "2026-09-10T21:00:00.000+01:00",
+   "venue": "",
+   "tags": [
+    "Intro Sessions",
+    "thur_perth",
+    "Intro",
+    "intros",
+    "perth"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-sb6vv-20260910193000"
+  },
+  {
    "id": "ev-spsfw-20260912103000",
    "title": "SIGNATURE | Letting Go | CUPAR",
    "start": "2026-09-12T10:30:00.000+01:00",
@@ -160,6 +190,21 @@
     "grangemouth"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-s5n86-20260913103000"
+  },
+  {
+   "id": "ev-s7zk6-20260917193000",
+   "title": "INTRO | 9D Breathwork - Letting Go | PERTH",
+   "start": "2026-09-17T19:30:00.000+01:00",
+   "end": "2026-09-17T21:00:00.000+01:00",
+   "venue": "",
+   "tags": [
+    "Intro Sessions",
+    "thur_perth",
+    "Intro",
+    "intros",
+    "perth"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-s7zk6-20260917193000"
   },
   {
    "id": "ev-sp1ol-20260919093000",
@@ -199,6 +244,21 @@
     "immersion"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-s4i8s-20260920100000"
+  },
+  {
+   "id": "ev-sko7l-20260924193000",
+   "title": "INTRO | 9D Breathwork - Return to Self | PERTH",
+   "start": "2026-09-24T19:30:00.000+01:00",
+   "end": "2026-09-24T21:00:00.000+01:00",
+   "venue": "",
+   "tags": [
+    "Intro Sessions",
+    "thur_perth",
+    "Intro",
+    "intros",
+    "perth"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-sko7l-20260924193000"
   },
   {
    "id": "ev-scw83-20261003110000",
