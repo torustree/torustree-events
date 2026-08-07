@@ -1,9 +1,9 @@
 {
- "updated": "2026-08-06T14:52:25.828511Z",
+ "updated": "2026-08-07T00:22:40.573572Z",
  "events": [
   {
    "id": "ev-su6nu-20260815093000",
-   "title": "SIGNATURE | Letting Go | Dundee",
+   "title": "SIGNATURE | Letting Go | DUNDEE",
    "start": "2026-08-15T09:30:00.000+01:00",
    "end": "2026-08-15T12:00:00.000+01:00",
    "venue": "",
@@ -16,7 +16,7 @@
   },
   {
    "id": "ev-so0ui-20260815143000",
-   "title": "SIGNATURE | Letting Go | Perth",
+   "title": "SIGNATURE | Letting Go | PERTH",
    "start": "2026-08-15T14:30:00.000+01:00",
    "end": "2026-08-15T17:00:00.000+01:00",
    "venue": "",
@@ -43,7 +43,7 @@
   },
   {
    "id": "ev-s32e1-20260826183000",
-   "title": "INTRO | 9D Breathwork - The Awakening | Dunkeld",
+   "title": "INTRO | 9D Breathwork - The Awakening | DUNKELD",
    "start": "2026-08-26T18:30:00.000+01:00",
    "end": "2026-08-26T20:00:00.000+01:00",
    "venue": "",
@@ -58,7 +58,7 @@
   },
   {
    "id": "ev-src9d-20260827183000",
-   "title": "INTRO | 9D Breathwork - Let it go | Dunkeld",
+   "title": "INTRO | 9D Breathwork - Let it go | DUNKELD",
    "start": "2026-08-27T18:30:00.000+01:00",
    "end": "2026-08-27T20:00:00.000+01:00",
    "venue": "",
@@ -73,7 +73,7 @@
   },
   {
    "id": "ev-sikve-20260905103000",
-   "title": "SIGNATURE | Letting Go | Stirling",
+   "title": "SIGNATURE | Letting Go | STIRLING",
    "start": "2026-09-05T10:30:00.000+01:00",
    "end": "2026-09-05T13:00:00.000+01:00",
    "venue": "",
@@ -137,8 +137,33 @@
    "url": "https://bookwhen.com/torustree/e/ev-sibzo-20260908183000"
   },
   {
+   "id": "ev-spsfw-20260912103000",
+   "title": "SIGNATURE | Letting Go | CUPAR",
+   "start": "2026-09-12T10:30:00.000+01:00",
+   "end": "2026-09-12T13:00:00.000+01:00",
+   "venue": "",
+   "tags": [
+    "9d Breathwork",
+    "signature",
+    "cupar"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-spsfw-20260912103000"
+  },
+  {
+   "id": "ev-s5n86-20260913103000",
+   "title": "SIGNATURE | Full System Reset | GRANGEMOUTH",
+   "start": "2026-09-13T10:30:00.000+01:00",
+   "end": "2026-09-13T13:00:00.000+01:00",
+   "venue": "",
+   "tags": [
+    "signature",
+    "grangemouth"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-s5n86-20260913103000"
+  },
+  {
    "id": "ev-sp1ol-20260919093000",
-   "title": "SIGNATURE | Full System Reset | Dundee",
+   "title": "SIGNATURE | Full System Reset | DUNDEE",
    "start": "2026-09-19T09:30:00.000+01:00",
    "end": "2026-09-19T12:00:00.000+01:00",
    "venue": "",
@@ -150,7 +175,7 @@
   },
   {
    "id": "ev-syu6r-20260919143000",
-   "title": "SIGNATURE | Full System Reset | Perth",
+   "title": "SIGNATURE | Full System Reset | PERTH",
    "start": "2026-09-19T14:30:00.000+01:00",
    "end": "2026-09-19T17:00:00.000+01:00",
    "venue": "",
@@ -192,8 +217,8 @@
    "url": "https://bookwhen.com/torustree/e/ev-scw83-20261003110000"
   },
   {
-   "id": "ev-s8akr-20261004103000",
-   "title": "SIGNATURE | The Origin | Stirling",
+   "id": "ev-su0y8-20261004103000",
+   "title": "SIGNATURE | The Origin | STIRLING",
    "start": "2026-10-04T10:30:00.000+01:00",
    "end": "2026-10-04T12:30:00.000+01:00",
    "venue": "",
@@ -201,7 +226,19 @@
     "signature",
     "stirling"
    ],
-   "url": "https://bookwhen.com/torustree/e/ev-s8akr-20261004103000"
+   "url": "https://bookwhen.com/torustree/e/ev-su0y8-20261004103000"
+  },
+  {
+   "id": "ev-szlpl-20261004143000",
+   "title": "SIGNATURE | The Origin | GRANGEMOUTH",
+   "start": "2026-10-04T14:30:00.000+01:00",
+   "end": "2026-10-04T17:00:00.000+01:00",
+   "venue": "",
+   "tags": [
+    "signature",
+    "grangemouth"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-szlpl-20261004143000"
   },
   {
    "id": "ev-smrxg-20261010100000",
@@ -216,6 +253,54 @@
     "immersion"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-smrxg-20261010100000"
+  },
+  {
+   "id": "ev-s5ocs-20261011103000",
+   "title": "SIGNATURE | The Origin | CUPAR",
+   "start": "2026-10-11T10:30:00.000+01:00",
+   "end": "2026-10-11T13:00:00.000+01:00",
+   "venue": "",
+   "tags": [
+    "signature",
+    "cupar"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-s5ocs-20261011103000"
+  },
+  {
+   "id": "ev-siimt-20261011150000",
+   "title": "SIGNATURE | The Origin | DUNFERMLINE",
+   "start": "2026-10-11T15:00:00.000+01:00",
+   "end": "2026-10-11T17:00:00.000+01:00",
+   "venue": "",
+   "tags": [
+    "signature",
+    "dunfermline"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-siimt-20261011150000"
+  },
+  {
+   "id": "ev-s4w1a-20261017143000",
+   "title": "SIGNATURE | The Origin | PERTH",
+   "start": "2026-10-17T14:30:00.000+01:00",
+   "end": "2026-10-17T17:00:00.000+01:00",
+   "venue": "",
+   "tags": [
+    "signature",
+    "perth"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-s4w1a-20261017143000"
+  },
+  {
+   "id": "ev-s3j6l-20261017213000",
+   "title": "SIGNATURE | The Origin | DUNDEE",
+   "start": "2026-10-17T21:30:00.000+01:00",
+   "end": "2026-10-18T00:00:00.000+01:00",
+   "venue": "",
+   "tags": [
+    "signature",
+    "dundee"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-s3j6l-20261017213000"
   },
   {
    "id": "ev-s52qu-20261019183000",
