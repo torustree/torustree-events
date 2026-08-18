@@ -130,7 +130,7 @@ document.addEventListener('click', function(e) {
   function init(){
     var containers = document.querySelectorAll('.tt-live-dates');
     if (!containers.length) return;
-    fetch(EVENTS_URL, {cache:'no-store'})
+    fetch(EVENTS_URL)
       .then(function(r){ return r.json(); })
       .then(function(data){
         containers.forEach(function(c){
