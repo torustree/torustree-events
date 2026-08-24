@@ -488,6 +488,57 @@ def existing_slugs(token: str, slugs: list[str]) -> set[str]:
     return found
 
 
+# COQL caps a page at 200. The scan cap is a runaway guard, not a business
+# rule - if it ever trips, the run says so rather than quietly under-reporting.
+COQL_PAGE = 200
+COQL_SCAN_CAP = 5000
+
+
+def canonical_slugs(token: str, days: int) -> set[str]:
+    """Slugs the Monday sync already holds, whatever key shape they are in.
+
+    Canonical rows are keyed 'slug|email|date', so existing_slugs - which
+    matches the bare slug exactly - cannot see them. That exactness is right
+    on the delete path, where prefix matching would destroy canonical rows,
+    but it leaves the write path blind: we would add a provisional row at the
+    full charge amount on top of the per-attendee canonical rows, turning one
+    £80 booking into £80 + £40 + £40. Adoption would not clear it either - it
+    only sweeps provisionals for slugs written in that same sync run, and
+    these were written days earlier.
+
+    Prefix matching is safe here in a way it is not on the delete path: the
+    worst outcome is a skipped write, never a destroyed row. Pure read, so no
+    scope change - the token stays CREATE and READ only.
+
+    The window is padded by three days because a canonical row's Booked_On
+    need not sit exactly inside the charge window it came from.
+    """
+    cutoff = (
+        datetime.now(timezone.utc) - timedelta(days=days + 3)
+    ).strftime("%Y-%m-%d")
+    found: set[str] = set()
+    offset = 0
+    while True:
+        rows = coql(
+            token,
+            "select Bookwhen_Booking_ID from Bookings "
+            "where Booked_On >= '{0}' limit {1} offset {2}".format(
+                cutoff, COQL_PAGE, offset
+            ),
+        )
+        for row in rows:
+            key = row.get("Bookwhen_Booking_ID")
+            if key:
+                found.add(key.split("|")[0])
+        if len(rows) < COQL_PAGE:
+            break
+        offset += COQL_PAGE
+        if offset >= COQL_SCAN_CAP:
+            stats["canonical_scan_truncated"] += 1
+            break
+    return found
+
+
 # --------------------------------------------------------------------------
 # Transform
 # --------------------------------------------------------------------------
@@ -659,18 +710,33 @@ def main() -> int:
         if row:
             rows.append(row)
 
-    # Drop anything already present so the log distinguishes "new" from
-    # "already had it" rather than reporting a wall of duplicate errors.
+    # Drop anything already accounted for, so the log distinguishes "new" from
+    # "already had it" rather than reporting a wall of duplicate errors. Two
+    # separate ways a booking can already be held, and they are counted apart:
+    # a provisional row this feed wrote, or canonical rows from the sync.
     slugs = [r["Bookwhen_Booking_ID"] for r in rows]
     already = existing_slugs(token, slugs)
-    fresh = [r for r in rows if r["Bookwhen_Booking_ID"] not in already]
-    stats["already_present"] = len(rows) - len(fresh)
+    canonical = canonical_slugs(token, LOOKBACK_DAYS)
+    log(f"canonical scan: {len(canonical)} slugs booked in window + 3 days")
 
-    # Refunds on bookings already adopted by the Monday sync have no provisional
-    # row to update. The feed does not write money onto rows it does not own, and
-    # splitting a partial refund across attendees would be a guess.
+    fresh: list[dict] = []
     for row in rows:
-        if row["Refunded_Amount"] > 0 and row["Bookwhen_Booking_ID"] in already:
+        slug = row["Bookwhen_Booking_ID"]
+        if slug in already:
+            stats["already_present"] += 1
+        elif slug in canonical:
+            stats["already_canonical"] += 1
+        else:
+            fresh.append(row)
+
+    # Refunds on bookings already held elsewhere have no provisional row to
+    # update. The feed does not write money onto rows it does not own, and
+    # splitting a partial refund across attendees would be a guess. Canonical
+    # rows count here too - they are precisely the adopted ones this was meant
+    # to catch, and the bare-slug match never saw them.
+    for row in rows:
+        slug = row["Bookwhen_Booking_ID"]
+        if row["Refunded_Amount"] > 0 and (slug in already or slug in canonical):
             stats["refund_needs_review"] += 1
 
     if DRY_RUN:
