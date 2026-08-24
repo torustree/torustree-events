@@ -423,22 +423,43 @@ def find_contact_id(token: str, email: str) -> str | None:
     return rows[0]["id"] if rows else None
 
 
-def find_session_id(token: str, event_id: str) -> str | None:
-    """Find the Session for an events.json event id.
+def session_event_code(event: dict) -> str | None:
+    """Build the Sessions.Event_Code key for an events.json event.
 
-    Sessions holds the two id formats in two different fields, and the names
-    are the wrong way round for intuition:
+    The two systems disagree about the timestamp inside the code. events.json
+    ids carry the event's LOCAL start - 'ev-szyyz-20260903193000' for 19:30
+    BST - while Sessions stores the same code in UTC, 'ev-szyyz-2026090318
+    3000'. They coincide in winter and differ by an hour under BST, so the id
+    cannot be used as-is; the timestamp is rebuilt from `start`, which carries
+    an explicit UTC offset and so is correct year round.
+    """
+    parts = (event.get("id") or "").split("-")
+    if len(parts) != 3:
+        return None
+    try:
+        start = datetime.fromisoformat(event["start"])
+    except (KeyError, TypeError, ValueError):
+        return None
+    stamp = start.astimezone(timezone.utc).strftime("%Y%m%d%H%M%S")
+    return f"{parts[0]}-{parts[1]}-{stamp}"
+
+
+def find_session_id(token: str, event_code: str) -> str | None:
+    """Find the Session for a Sessions.Event_Code value.
+
+    Sessions holds the two id formats in two fields, and the names are the
+    wrong way round for intuition:
 
       Bookwhen_Event_ID  bare 12-char slug     'jnayyqp7237z'
-      Event_Code         composite id          'ev-spsfw-20260912093000'
+      Event_Code         composite id, in UTC  'ev-spsfw-20260912093000'
 
-    events.json ids are the composite form, so the join is on Event_Code.
-    Matching against Bookwhen_Event_ID can never succeed - it produced
-    no_session_record on 54 of 54 rows before this was corrected.
+    events.json carries no bare slug, so the join has to go through
+    Event_Code. Matching against Bookwhen_Event_ID can never succeed - that
+    produced no_session_record on 54 of 54 rows.
     """
     rows = coql(
         token,
-        "select id from Sessions where Event_Code = '{0}' limit 1".format(event_id),
+        "select id from Sessions where Event_Code = '{0}' limit 1".format(event_code),
     )
     return rows[0]["id"] if rows else None
 
@@ -530,10 +551,14 @@ def build_row(charge: dict, events: dict, token: str) -> dict | None:
         row["Bookwhen_Event_ID"] = event_id
         row["Event_Code"] = "-".join(event_id.split("-")[:2])
         row["Event_Date"] = chosen["start"][:10]
-        session_id = find_session_id(token, event_id)
-        if session_id:
+        session_code = session_event_code(chosen)
+        if not session_code:
+            stats["session_code_unbuildable"] += 1
+        elif (session_id := find_session_id(token, session_code)):
             row["Session"] = {"id": session_id}
         else:
+            # A Session row that genuinely does not exist yet - later events
+            # have not been created in the CRM. Left null for adoption.
             stats["no_session_record"] += 1
         stats["event_matched"] += 1
     else:
