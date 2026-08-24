@@ -199,7 +199,15 @@ def http_request(
         )
         try:
             with urllib.request.urlopen(req, timeout=45) as resp:
-                return json.loads(resp.read().decode("utf-8"))
+                raw = resp.read()
+                # 204 is COQL's documented "no rows matched" and is the ONLY
+                # empty response we accept. Treating any empty body as {} would
+                # extend that trust to the write path, where an empty response
+                # is anomalous and must fail loudly - the same silent-success
+                # trap that cost ~240 records their EventIDs in August 2026.
+                if resp.status == 204:
+                    return {}
+                return json.loads(raw.decode("utf-8"))
         except urllib.error.HTTPError as exc:
             last_status = exc.code
             # 4xx other than rate limiting will not improve on retry.
