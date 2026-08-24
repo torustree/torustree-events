@@ -128,12 +128,54 @@ def log(message: str) -> None:
     print(f"[feed] {message}", flush=True)
 
 
+# An error identifier, and nothing else: no spaces, no @, no punctuation beyond
+# these, hard length cap. A name, email or address cannot satisfy this pattern.
+SAFE_CODE = re.compile(r"^[A-Za-z0-9_.-]{1,64}$")
+
+
+class SafeHTTPError(RuntimeError):
+    """An HTTP failure reduced to parts that are safe on a public log.
+
+    Carries only host, status and a machine-readable error identifier. The
+    response body it came from is discarded beyond that one field.
+    """
+
+    def __init__(self, host: str, status: int | str, code: str | None = None) -> None:
+        self.host = host
+        self.status = status
+        self.code = code
+        detail = f" ({code})" if code else ""
+        super().__init__(f"HTTP {status} from {host}{detail}")
+
+
+def error_code(body: Any) -> str | None:
+    """Pull ONLY a short error identifier out of an error body.
+
+    Zoho and Stripe both return a machine-readable code next to a human
+    message. The message, and every other field, may echo request detail, so
+    a single whitelisted key is read and then pattern-checked before it is
+    allowed anywhere near stdout.
+    """
+    if not isinstance(body, dict):
+        return None
+    for key in ("error", "code"):
+        value = body.get(key)
+        if isinstance(value, dict):  # Stripe nests: {"error": {"code": ...}}
+            value = value.get("code") or value.get("type")
+        if isinstance(value, str) and SAFE_CODE.match(value):
+            return value
+    return None
+
+
 def safe_error(exc: BaseException) -> str:
     """Reduce an exception to something safe to publish.
 
     Exception *messages* can contain response bodies, which contain customer
-    records. Only the class name is ever emitted.
+    records, so only the class name is emitted - except for SafeHTTPError,
+    which is built from whitelisted fields and carries no free text.
     """
+    if isinstance(exc, SafeHTTPError):
+        return f"{type(exc).__name__}: {exc}"
     return type(exc).__name__
 
 
@@ -164,7 +206,11 @@ def http_request(
             if exc.code == 429 or exc.code >= 500:
                 time.sleep(2 ** attempt)
                 continue
-            raise RuntimeError(f"HTTP {exc.code} from {urllib.parse.urlparse(url).netloc}")
+            try:
+                detail = error_code(json.loads(exc.read().decode("utf-8")))
+            except Exception:  # noqa: BLE001 - a body we cannot parse tells us nothing
+                detail = None
+            raise SafeHTTPError(urllib.parse.urlparse(url).netloc, exc.code, detail)
         except (urllib.error.URLError, TimeoutError) as exc:
             if attempt == retries - 1:
                 raise RuntimeError(f"network failure: {safe_error(exc)}")
@@ -194,8 +240,14 @@ def zoho_access_token() -> str:
     )
     token = data.get("access_token")
     if not token:
-        # data contains an error code but may echo request detail - do not print.
-        raise RuntimeError("Zoho token refresh returned no access_token")
+        # Zoho answers a bad refresh with HTTP 200 and an error code in the
+        # body, so this is the normal auth-failure path, not an edge case. The
+        # body may echo request detail, so only the code field is surfaced.
+        raise SafeHTTPError(
+            urllib.parse.urlparse(ZOHO_ACCOUNTS).netloc,
+            "200/no-token",
+            error_code(data),
+        )
     return token
 
 
@@ -520,6 +572,8 @@ def main() -> int:
 
     stripe_key = os.environ["STRIPE_RESTRICTED_KEY"]
     token = zoho_access_token()
+    # Marks which side of the auth boundary a later failure fell on.
+    log("zoho auth ok")
     verify_fields(token)
 
     events = fetch_events()
