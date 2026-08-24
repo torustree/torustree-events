@@ -444,24 +444,29 @@ def session_event_code(event: dict) -> str | None:
     return f"{parts[0]}-{parts[1]}-{stamp}"
 
 
-def find_session_id(token: str, event_code: str) -> str | None:
-    """Find the Session for a Sessions.Event_Code value.
+def find_session(token: str, event_code: str) -> dict | None:
+    """Fetch the Session for a Sessions.Event_Code value.
 
-    Sessions holds the two id formats in two fields, and the names are the
-    wrong way round for intuition:
+    Bookings and Sessions share one convention for the two id formats, and
+    the field names are the wrong way round for intuition:
 
-      Bookwhen_Event_ID  bare 12-char slug     'jnayyqp7237z'
-      Event_Code         composite id, in UTC  'ev-spsfw-20260912093000'
+      Bookwhen_Event_ID  bare 12-char slug     'rmqldw0novbp'
+      Event_Code         composite id, in UTC  'ev-s32e1-20260826173000'
 
     events.json carries no bare slug, so the join has to go through
     Event_Code. Matching against Bookwhen_Event_ID can never succeed - that
     produced no_session_record on 54 of 54 rows.
+
+    Returns the whole row, not just the id: Sessions is the only
+    authoritative source for the bare slug, and this is the same record we
+    would be fetching anyway.
     """
     rows = coql(
         token,
-        "select id from Sessions where Event_Code = '{0}' limit 1".format(event_code),
+        "select id, Bookwhen_Event_ID from Sessions "
+        "where Event_Code = '{0}' limit 1".format(event_code),
     )
-    return rows[0]["id"] if rows else None
+    return rows[0] if rows else None
 
 
 def existing_slugs(token: str, slugs: list[str]) -> set[str]:
@@ -547,19 +552,32 @@ def build_row(charge: dict, events: dict, token: str) -> dict | None:
     )
     chosen = future[0] if future else None
     if chosen:
-        event_id = chosen["id"]
-        row["Bookwhen_Event_ID"] = event_id
-        row["Event_Code"] = "-".join(event_id.split("-")[:2])
         row["Event_Date"] = chosen["start"][:10]
+        # Event_Code is the full composite in UTC - the convention Bookings
+        # and Sessions both already follow. events.json spells the same code
+        # in local time, so the raw id is an hour out under BST.
         session_code = session_event_code(chosen)
         if not session_code:
             stats["session_code_unbuildable"] += 1
-        elif (session_id := find_session_id(token, session_code)):
-            row["Session"] = {"id": session_id}
         else:
-            # A Session row that genuinely does not exist yet - later events
-            # have not been created in the CRM. Left null for adoption.
-            stats["no_session_record"] += 1
+            row["Event_Code"] = session_code
+            session = find_session(token, session_code)
+            if session:
+                row["Session"] = {"id": session["id"]}
+                # Sessions is the only authoritative source for the bare event
+                # slug; events.json does not carry it. Where no Session
+                # matched, Bookwhen_Event_ID is left null - an empty field is
+                # recoverable, a wrongly shaped one silently breaks every
+                # future join and the Monday sync's adoption step.
+                slug = session.get("Bookwhen_Event_ID")
+                if slug:
+                    row["Bookwhen_Event_ID"] = slug
+                else:
+                    stats["session_without_slug"] += 1
+            else:
+                # A Session that genuinely does not exist yet - later events
+                # have not been created in the CRM. Left null for adoption.
+                stats["no_session_record"] += 1
         stats["event_matched"] += 1
     else:
         stats["event_unmatched"] += 1
