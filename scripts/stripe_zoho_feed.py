@@ -719,6 +719,12 @@ def main() -> int:
     canonical = canonical_slugs(token, LOOKBACK_DAYS)
     log(f"canonical scan: {len(canonical)} slugs booked in window + 3 days")
 
+    # Seeded so all three outcomes always print, including as zero. A missing
+    # line reads as "not measured"; an explicit 0 reads as "measured, none".
+    stats.setdefault("already_present", 0)
+    stats.setdefault("already_canonical", 0)
+    stats.setdefault("fresh", 0)
+
     fresh: list[dict] = []
     for row in rows:
         slug = row["Bookwhen_Booking_ID"]
@@ -728,6 +734,7 @@ def main() -> int:
             stats["already_canonical"] += 1
         else:
             fresh.append(row)
+    stats["fresh"] = len(fresh)
 
     # Refunds on bookings already held elsewhere have no provisional row to
     # update. The feed does not write money onto rows it does not own, and
