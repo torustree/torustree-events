@@ -386,20 +386,24 @@ def fetch_charges(key: str) -> list[dict]:
 
 
 def coql(token: str, query: str) -> list[dict]:
+    """Run a COQL query.
+
+    No failure is swallowed here. "No rows matched" arrives as a 204, which
+    http_request turns into {}; anything else is a genuine failure and must
+    surface. The handler that used to catch RuntimeError and return [] made an
+    erroring query indistinguishable from an empty one - exactly the silent
+    success spec section 8 warns about.
+    """
     body = json.dumps({"select_query": query}).encode()
-    try:
-        data = http_request(
-            f"{ZOHO_API}/coql",
-            method="POST",
-            headers={
-                "Authorization": f"Zoho-oauthtoken {token}",
-                "Content-Type": "application/json",
-            },
-            body=body,
-        )
-    except RuntimeError:
-        # COQL returns 204 with no body when nothing matches.
-        return []
+    data = http_request(
+        f"{ZOHO_API}/coql",
+        method="POST",
+        headers={
+            "Authorization": f"Zoho-oauthtoken {token}",
+            "Content-Type": "application/json",
+        },
+        body=body,
+    )
     return data.get("data", []) or []
 
 
@@ -420,9 +424,21 @@ def find_contact_id(token: str, email: str) -> str | None:
 
 
 def find_session_id(token: str, event_id: str) -> str | None:
+    """Find the Session for an events.json event id.
+
+    Sessions holds the two id formats in two different fields, and the names
+    are the wrong way round for intuition:
+
+      Bookwhen_Event_ID  bare 12-char slug     'jnayyqp7237z'
+      Event_Code         composite id          'ev-spsfw-20260912093000'
+
+    events.json ids are the composite form, so the join is on Event_Code.
+    Matching against Bookwhen_Event_ID can never succeed - it produced
+    no_session_record on 54 of 54 rows before this was corrected.
+    """
     rows = coql(
         token,
-        "select id from Sessions where Bookwhen_Event_ID = '{0}' limit 1".format(event_id),
+        "select id from Sessions where Event_Code = '{0}' limit 1".format(event_id),
     )
     return rows[0]["id"] if rows else None
 
