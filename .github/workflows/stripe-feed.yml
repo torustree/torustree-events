@@ -1,0 +1,55 @@
+# .github/workflows/stripe-feed.yml
+#
+# Torus Tree - Stripe to Zoho booking feed.
+#
+# Offset 15 minutes from the update-events job so the two never contend for the
+# events.json file.
+#
+# SAFETY: starts in dry-run. Flip DRY_RUN to "false" only after a clean Phase 1
+# run has been reviewed. Logs on a public repo are world-readable - the script
+# emits counts only, never customer data.
+
+name: stripe-feed
+
+on:
+  schedule:
+    - cron: "15,45 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Plan writes without making them"
+        type: boolean
+        default: true
+      lookback_days:
+        description: "How many days of Stripe charges to scan"
+        type: string
+        default: "7"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: stripe-feed
+  cancel-in-progress: false
+
+jobs:
+  feed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run feed
+        env:
+          STRIPE_RESTRICTED_KEY: ${{ secrets.STRIPE_RESTRICTED_KEY }}
+          ZOHO_CLIENT_ID: ${{ secrets.ZOHO_CLIENT_ID }}
+          ZOHO_CLIENT_SECRET: ${{ secrets.ZOHO_CLIENT_SECRET }}
+          ZOHO_REFRESH_TOKEN: ${{ secrets.ZOHO_REFRESH_TOKEN }}
+          # Scheduled runs stay in dry-run until deliberately switched off.
+          DRY_RUN: ${{ github.event.inputs.dry_run || 'true' }}
+          LOOKBACK_DAYS: ${{ github.event.inputs.lookback_days || '7' }}
+        run: python scripts/stripe_zoho_feed.py
