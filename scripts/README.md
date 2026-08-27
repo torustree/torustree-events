@@ -30,9 +30,35 @@ Plan: watch a Monday cycle deliberately, verify, then flip line 53.
 
 Runs `0 6,17 * * *`, model `claude-opus-5`, no repo attached, Zoho-CRM
 connector only. Reads Notes titled `Email reply received` from the last 24
-hours and writes a `DRAFT REPLY` Note on the parent Contact. Its toolset is
-restricted to six Zoho read tools plus `createNotesModule`, so "the Note is
-the only write" is enforced by the harness rather than by the prompt alone.
+hours and writes a `DRAFT REPLY` Note on the parent Contact.
+
+**Currently PAUSED.** See the tool-restriction finding below.
+
+### The toolset restriction is NOT enforced by the harness
+
+An earlier version of this file claimed it was. That was wrong, and both
+configuration routes were tested against live runs:
+
+| Attempted restriction | Result |
+|---|---|
+| `session_context.allowed_tools`, seven `mcp__Zoho-CRM__*` names | Did not restrict. `ToolSearch` still returned `updateRelatedRecords` and `deleteNotesModule`, and the agent also called `Bash` and `PushNotification`, none of which were listed |
+| `mcp_connections[].permitted_tools`, seven bare tool names | Did not restrict either. `ToolSearch` still returned `deleteNotesModule` and `updateNotesModule` |
+
+Both were accepted by the API and echoed back in the routine config, so the
+settings look applied while changing nothing observable about what the agent
+can see.
+
+What is still untested is whether *calling* an excluded tool would be denied.
+Discovery is clearly not blocked; invocation may or may not be. Nothing has
+tried, because the prompt forbids it, and deliberately provoking a write on
+live CRM data is not a test worth running.
+
+**So the HARD RULES in the prompt are the only thing keeping this agent to a
+single write.** They have held on every run so far, and the agent reports
+restrictions it believes it is under rather than working around them. But
+treat the protection as instruction-level, not structural, and write the
+prompt accordingly. Do not assume a future config flag has closed this
+without re-reading a run log to confirm.
 
 ### ACTION REQUIRED 25 October 2026 — BST ends
 
