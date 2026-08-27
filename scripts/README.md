@@ -23,6 +23,31 @@ clean up.
 
 Plan: watch a Monday cycle deliberately, verify, then flip line 53.
 
+## Scheduled cloud routines
+
+**Email reply drafter** — `trig_018trkTG3Sp1BBE9Do69P4ft`
+<https://claude.ai/code/routines/trig_018trkTG3Sp1BBE9Do69P4ft>
+
+Runs `0 6,17 * * *`, model `claude-opus-5`, no repo attached, Zoho-CRM
+connector only. Reads Notes titled `Email reply received` from the last 24
+hours and writes a `DRAFT REPLY` Note on the parent Contact. Its toolset is
+restricted to six Zoho read tools plus `createNotesModule`, so "the Note is
+the only write" is enforced by the harness rather than by the prompt alone.
+
+### ACTION REQUIRED 25 October 2026 — BST ends
+
+Routine cron expressions are **UTC and do not follow British Summer Time**.
+`0 6,17` is 07:00 and 18:00 local while BST is in effect. When the clocks go
+back on **Sun 25 Oct 2026** those runs become **06:00 and 17:00 local** and
+stay there until BST resumes in March.
+
+To hold 07:00/18:00 local through winter, change the cron to `0 7,18 * * *`
+on or after 25 October, and change it back in spring. This is not a reminder
+sitting with anyone — it is written down here because nothing will prompt it.
+
+The same applies to any future routine. Anything scheduled in UTC drifts by
+an hour twice a year relative to the working day.
+
 ## Known gaps
 
 **`Ticket_Type` is null on every Stripe Feed row.** Stripe metadata does not
