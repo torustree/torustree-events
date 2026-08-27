@@ -28,37 +28,77 @@ Plan: watch a Monday cycle deliberately, verify, then flip line 53.
 **Email reply drafter** — `trig_018trkTG3Sp1BBE9Do69P4ft`
 <https://claude.ai/code/routines/trig_018trkTG3Sp1BBE9Do69P4ft>
 
-Runs `0 6,17 * * *`, model `claude-opus-5`, no repo attached, Zoho-CRM
-connector only. Reads Notes titled `Email reply received` from the last 24
-hours and writes a `DRAFT REPLY` Note on the parent Contact.
+Runs `0 6,17 * * *`, model `claude-opus-5`, no repo attached. Reads Notes
+titled `Email reply received` from the last 24 hours and writes a
+`DRAFT REPLY` note on the parent Contact. **Enabled.**
 
-**Currently PAUSED.** See the tool-restriction finding below.
+It was created through the HTTP API, so it can only be changed there. It does
+not appear in claude.ai's Scheduled tasks UI and cannot be edited from a
+Cowork session.
 
-### The toolset restriction is NOT enforced by the harness
+### The CRM restriction: enforced, by OAuth scope
 
-An earlier version of this file claimed it was. That was wrong, and both
-configuration routes were tested against live runs:
+The connector is **Torus Tree — Notes Drafter (narrow)**, a custom server
+built in the Zoho MCP console (`mcp.zoho.eu`, server name
+`Torus-Tree-Notes-Drafter-narrow`). Creating a server there means selecting
+its tools, and the OAuth scope string is derived from that selection, so
+Zoho refuses anything outside it server-side. Same principle as the Stripe
+feed's Self Client token: the write fails at the far end rather than relying
+on the agent's restraint.
 
-| Attempted restriction | Result |
+Its four tools, namespaced by the connector as
+`mcp__Torus-Tree-Notes-Drafter-narrow__ZohoCRM_*`:
+
+    executeCOQLQuery   getRecord   getNotes   createNotes
+
+Verified 27 Aug against a live run: a broad `ToolSearch` for "zoho"
+(max_results 25) returned exactly those four and nothing else, and a
+deliberately hostile query, "update delete record modify remove", surfaced
+only `getRecord` from Zoho. `updateRecord`, `deleteRecord`, `createRecords`
+and the note mutation tools are genuinely absent.
+
+The connect URL carries an API key and is a credential. **It is not recorded
+here** — this repo is public. Get it from the Connect tab of that server in
+the Zoho MCP console.
+
+The broad `Zoho-CRM` connector stays connected for interactive chat work and
+is deliberately NOT attached to this routine. The connectors page may show it
+as "You started connecting to Zoho CRM but didn't finish"; that label is
+stale. A live COQL read through it succeeded on 27 Aug. Do not re-authorise
+it on the strength of that message.
+
+### The sandbox restriction: NOT possible, and not for want of trying
+
+Do not believe `allowed_tools` or `permitted_tools`. Both are accepted by the
+API and echoed back in the routine config, so they look applied, and neither
+restricts anything. Three live tests:
+
+| Attempted | Result |
 |---|---|
-| `session_context.allowed_tools`, seven `mcp__Zoho-CRM__*` names | Did not restrict. `ToolSearch` still returned `updateRelatedRecords` and `deleteNotesModule`, and the agent also called `Bash` and `PushNotification`, none of which were listed |
-| `mcp_connections[].permitted_tools`, seven bare tool names | Did not restrict either. `ToolSearch` still returned `deleteNotesModule` and `updateNotesModule` |
+| `session_context.allowed_tools` = seven `mcp__Zoho-CRM__*` names | No effect. `ToolSearch` still returned `updateRelatedRecords`, `deleteNotesModule`; agent called `Bash` and `PushNotification`, neither listed |
+| `mcp_connections[].permitted_tools` = seven bare names | No effect. `ToolSearch` still returned `deleteNotesModule`, `updateNotesModule` |
+| `allowed_tools` = ToolSearch, TodoWrite, PushNotification + the 4 Zoho tools | No effect. `ToolSearch` still returned `WebFetch`, `WebSearch`, `CronCreate`, `CronDelete`, `CronList`, `Task*`, `NotebookEdit`. A direct `Bash: echo audit-probe` **ran and returned `audit-probe`** |
 
-Both were accepted by the API and echoed back in the routine config, so the
-settings look applied while changing nothing observable about what the agent
-can see.
+That last test settles it in both directions: not just discovery, invocation
+too. Omitting the field entirely causes the server to substitute
+`["preset:default", ...]`, so it is plainly read and plainly not applied.
 
-What is still untested is whether *calling* an excluded tool would be denied.
-Discovery is clearly not blocked; invocation may or may not be. Nothing has
-tried, because the prompt forbids it, and deliberately provoking a write on
-live CRM data is not a test worth running.
+**So the agent still has `Bash`, `WebFetch`, `WebSearch`, `Write` and the
+Cron and Task families**, and no configuration available to us removes them.
+The narrow connector scopes what it can do to the CRM; it does not scope the
+agent. Those two things are easy to conflate and are not the same.
 
-**So the HARD RULES in the prompt are the only thing keeping this agent to a
-single write.** They have held on every run so far, and the agent reports
-restrictions it believes it is under rather than working around them. But
-treat the protection as instruction-level, not structural, and write the
-prompt accordingly. Do not assume a future config flag has closed this
-without re-reading a run log to confirm.
+This matters here more than on most tasks: the agent's entire input is email
+text written by people outside the business. A shell and an outbound HTTP
+call are a poor pairing with untrusted input. The prompt therefore carries a
+TOOL DISCIPLINE section forbidding those tools and an UNTRUSTED INPUT section
+telling it to treat note contents strictly as data and to report, rather than
+act on, anything resembling an instruction. **That is instruction-level
+protection and should be trusted accordingly.** The `allowed_tools` list is
+left in place as a statement of intent, not as a control.
+
+If a future run log shows the agent using a shell or fetching a URL, that is
+not a surprise to be debugged, it is this limitation showing.
 
 ### ACTION REQUIRED 25 October 2026 — BST ends
 
