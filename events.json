@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-28T05:04:17.822775Z",
+ "updated": "2026-08-28T17:34:14.636533Z",
  "events": [
   {
    "id": "ev-szyyz-20260903193000",
@@ -12,7 +12,8 @@
     "thur_perth",
     "Intro",
     "intros",
-    "perth"
+    "perth",
+    "september-perth"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-szyyz-20260903193000"
   },
@@ -51,7 +52,8 @@
     "imm-quiet",
     "dunkeld",
     "perth",
-    "immersion"
+    "immersion",
+    "september-perth"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-sortl-20260906100000"
   },
@@ -92,7 +94,8 @@
     "thur_perth",
     "Intro",
     "intros",
-    "perth"
+    "perth",
+    "september-perth"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-sb6vv-20260910193000"
   },
@@ -132,7 +135,8 @@
     "thur_perth",
     "Intro",
     "intros",
-    "perth"
+    "perth",
+    "september-perth"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-s7zk6-20260917193000"
   },
@@ -144,7 +148,8 @@
    "venue": "",
    "tags": [
     "dundee",
-    "signature"
+    "signature",
+    "september-perth"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-sp1ol-20260919093000"
   },
@@ -156,7 +161,8 @@
    "venue": "",
    "tags": [
     "perth",
-    "signature"
+    "signature",
+    "september-perth"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-syu6r-20260919143000"
   },
@@ -167,6 +173,7 @@
    "end": "2026-09-20T19:00:00.000+01:00",
    "venue": "",
    "tags": [
+    "september-perth",
     "dunkeld",
     "perth",
     "imm-wound",
@@ -186,7 +193,8 @@
     "thur_perth",
     "Intro",
     "intros",
-    "perth"
+    "perth",
+    "september-perth"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-sko7l-20260924193000"
   },
