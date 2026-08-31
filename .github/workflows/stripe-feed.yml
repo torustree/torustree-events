@@ -49,7 +49,7 @@ jobs:
           ZOHO_CLIENT_ID: ${{ secrets.ZOHO_CLIENT_ID }}
           ZOHO_CLIENT_SECRET: ${{ secrets.ZOHO_CLIENT_SECRET }}
           ZOHO_REFRESH_TOKEN: ${{ secrets.ZOHO_REFRESH_TOKEN }}
-          # Scheduled runs stay in dry-run until deliberately switched off.
-          DRY_RUN: ${{ github.event.inputs.dry_run || 'true' }}
+          # Scheduled runs write. A manual dispatch can still ask for dry-run.
+          DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
           LOOKBACK_DAYS: ${{ github.event.inputs.lookback_days || '7' }}
         run: python scripts/stripe_zoho_feed.py
