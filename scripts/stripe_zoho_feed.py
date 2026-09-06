@@ -674,7 +674,16 @@ def write_rows(token: str, rows: list[dict]) -> None:
 
 def verify_written(token: str, slugs: list[str]) -> None:
     """Read back rather than trusting the write response."""
-    found = existing_slugs(token, slugs)
+    # Zoho's COQL index trails the write by seconds, so an immediate
+    # read-back can report a row missing that is in fact present. Retry
+    # before calling it a loss - the guard still catches a real drop.
+    found: set[str] = set()
+    for attempt in range(4):
+        found = existing_slugs(token, slugs)
+        if len(found) == len(slugs):
+            break
+        if attempt < 3:
+            time.sleep(10)
     stats["verified_present"] = len(found)
     if len(found) != len(slugs):
         stats["verify_missing"] = len(slugs) - len(found)
