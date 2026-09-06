@@ -1,31 +1,6 @@
 {
- "updated": "2026-09-05T23:09:42.361085Z",
+ "updated": "2026-09-06T01:11:01.133503Z",
  "events": [
-  {
-   "id": "ev-sikve-20260905103000",
-   "title": "SIGNATURE | Letting Go | STIRLING",
-   "start": "2026-09-05T10:30:00.000+01:00",
-   "end": "2026-09-05T13:00:00.000+01:00",
-   "venue": "",
-   "tags": [
-    "signature",
-    "stirling"
-   ],
-   "url": "https://bookwhen.com/torustree/e/ev-sikve-20260905103000"
-  },
-  {
-   "id": "ev-swxhw-20260905150000",
-   "title": "SIGNATURE | Calm the Fire Within | DUNFERMLINE",
-   "start": "2026-09-05T15:00:00.000+01:00",
-   "end": "2026-09-05T17:30:00.000+01:00",
-   "venue": "",
-   "tags": [
-    "signature",
-    "fife",
-    "dunfermline"
-   ],
-   "url": "https://bookwhen.com/torustree/e/ev-swxhw-20260905150000"
-  },
   {
    "id": "ev-saf6k-20260907183000",
    "title": "COURSE | The Reset Path: Return to Self | DUNKELD",
