@@ -51,3 +51,9 @@ out.sort(key=lambda e: e["start"])
 with open("events.json", "w") as f:
     json.dump({"updated": datetime.datetime.utcnow().isoformat() + "Z", "events": out}, f, indent=1)
 print(f"Wrote {len(out)} events")
+
+
+# Keep the Supabase project awake (free tier pauses after ~7 days idle)
+_SB = os.environ.get("SUPABASE_KEY", "")
+try: urllib.request.urlopen(urllib.request.Request("https://reyqickmgvgehbywprtl.supabase.co/rest/v1/groups?limit=1", headers={"apikey": _SB, "Authorization": "Bearer " + _SB}), timeout=15); print("Supabase pinged")
+except Exception as e: print("Supabase ping failed:", e)
