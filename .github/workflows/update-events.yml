@@ -13,6 +13,7 @@ jobs:
       - name: Fetch events
         env:
           BOOKWHEN_API_KEY: ${{ secrets.BOOKWHEN_API_KEY }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
         run: python3 fetch_events.py
       - name: Commit if changed
         run: |
