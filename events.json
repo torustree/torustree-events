@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-08T12:58:23.705312Z",
+ "updated": "2026-09-08T17:09:29.083455Z",
  "events": [
   {
    "id": "ev-sibzo-20260908183000",
@@ -16,7 +16,7 @@
   },
   {
    "id": "ev-sb6vv-20260910193000",
-   "title": "INTRO | 9D Breathwork - Awaken | PERTH",
+   "title": "INTRO | 9D Breathwork - Awaken | PERTH 2 for 1",
    "start": "2026-09-10T19:30:00.000+01:00",
    "end": "2026-09-10T21:00:00.000+01:00",
    "venue": "",
@@ -39,7 +39,8 @@
    "tags": [
     "9d Breathwork",
     "signature",
-    "cupar"
+    "cupar",
+    "september-perth"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-spsfw-20260912103000"
   },
@@ -57,7 +58,7 @@
   },
   {
    "id": "ev-s7zk6-20260917193000",
-   "title": "INTRO | 9D Breathwork - Letting Go | PERTH",
+   "title": "INTRO | 9D Breathwork - Letting Go | PERTH 2 for 1",
    "start": "2026-09-17T19:30:00.000+01:00",
    "end": "2026-09-17T21:00:00.000+01:00",
    "venue": "",
@@ -66,8 +67,7 @@
     "thur_perth",
     "Intro",
     "intros",
-    "perth",
-    "september-perth"
+    "perth"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-s7zk6-20260917193000"
   },
@@ -115,7 +115,7 @@
   },
   {
    "id": "ev-sko7l-20260924193000",
-   "title": "INTRO | 9D Breathwork - Return to Self | PERTH",
+   "title": "INTRO | 9D Breathwork - Return to Self | PERTH 2 for 1",
    "start": "2026-09-24T19:30:00.000+01:00",
    "end": "2026-09-24T21:00:00.000+01:00",
    "venue": "",
@@ -124,8 +124,7 @@
     "thur_perth",
     "Intro",
     "intros",
-    "perth",
-    "september-perth"
+    "perth"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-sko7l-20260924193000"
   },
