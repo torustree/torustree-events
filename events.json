@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-13T14:34:49.417902Z",
+ "updated": "2026-09-13T17:53:30.776370Z",
  "events": [
   {
    "id": "ev-s5n86-20260913103000",
@@ -164,6 +164,18 @@
    "url": "https://bookwhen.com/torustree/e/ev-siimt-20261011150000"
   },
   {
+   "id": "ev-s3j6l-20261017093000",
+   "title": "SIGNATURE | The Origin | DUNDEE",
+   "start": "2026-10-17T09:30:00.000+01:00",
+   "end": "2026-10-17T12:00:00.000+01:00",
+   "venue": "",
+   "tags": [
+    "signature",
+    "dundee"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-s3j6l-20261017093000"
+  },
+  {
    "id": "ev-s4w1a-20261017143000",
    "title": "SIGNATURE | The Origin | PERTH",
    "start": "2026-10-17T14:30:00.000+01:00",
@@ -174,18 +186,6 @@
     "perth"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-s4w1a-20261017143000"
-  },
-  {
-   "id": "ev-s3j6l-20261017213000",
-   "title": "SIGNATURE | The Origin | DUNDEE",
-   "start": "2026-10-17T21:30:00.000+01:00",
-   "end": "2026-10-18T00:00:00.000+01:00",
-   "venue": "",
-   "tags": [
-    "signature",
-    "dundee"
-   ],
-   "url": "https://bookwhen.com/torustree/e/ev-s3j6l-20261017213000"
   },
   {
    "id": "ev-s52qu-20261019183000",
