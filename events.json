@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-14T11:39:48.488864Z",
+ "updated": "2026-09-14T17:34:30.568418Z",
  "events": [
   {
    "id": "ev-s7zk6-20260917193000",
@@ -72,6 +72,18 @@
     "perth"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-sko7l-20260924193000"
+  },
+  {
+   "id": "ev-srwhn-20261001193000",
+   "title": "REGULATE | Reset, Reconnect & Restore | PERTH",
+   "start": "2026-10-01T19:30:00.000+01:00",
+   "end": "2026-10-01T21:00:00.000+01:00",
+   "venue": "",
+   "tags": [
+    "perth",
+    "regulate"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-srwhn-20261001193000"
   },
   {
    "id": "ev-scw83-20261003110000",
@@ -150,6 +162,18 @@
     "dunfermline"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-siimt-20261011150000"
+  },
+  {
+   "id": "ev-sb2ou-20261015193000",
+   "title": "REGULATE | Reset, Reconnect & Restore | PERTH",
+   "start": "2026-10-15T19:30:00.000+01:00",
+   "end": "2026-10-15T21:00:00.000+01:00",
+   "venue": "",
+   "tags": [
+    "perth",
+    "regulate"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-sb2ou-20261015193000"
   },
   {
    "id": "ev-s3j6l-20261017093000",
