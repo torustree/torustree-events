@@ -19,6 +19,6 @@ jobs:
         run: |
           git config user.name "bookwhen-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add events.json
+          git add events.json posting-stats.json
           git diff --cached --quiet || git commit -m "Update events $(date -u +%F_%H:%M)"
           git push
