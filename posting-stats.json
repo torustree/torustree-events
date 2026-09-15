@@ -1,29 +1,29 @@
 {
- "generated": "2026-09-15T18:16:50.416Z",
+ "generated": "2026-09-15T20:05:57.238+00:00",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data.",
  "groups": {
   "total": 202,
-  "active": 164,
+  "active": 161,
   "archived": 2,
-  "blocked": 37
+  "blocked": 40
  },
  "all_time": {
-  "posts": 327,
-  "live": 226,
-  "pending": 88,
-  "declined": 5,
+  "posts": 328,
+  "live": 227,
+  "pending": 85,
+  "declined": 8,
   "other": 8,
-  "live_rate": 0.691,
-  "booking_link_rate": 0.587
+  "live_rate": 0.692,
+  "booking_link_rate": 0.588
  },
  "last_30_days": {
-  "posts": 272,
-  "live": 178,
-  "pending": 81,
-  "declined": 5,
+  "posts": 273,
+  "live": 179,
+  "pending": 78,
+  "declined": 8,
   "other": 8,
-  "live_rate": 0.654,
-  "booking_link_rate": 0.673
+  "live_rate": 0.656,
+  "booking_link_rate": 0.674
  },
  "by_location": {
   "Bearsden": {
@@ -74,8 +74,8 @@
   "Falkirk": {
    "posts": 18,
    "live": 11,
-   "pending": 5,
-   "declined": 0,
+   "pending": 4,
+   "declined": 1,
    "other": 2,
    "live_rate": 0.611,
    "booking_link_rate": 0.611
@@ -92,8 +92,8 @@
   "Forfar": {
    "posts": 11,
    "live": 4,
-   "pending": 7,
-   "declined": 0,
+   "pending": 6,
+   "declined": 1,
    "other": 0,
    "live_rate": 0.364,
    "booking_link_rate": 0.364
@@ -119,8 +119,8 @@
   "Pitlochry": {
    "posts": 14,
    "live": 3,
-   "pending": 10,
-   "declined": 0,
+   "pending": 9,
+   "declined": 1,
    "other": 1,
    "live_rate": 0.214,
    "booking_link_rate": 0.214
@@ -135,24 +135,24 @@
    "booking_link_rate": 0.25
   },
   "Stirling": {
-   "posts": 31,
-   "live": 25,
+   "posts": 32,
+   "live": 26,
    "pending": 3,
    "declined": 0,
    "other": 3,
-   "live_rate": 0.806,
-   "booking_link_rate": 0.806
+   "live_rate": 0.812,
+   "booking_link_rate": 0.812
   }
  },
  "by_profile": {
   "Mark Scott": {
-   "posts": 224,
-   "live": 163,
-   "pending": 52,
-   "declined": 4,
+   "posts": 225,
+   "live": 164,
+   "pending": 49,
+   "declined": 7,
    "other": 5,
-   "live_rate": 0.728,
-   "booking_link_rate": 0.634
+   "live_rate": 0.729,
+   "booking_link_rate": 0.636
   },
   "Torus Tree": {
    "posts": 103,
@@ -207,13 +207,13 @@
   },
   {
    "week_starting": "2026-09-14",
-   "posts": 65,
-   "live": 23,
-   "pending": 41,
-   "declined": 1,
+   "posts": 66,
+   "live": 24,
+   "pending": 38,
+   "declined": 4,
    "other": 0,
-   "live_rate": 0.354,
-   "booking_link_rate": 0.354
+   "live_rate": 0.364,
+   "booking_link_rate": 0.364
   }
  ]
 }
