@@ -31,20 +31,33 @@ def get(url):
 
 # ---------------------------------------------------------------- events.json
 
-# Fetch upcoming events with locations included; paginate defensively
-events, included, url = [], {}, f"{BASE}/events?filter[from]={today}&include=location&page[size]=100"
-while url:
-    data = get(url)
-    events.extend(data.get("data", []))
+# Fetch upcoming events with locations included.
+# Bookwhen paginates at a fixed 20 per page and offers no page[size] override;
+# its `links` object carries only `self`, never `next`, so pagination has to be
+# driven by an explicit page[offset] walk. A short page means we are done.
+PAGE = 20
+events, included = [], {}
+offset = 0
+while True:
+    data = get(f"{BASE}/events?filter[from]={today}&include=location&page[offset]={offset}")
+    batch = data.get("data", [])
+    events.extend(batch)
     for inc in data.get("included", []):
         included[(inc["type"], inc["id"])] = inc
-    url = data.get("links", {}).get("next")
+    if len(batch) < PAGE:
+        break
+    offset += PAGE
+    if offset >= 2000:
+        print(f"Warning: stopped paginating at offset {offset}", file=sys.stderr)
+        break
 
 out = []
 for ev in events:
     a = ev.get("attributes", {})
     loc = ev.get("relationships", {}).get("location", {}).get("data") or {}
-    loc_obj = included.get(("locations", loc.get("id")), {})
+    # Trust the type the relationship declares ("location", singular) rather
+    # than hardcoding it — a hardcoded "locations" silently missed every match.
+    loc_obj = included.get((loc.get("type"), loc.get("id")), {})
     venue = (loc_obj.get("attributes", {}) or {}).get("address_text", "") or ""
     # Event page URL: bookwhen event ids are like "ev-xxxx-20260905..."
     out.append({
