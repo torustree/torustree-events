@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-16T08:43:36.488+00:00",
+ "generated": "2026-09-16T12:20:37.812+00:00",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data.",
  "groups": {
   "total": 202,
@@ -9,21 +9,21 @@
  },
  "all_time": {
   "posts": 330,
-  "live": 235,
-  "pending": 69,
+  "live": 236,
+  "pending": 68,
   "declined": 18,
   "other": 8,
-  "live_rate": 0.712,
-  "booking_link_rate": 0.6
+  "live_rate": 0.715,
+  "booking_link_rate": 0.603
  },
  "last_30_days": {
   "posts": 275,
-  "live": 187,
-  "pending": 62,
+  "live": 188,
+  "pending": 61,
   "declined": 18,
   "other": 8,
-  "live_rate": 0.68,
-  "booking_link_rate": 0.687
+  "live_rate": 0.684,
+  "booking_link_rate": 0.691
  },
  "by_location": {
   "Bearsden": {
@@ -109,12 +109,12 @@
   },
   "Perth": {
    "posts": 78,
-   "live": 66,
-   "pending": 11,
+   "live": 67,
+   "pending": 10,
    "declined": 0,
    "other": 1,
-   "live_rate": 0.846,
-   "booking_link_rate": 0.641
+   "live_rate": 0.859,
+   "booking_link_rate": 0.654
   },
   "Pitlochry": {
    "posts": 14,
@@ -156,12 +156,12 @@
   },
   "Torus Tree": {
    "posts": 104,
-   "live": 66,
-   "pending": 32,
+   "live": 67,
+   "pending": 31,
    "declined": 3,
    "other": 3,
-   "live_rate": 0.635,
-   "booking_link_rate": 0.49
+   "live_rate": 0.644,
+   "booking_link_rate": 0.5
   }
  },
  "by_week": [
@@ -208,12 +208,12 @@
   {
    "week_starting": "2026-09-14",
    "posts": 90,
-   "live": 48,
-   "pending": 27,
+   "live": 49,
+   "pending": 26,
    "declined": 15,
    "other": 0,
-   "live_rate": 0.533,
-   "booking_link_rate": 0.533
+   "live_rate": 0.544,
+   "booking_link_rate": 0.544
   }
  ]
 }

@@ -1,12 +1,12 @@
 {
- "updated": "2026-09-16T08:45:32.082884Z",
+ "updated": "2026-09-16T13:06:13.289145Z",
  "events": [
   {
    "id": "ev-s7zk6-20260917193000",
    "title": "INTRO | 9D Breathwork - Letting Go | PERTH 2 for 1",
    "start": "2026-09-17T19:30:00.000+01:00",
    "end": "2026-09-17T21:00:00.000+01:00",
-   "venue": "",
+   "venue": "Perth Yoga Studio - Old Academy Building",
    "tags": [
     "Intro Sessions",
     "thur_perth",
@@ -21,7 +21,7 @@
    "title": "SIGNATURE | Full System Reset | DUNDEE",
    "start": "2026-09-19T09:30:00.000+01:00",
    "end": "2026-09-19T12:00:00.000+01:00",
-   "venue": "",
+   "venue": "Fairfield Community Sports Hub",
    "tags": [
     "dundee",
     "signature",
@@ -34,7 +34,7 @@
    "title": "SIGNATURE | Full System Reset | PERTH",
    "start": "2026-09-19T14:30:00.000+01:00",
    "end": "2026-09-19T17:00:00.000+01:00",
-   "venue": "",
+   "venue": "Perth Yoga Studio - Old Academy Building",
    "tags": [
     "perth",
     "signature",
@@ -47,7 +47,7 @@
    "title": "IMMERSION - FULL DAY | Healing the Mother Wound | DUNKELD",
    "start": "2026-09-20T10:00:00.000+01:00",
    "end": "2026-09-20T19:00:00.000+01:00",
-   "venue": "",
+   "venue": "Torus Tree Ltd",
    "tags": [
     "september-perth",
     "dunkeld",
@@ -63,7 +63,7 @@
    "title": "INTRO | 9D Breathwork - Return to Self | PERTH 2 for 1",
    "start": "2026-09-24T19:30:00.000+01:00",
    "end": "2026-09-24T21:00:00.000+01:00",
-   "venue": "",
+   "venue": "Perth Yoga Studio - Old Academy Building",
    "tags": [
     "Intro Sessions",
     "thur_perth",
@@ -78,7 +78,7 @@
    "title": "REGULATE | Reset, Reconnect & Restore | PERTH",
    "start": "2026-10-01T19:30:00.000+01:00",
    "end": "2026-10-01T21:00:00.000+01:00",
-   "venue": "",
+   "venue": "Perth Yoga Studio - Old Academy Building",
    "tags": [
     "perth",
     "regulate"
@@ -90,7 +90,7 @@
    "title": "IMMERSION - FULL DAY | Firewalk & Ceremony | DUNKELD",
    "start": "2026-10-03T11:00:00.000+01:00",
    "end": "2026-10-03T19:00:00.000+01:00",
-   "venue": "",
+   "venue": "Torus Tree Ltd",
    "tags": [
     "imm-firewalk",
     "Firewalk",
@@ -106,7 +106,7 @@
    "title": "SIGNATURE | The Origin | STIRLING",
    "start": "2026-10-04T10:30:00.000+01:00",
    "end": "2026-10-04T12:30:00.000+01:00",
-   "venue": "",
+   "venue": "Logie Kirk Hall",
    "tags": [
     "signature",
     "stirling"
@@ -118,7 +118,7 @@
    "title": "SIGNATURE | The Origin | GRANGEMOUTH",
    "start": "2026-10-04T14:30:00.000+01:00",
    "end": "2026-10-04T17:00:00.000+01:00",
-   "venue": "",
+   "venue": "Yoga Flow Studio",
    "tags": [
     "signature",
     "grangemouth"
@@ -130,7 +130,7 @@
    "title": "IMMERSION - FULL DAY | Breaking The Family Pattern | DUNKELD",
    "start": "2026-10-10T10:00:00.000+01:00",
    "end": "2026-10-10T19:00:00.000+01:00",
-   "venue": "",
+   "venue": "Torus Tree Ltd",
    "tags": [
     "perth",
     "dunkeld",
@@ -144,7 +144,7 @@
    "title": "SIGNATURE | The Origin | CUPAR",
    "start": "2026-10-11T10:30:00.000+01:00",
    "end": "2026-10-11T13:00:00.000+01:00",
-   "venue": "",
+   "venue": "Corn Exchange",
    "tags": [
     "signature",
     "cupar"
@@ -156,7 +156,7 @@
    "title": "SIGNATURE | The Origin | DUNFERMLINE",
    "start": "2026-10-11T15:00:00.000+01:00",
    "end": "2026-10-11T17:00:00.000+01:00",
-   "venue": "",
+   "venue": "Trench Boxing & Fitness",
    "tags": [
     "signature",
     "dunfermline"
@@ -168,7 +168,7 @@
    "title": "REGULATE | Reset, Reconnect & Restore | PERTH",
    "start": "2026-10-15T19:30:00.000+01:00",
    "end": "2026-10-15T21:00:00.000+01:00",
-   "venue": "",
+   "venue": "Perth Yoga Studio - Old Academy Building",
    "tags": [
     "perth",
     "regulate"
@@ -180,7 +180,7 @@
    "title": "SIGNATURE | The Origin | DUNDEE",
    "start": "2026-10-17T09:30:00.000+01:00",
    "end": "2026-10-17T12:00:00.000+01:00",
-   "venue": "",
+   "venue": "Fairfield Community Sports Hub",
    "tags": [
     "signature",
     "dundee"
@@ -192,7 +192,7 @@
    "title": "SIGNATURE | The Origin | PERTH",
    "start": "2026-10-17T14:30:00.000+01:00",
    "end": "2026-10-17T17:00:00.000+01:00",
-   "venue": "",
+   "venue": "Perth Yoga Studio - Old Academy Building",
    "tags": [
     "signature",
     "perth"
@@ -204,7 +204,7 @@
    "title": "COURSE | The Power Path: Rise into Freedom | DUNKELD",
    "start": "2026-10-19T18:30:00.000+01:00",
    "end": "2026-10-19T20:30:00.000+01:00",
-   "venue": "",
+   "venue": "Torus Tree Ltd",
    "tags": [
     "course",
     "dunkeld",
@@ -217,7 +217,7 @@
    "title": "COURSE | The Reset Path: Return to Self | DUNKELD",
    "start": "2026-10-20T18:30:00.000+01:00",
    "end": "2026-10-20T20:30:00.000+01:00",
-   "venue": "",
+   "venue": "Torus Tree Ltd",
    "tags": [
     "course",
     "dunkeld",
@@ -230,7 +230,7 @@
    "title": "IMMERSION - FULL DAY | 9DMT Breathwork: Reclaiming Your Power | DUNKELD",
    "start": "2026-10-24T10:00:00.000+01:00",
    "end": "2026-10-24T19:00:00.000+01:00",
-   "venue": "",
+   "venue": "Torus Tree Ltd",
    "tags": [
     "imm-9dmt",
     "immersion",
@@ -240,11 +240,35 @@
    "url": "https://bookwhen.com/torustree/e/ev-syugo-20261024100000"
   },
   {
+   "id": "ev-s3e3a-20261112193000",
+   "title": "REGULATE | Reset, Reconnect & Restore | PERTH",
+   "start": "2026-11-12T19:30:00.000+00:00",
+   "end": "2026-11-12T21:00:00.000+00:00",
+   "venue": "Perth Yoga Studio - Old Academy Building",
+   "tags": [
+    "perth",
+    "regulate"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-s3e3a-20261112193000"
+  },
+  {
+   "id": "ev-sueru-20261126193000",
+   "title": "REGULATE | Reset, Reconnect & Restore | PERTH",
+   "start": "2026-11-26T19:30:00.000+00:00",
+   "end": "2026-11-26T21:00:00.000+00:00",
+   "venue": "Perth Yoga Studio - Old Academy Building",
+   "tags": [
+    "perth",
+    "regulate"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-sueru-20261126193000"
+  },
+  {
    "id": "ev-stpw7-20270111183000",
    "title": "COURSE | The Reset Path: Return to Self | DUNKELD",
    "start": "2027-01-11T18:30:00.000+00:00",
    "end": "2027-01-11T20:30:00.000+00:00",
-   "venue": "",
+   "venue": "Torus Tree Ltd",
    "tags": [
     "course",
     "dunkeld",
@@ -257,7 +281,7 @@
    "title": "COURSE | The Power Path: Rise into Freedom | DUNKELD",
    "start": "2027-01-12T18:30:00.000+00:00",
    "end": "2027-01-12T20:30:00.000+00:00",
-   "venue": "",
+   "venue": "Torus Tree Ltd",
    "tags": [
     "course",
     "dunkeld",
