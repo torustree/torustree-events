@@ -60,7 +60,7 @@ for ev in events:
 # NOTE: deliberately NO attendee/space counts — "spaces are limited" policy
 out.sort(key=lambda e: e["start"])
 with open("events.json", "w") as f:
-    json.dump({"updated": datetime.datetime.utcnow().isoformat() + "Z", "events": out}, f, indent=1)
+    json.dump({"updated": datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z"), "events": out}, f, indent=1)
 print(f"Wrote {len(out)} events")
 
 
