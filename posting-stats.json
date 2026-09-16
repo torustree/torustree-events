@@ -2,10 +2,10 @@
  "generated": "2026-09-16T12:20:37.812+00:00",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data.",
  "groups": {
-  "total": 202,
-  "active": 155,
+  "total": 252,
+  "active": 161,
   "archived": 2,
-  "blocked": 46
+  "blocked": 90
  },
  "all_time": {
   "posts": 330,
