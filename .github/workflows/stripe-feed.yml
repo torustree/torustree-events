@@ -50,6 +50,17 @@ jobs:
           ZOHO_CLIENT_SECRET: ${{ secrets.ZOHO_CLIENT_SECRET }}
           ZOHO_REFRESH_TOKEN: ${{ secrets.ZOHO_REFRESH_TOKEN }}
           # Scheduled runs write. A manual dispatch can still ask for dry-run.
+          #
+          # The 'false' fallback is deliberately the same value the unticked
+          # checkbox produces, which is what makes this safe either way:
+          # github.event.inputs hands over the *string* "false" (non-empty, so
+          # truthy, so || returns it), while the typed inputs context would give
+          # a real boolean false (falsy, so || falls through to the literal).
+          # Both land on "false", so unticking the box always means "write".
+          # Do not flip this fallback to 'true' — then unticking would fall
+          # through to a dry run and silently skip a write you asked for.
+          # scripts/stripe_zoho_feed.py treats only the exact string "false" as
+          # permission to write; anything else, including unset, dry-runs.
           DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
           LOOKBACK_DAYS: ${{ github.event.inputs.lookback_days || '7' }}
         run: python scripts/stripe_zoho_feed.py
