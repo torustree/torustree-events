@@ -1,29 +1,29 @@
 {
- "generated": "2026-09-16T16:12:07.198+00:00",
+ "generated": "2026-09-17T10:02:21.058+00:00",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data.",
  "groups": {
-  "total": 252,
-  "active": 171,
+  "total": 266,
+  "active": 195,
   "archived": 2,
-  "blocked": 80
+  "blocked": 70
  },
  "all_time": {
   "posts": 330,
-  "live": 240,
-  "pending": 59,
+  "live": 241,
+  "pending": 58,
   "declined": 23,
   "other": 8,
-  "live_rate": 0.727,
-  "booking_link_rate": 0.615
+  "live_rate": 0.73,
+  "booking_link_rate": 0.618
  },
  "last_30_days": {
-  "posts": 268,
-  "live": 186,
-  "pending": 52,
+  "posts": 255,
+  "live": 177,
+  "pending": 49,
   "declined": 23,
-  "other": 7,
+  "other": 6,
   "live_rate": 0.694,
-  "booking_link_rate": 0.701
+  "booking_link_rate": 0.702
  },
  "by_location": {
   "Bearsden": {
@@ -127,12 +127,12 @@
   },
   "Scotland-wide": {
    "posts": 4,
-   "live": 1,
-   "pending": 3,
+   "live": 2,
+   "pending": 2,
    "declined": 0,
    "other": 0,
-   "live_rate": 0.25,
-   "booking_link_rate": 0.25
+   "live_rate": 0.5,
+   "booking_link_rate": 0.5
   },
   "Stirling": {
    "posts": 32,
@@ -156,12 +156,12 @@
   },
   "Torus Tree": {
    "posts": 104,
-   "live": 71,
-   "pending": 26,
+   "live": 72,
+   "pending": 25,
    "declined": 4,
    "other": 3,
-   "live_rate": 0.683,
-   "booking_link_rate": 0.538
+   "live_rate": 0.692,
+   "booking_link_rate": 0.548
   }
  },
  "by_week": [
@@ -208,12 +208,12 @@
   {
    "week_starting": "2026-09-14",
    "posts": 90,
-   "live": 51,
-   "pending": 20,
+   "live": 52,
+   "pending": 19,
    "declined": 19,
    "other": 0,
-   "live_rate": 0.567,
-   "booking_link_rate": 0.567
+   "live_rate": 0.578,
+   "booking_link_rate": 0.578
   }
  ]
 }
