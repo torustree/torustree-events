@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-17T10:02:21.058+00:00",
+ "generated": "2026-09-17T11:15:53.802+00:00",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data.",
  "groups": {
   "total": 266,
@@ -9,21 +9,21 @@
  },
  "all_time": {
   "posts": 330,
-  "live": 241,
-  "pending": 58,
+  "live": 242,
+  "pending": 57,
   "declined": 23,
   "other": 8,
-  "live_rate": 0.73,
-  "booking_link_rate": 0.618
+  "live_rate": 0.733,
+  "booking_link_rate": 0.621
  },
  "last_30_days": {
-  "posts": 255,
-  "live": 177,
-  "pending": 49,
+  "posts": 240,
+  "live": 166,
+  "pending": 47,
   "declined": 23,
-  "other": 6,
-  "live_rate": 0.694,
-  "booking_link_rate": 0.702
+  "other": 4,
+  "live_rate": 0.692,
+  "booking_link_rate": 0.7
  },
  "by_location": {
   "Bearsden": {
@@ -82,12 +82,12 @@
   },
   "Fife": {
    "posts": 77,
-   "live": 61,
-   "pending": 11,
+   "live": 62,
+   "pending": 10,
    "declined": 4,
    "other": 1,
-   "live_rate": 0.792,
-   "booking_link_rate": 0.805
+   "live_rate": 0.805,
+   "booking_link_rate": 0.818
   },
   "Forfar": {
    "posts": 11,
@@ -147,12 +147,12 @@
  "by_profile": {
   "Mark Scott": {
    "posts": 226,
-   "live": 169,
-   "pending": 33,
+   "live": 170,
+   "pending": 32,
    "declined": 19,
    "other": 5,
-   "live_rate": 0.748,
-   "booking_link_rate": 0.65
+   "live_rate": 0.752,
+   "booking_link_rate": 0.655
   },
   "Torus Tree": {
    "posts": 104,
@@ -187,13 +187,13 @@
   },
   {
    "week_starting": "2026-08-24",
-   "posts": 28,
+   "posts": 26,
    "live": 19,
-   "pending": 6,
+   "pending": 4,
    "declined": 3,
    "other": 0,
-   "live_rate": 0.679,
-   "booking_link_rate": 0.679
+   "live_rate": 0.731,
+   "booking_link_rate": 0.731
   },
   {
    "week_starting": "2026-09-07",
@@ -207,13 +207,13 @@
   },
   {
    "week_starting": "2026-09-14",
-   "posts": 90,
-   "live": 52,
-   "pending": 19,
+   "posts": 92,
+   "live": 53,
+   "pending": 20,
    "declined": 19,
    "other": 0,
-   "live_rate": 0.578,
-   "booking_link_rate": 0.578
+   "live_rate": 0.576,
+   "booking_link_rate": 0.576
   }
  ]
 }
