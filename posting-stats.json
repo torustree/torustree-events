@@ -1,11 +1,11 @@
 {
- "generated": "2026-09-18T06:38:06.375+00:00",
+ "generated": "2026-09-18T10:50:38.913Z",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data.",
  "groups": {
   "total": 266,
-  "active": 205,
+  "active": 206,
   "archived": 2,
-  "blocked": 60
+  "blocked": 59
  },
  "all_time": {
   "posts": 329,
@@ -17,13 +17,13 @@
   "booking_link_rate": 0.623
  },
  "last_30_days": {
-  "posts": 198,
-  "live": 130,
-  "pending": 44,
+  "posts": 190,
+  "live": 124,
+  "pending": 42,
   "declined": 23,
   "other": 1,
-  "live_rate": 0.657,
-  "booking_link_rate": 0.667
+  "live_rate": 0.653,
+  "booking_link_rate": 0.663
  },
  "by_location": {
   "Bearsden": {
