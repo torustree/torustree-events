@@ -1,29 +1,29 @@
 {
- "generated": "2026-09-17T11:15:53.802+00:00",
+ "generated": "2026-09-18T06:38:06.375+00:00",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data.",
  "groups": {
   "total": 266,
-  "active": 195,
+  "active": 205,
   "archived": 2,
-  "blocked": 70
+  "blocked": 60
  },
  "all_time": {
-  "posts": 330,
+  "posts": 329,
   "live": 242,
-  "pending": 57,
+  "pending": 56,
   "declined": 23,
   "other": 8,
-  "live_rate": 0.733,
-  "booking_link_rate": 0.621
+  "live_rate": 0.736,
+  "booking_link_rate": 0.623
  },
  "last_30_days": {
-  "posts": 226,
-  "live": 152,
-  "pending": 47,
+  "posts": 198,
+  "live": 130,
+  "pending": 44,
   "declined": 23,
-  "other": 4,
-  "live_rate": 0.673,
-  "booking_link_rate": 0.681
+  "other": 1,
+  "live_rate": 0.657,
+  "booking_link_rate": 0.667
  },
  "by_location": {
   "Bearsden": {
@@ -81,13 +81,13 @@
    "booking_link_rate": 0.722
   },
   "Fife": {
-   "posts": 77,
+   "posts": 76,
    "live": 62,
-   "pending": 10,
+   "pending": 9,
    "declined": 4,
    "other": 1,
-   "live_rate": 0.805,
-   "booking_link_rate": 0.818
+   "live_rate": 0.816,
+   "booking_link_rate": 0.829
   },
   "Forfar": {
    "posts": 11,
@@ -146,22 +146,22 @@
  },
  "by_profile": {
   "Mark Scott": {
-   "posts": 226,
-   "live": 170,
-   "pending": 32,
+   "posts": 233,
+   "live": 171,
+   "pending": 38,
    "declined": 19,
    "other": 5,
-   "live_rate": 0.752,
-   "booking_link_rate": 0.655
+   "live_rate": 0.734,
+   "booking_link_rate": 0.639
   },
   "Torus Tree": {
-   "posts": 104,
-   "live": 72,
-   "pending": 25,
+   "posts": 96,
+   "live": 71,
+   "pending": 18,
    "declined": 4,
    "other": 3,
-   "live_rate": 0.692,
-   "booking_link_rate": 0.548
+   "live_rate": 0.74,
+   "booking_link_rate": 0.583
   }
  },
  "by_week": [
@@ -187,13 +187,13 @@
   },
   {
    "week_starting": "2026-08-24",
-   "posts": 26,
+   "posts": 25,
    "live": 19,
-   "pending": 4,
+   "pending": 3,
    "declined": 3,
    "other": 0,
-   "live_rate": 0.731,
-   "booking_link_rate": 0.731
+   "live_rate": 0.76,
+   "booking_link_rate": 0.76
   },
   {
    "week_starting": "2026-09-07",
