@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-18T10:50:38.913Z",
+ "generated": "2026-09-20T13:50:09.115+00:00",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data.",
  "groups": {
   "total": 266,
@@ -8,18 +8,18 @@
   "blocked": 59
  },
  "all_time": {
-  "posts": 329,
-  "live": 242,
-  "pending": 56,
+  "posts": 332,
+  "live": 244,
+  "pending": 57,
   "declined": 23,
   "other": 8,
-  "live_rate": 0.736,
+  "live_rate": 0.735,
   "booking_link_rate": 0.623
  },
  "last_30_days": {
-  "posts": 163,
-  "live": 112,
-  "pending": 28,
+  "posts": 166,
+  "live": 114,
+  "pending": 29,
   "declined": 23,
   "other": 0,
   "live_rate": 0.687,
@@ -62,6 +62,15 @@
    "live_rate": 0.35,
    "booking_link_rate": 0.35
   },
+  "Cumbernauld": {
+   "posts": 1,
+   "live": 0,
+   "pending": 1,
+   "declined": 0,
+   "other": 0,
+   "live_rate": 0.0,
+   "booking_link_rate": 0.0
+  },
   "Dundee": {
    "posts": 66,
    "live": 48,
@@ -97,6 +106,15 @@
    "other": 0,
    "live_rate": 0.545,
    "booking_link_rate": 0.545
+  },
+  "Kelty": {
+   "posts": 1,
+   "live": 1,
+   "pending": 0,
+   "declined": 0,
+   "other": 0,
+   "live_rate": 1.0,
+   "booking_link_rate": 1.0
   },
   "North Fife": {
    "posts": 3,
@@ -135,24 +153,24 @@
    "booking_link_rate": 0.5
   },
   "Stirling": {
-   "posts": 32,
-   "live": 27,
+   "posts": 33,
+   "live": 28,
    "pending": 0,
    "declined": 2,
    "other": 3,
-   "live_rate": 0.844,
-   "booking_link_rate": 0.844
+   "live_rate": 0.848,
+   "booking_link_rate": 0.848
   }
  },
  "by_profile": {
   "Mark Scott": {
-   "posts": 233,
-   "live": 171,
-   "pending": 38,
+   "posts": 236,
+   "live": 173,
+   "pending": 39,
    "declined": 19,
    "other": 5,
-   "live_rate": 0.734,
-   "booking_link_rate": 0.639
+   "live_rate": 0.733,
+   "booking_link_rate": 0.64
   },
   "Torus Tree": {
    "posts": 96,
@@ -207,13 +225,13 @@
   },
   {
    "week_starting": "2026-09-14",
-   "posts": 92,
-   "live": 53,
-   "pending": 20,
+   "posts": 95,
+   "live": 55,
+   "pending": 21,
    "declined": 19,
    "other": 0,
-   "live_rate": 0.576,
-   "booking_link_rate": 0.576
+   "live_rate": 0.579,
+   "booking_link_rate": 0.579
   }
  ]
 }
