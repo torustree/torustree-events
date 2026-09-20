@@ -1,32 +1,6 @@
 {
- "updated": "2026-09-19T22:15:59.901676Z",
+ "updated": "2026-09-20T00:13:38.872691Z",
  "events": [
-  {
-   "id": "ev-sp1ol-20260919093000",
-   "title": "SIGNATURE | Full System Reset | DUNDEE",
-   "start": "2026-09-19T09:30:00.000+01:00",
-   "end": "2026-09-19T12:00:00.000+01:00",
-   "venue": "Fairfield Community Sports Hub",
-   "tags": [
-    "dundee",
-    "signature",
-    "september-perth"
-   ],
-   "url": "https://bookwhen.com/torustree/e/ev-sp1ol-20260919093000"
-  },
-  {
-   "id": "ev-syu6r-20260919143000",
-   "title": "SIGNATURE | Full System Reset | PERTH",
-   "start": "2026-09-19T14:30:00.000+01:00",
-   "end": "2026-09-19T17:00:00.000+01:00",
-   "venue": "Perth Yoga Studio - Old Academy Building",
-   "tags": [
-    "perth",
-    "signature",
-    "september-perth"
-   ],
-   "url": "https://bookwhen.com/torustree/e/ev-syu6r-20260919143000"
-  },
   {
    "id": "ev-s4i8s-20260920100000",
    "title": "IMMERSION - FULL DAY | Healing the Mother Wound | DUNKELD",
