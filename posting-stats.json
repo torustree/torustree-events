@@ -17,13 +17,13 @@
   "booking_link_rate": 0.623
  },
  "last_30_days": {
-  "posts": 164,
-  "live": 112,
+  "posts": 162,
+  "live": 110,
   "pending": 29,
   "declined": 23,
   "other": 0,
-  "live_rate": 0.683,
-  "booking_link_rate": 0.695
+  "live_rate": 0.679,
+  "booking_link_rate": 0.691
  },
  "by_location": {
   "Bearsden": {
