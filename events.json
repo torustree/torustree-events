@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-23T12:52:38.442566Z",
+ "updated": "2026-09-23T17:40:34.682883Z",
  "events": [
   {
    "id": "ev-sko7l-20260924193000",
@@ -15,18 +15,6 @@
     "perth"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-sko7l-20260924193000"
-  },
-  {
-   "id": "ev-srwhn-20261001193000",
-   "title": "INTRO | Reset, Reconnect & Restore | PERTH",
-   "start": "2026-10-01T19:30:00.000+01:00",
-   "end": "2026-10-01T21:00:00.000+01:00",
-   "venue": "Perth Yoga Studio - Old Academy Building",
-   "tags": [
-    "perth",
-    "regulate"
-   ],
-   "url": "https://bookwhen.com/torustree/e/ev-srwhn-20261001193000"
   },
   {
    "id": "ev-scw83-20261003110000",
@@ -69,6 +57,21 @@
    "url": "https://bookwhen.com/torustree/e/ev-szlpl-20261004143000"
   },
   {
+   "id": "ev-scknp-20261008193000",
+   "title": "INTRO | 9D Breathwork | PERTH ",
+   "start": "2026-10-08T19:30:00.000+01:00",
+   "end": "2026-10-08T21:00:00.000+01:00",
+   "venue": "Perth Yoga Studio - Old Academy Building",
+   "tags": [
+    "Intro Sessions",
+    "thur_perth",
+    "Intro",
+    "intros",
+    "perth"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-scknp-20261008193000"
+  },
+  {
    "id": "ev-smrxg-20261010100000",
    "title": "IMMERSION - FULL DAY | Breaking The Family Pattern | DUNKELD",
    "start": "2026-10-10T10:00:00.000+01:00",
@@ -105,18 +108,6 @@
     "dunfermline"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-siimt-20261011150000"
-  },
-  {
-   "id": "ev-sb2ou-20261015193000",
-   "title": "INTRO | Reset, Reconnect & Restore | PERTH",
-   "start": "2026-10-15T19:30:00.000+01:00",
-   "end": "2026-10-15T21:00:00.000+01:00",
-   "venue": "Perth Yoga Studio - Old Academy Building",
-   "tags": [
-    "perth",
-    "regulate"
-   ],
-   "url": "https://bookwhen.com/torustree/e/ev-sb2ou-20261015193000"
   },
   {
    "id": "ev-s3j6l-20261017093000",
