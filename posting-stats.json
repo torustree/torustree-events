@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-25T18:03:00.848Z",
+ "generated": "2026-09-25T19:36:16.157+00:00",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data.",
  "groups": {
   "total": 266,
@@ -10,8 +10,8 @@
  "all_time": {
   "posts": 375,
   "live": 279,
-  "pending": 64,
-  "declined": 24,
+  "pending": 63,
+  "declined": 25,
   "other": 8,
   "live_rate": 0.744,
   "booking_link_rate": 0.645
@@ -19,8 +19,8 @@
  "last_30_days": {
   "posts": 205,
   "live": 145,
-  "pending": 36,
-  "declined": 24,
+  "pending": 35,
+  "declined": 25,
   "other": 0,
   "live_rate": 0.707,
   "booking_link_rate": 0.717
@@ -182,8 +182,8 @@
   "Perth": {
    "posts": 98,
    "live": 83,
-   "pending": 12,
-   "declined": 2,
+   "pending": 11,
+   "declined": 3,
    "other": 1,
    "live_rate": 0.847,
    "booking_link_rate": 0.684
@@ -229,8 +229,8 @@
   "Torus Tree": {
    "posts": 106,
    "live": 77,
-   "pending": 21,
-   "declined": 5,
+   "pending": 20,
+   "declined": 6,
    "other": 3,
    "live_rate": 0.726,
    "booking_link_rate": 0.585
@@ -291,8 +291,8 @@
    "week_starting": "2026-09-21",
    "posts": 43,
    "live": 35,
-   "pending": 7,
-   "declined": 1,
+   "pending": 6,
+   "declined": 2,
    "other": 0,
    "live_rate": 0.814,
    "booking_link_rate": 0.814
