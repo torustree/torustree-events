@@ -1,6 +1,21 @@
 {
- "updated": "2026-09-25T10:22:40.854747Z",
+ "updated": "2026-09-25T15:23:53.998847Z",
  "events": [
+  {
+   "id": "ev-srwhn-20261001193000",
+   "title": "INTRO | 9D Breathwork Downregulation | PERTH",
+   "start": "2026-10-01T19:30:00.000+01:00",
+   "end": "2026-10-01T21:00:00.000+01:00",
+   "venue": "Perth Yoga Studio - Old Academy Building",
+   "tags": [
+    "Intro",
+    "intros",
+    "Intro Sessions",
+    "thur_perth",
+    "perth"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-srwhn-20261001193000"
+  },
   {
    "id": "ev-scw83-20261003110000",
    "title": "IMMERSION - FULL DAY | Firewalk & Ceremony | DUNKELD",
@@ -95,6 +110,21 @@
    "url": "https://bookwhen.com/torustree/e/ev-siimt-20261011150000"
   },
   {
+   "id": "ev-sogpl-20261015193000",
+   "title": "INTRO | 9D Breathwork Down Regulation | PERTH",
+   "start": "2026-10-15T19:30:00.000+01:00",
+   "end": "2026-10-15T21:00:00.000+01:00",
+   "venue": "Perth Yoga Studio - Old Academy Building",
+   "tags": [
+    "Intro",
+    "intros",
+    "Intro Sessions",
+    "thur_perth",
+    "perth"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-sogpl-20261015193000"
+  },
+  {
    "id": "ev-s3j6l-20261017093000",
    "title": "SIGNATURE | The Origin | DUNDEE",
    "start": "2026-10-17T09:30:00.000+01:00",
@@ -181,6 +211,42 @@
     "grangemouth"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-sav74-20261114103000"
+  },
+  {
+   "id": "ev-sei1r-20261114150000",
+   "title": " SIGNATURE | You Are Enough | DUNFERMLINE",
+   "start": "2026-11-14T15:00:00.000+00:00",
+   "end": "2026-11-14T17:30:00.000+00:00",
+   "venue": "Trench Boxing & Fitness",
+   "tags": [
+    "signature",
+    "dunfermline"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-sei1r-20261114150000"
+  },
+  {
+   "id": "ev-s5wet-20261121103000",
+   "title": "SIGNATURE | You Are Enough | STIRLING",
+   "start": "2026-11-21T10:30:00.000+00:00",
+   "end": "2026-11-21T13:00:00.000+00:00",
+   "venue": "Logie Kirk Hall",
+   "tags": [
+    "signature",
+    "stirling"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-s5wet-20261121103000"
+  },
+  {
+   "id": "ev-sl6oc-20261121150000",
+   "title": "SIGNATURE | You Are Enough | PERTH",
+   "start": "2026-11-21T15:00:00.000+00:00",
+   "end": "2026-11-21T17:30:00.000+00:00",
+   "venue": "Perth Yoga Studio - Old Academy Building",
+   "tags": [
+    "signature",
+    "perth"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-sl6oc-20261121150000"
   },
   {
    "id": "ev-sueru-20261126193000",
