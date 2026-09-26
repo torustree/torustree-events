@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-26T17:18:42.174+00:00",
+ "generated": "2026-09-26T19:28:42.137+00:00",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data.",
  "groups": {
   "total": 266,
@@ -9,21 +9,21 @@
  },
  "all_time": {
   "posts": 447,
-  "live": 326,
-  "pending": 76,
-  "declined": 37,
+  "live": 327,
+  "pending": 74,
+  "declined": 38,
   "other": 8,
-  "live_rate": 0.729,
-  "booking_link_rate": 0.649
+  "live_rate": 0.732,
+  "booking_link_rate": 0.651
  },
  "last_30_days": {
   "posts": 277,
-  "live": 192,
-  "pending": 48,
-  "declined": 37,
+  "live": 193,
+  "pending": 46,
+  "declined": 38,
   "other": 0,
-  "live_rate": 0.693,
-  "booking_link_rate": 0.704
+  "live_rate": 0.697,
+  "booking_link_rate": 0.708
  },
  "by_location": {
   "Aberfoyle": {
@@ -92,8 +92,8 @@
   "Carnoustie": {
    "posts": 2,
    "live": 0,
-   "pending": 2,
-   "declined": 0,
+   "pending": 1,
+   "declined": 1,
    "other": 0,
    "live_rate": 0.0,
    "booking_link_rate": 0.0
@@ -271,12 +271,12 @@
   },
   "Stirling": {
    "posts": 54,
-   "live": 43,
-   "pending": 4,
+   "live": 44,
+   "pending": 3,
    "declined": 4,
    "other": 3,
-   "live_rate": 0.796,
-   "booking_link_rate": 0.796
+   "live_rate": 0.815,
+   "booking_link_rate": 0.815
   },
   "Unassigned": {
    "posts": 1,
@@ -291,12 +291,12 @@
  "by_profile": {
   "Mark Scott": {
    "posts": 328,
-   "live": 239,
-   "pending": 55,
-   "declined": 29,
+   "live": 240,
+   "pending": 53,
+   "declined": 30,
    "other": 5,
-   "live_rate": 0.729,
-   "booking_link_rate": 0.665
+   "live_rate": 0.732,
+   "booking_link_rate": 0.668
   },
   "Torus Tree": {
    "posts": 119,
@@ -362,12 +362,12 @@
   {
    "week_starting": "2026-09-21",
    "posts": 117,
-   "live": 83,
-   "pending": 21,
-   "declined": 13,
+   "live": 84,
+   "pending": 19,
+   "declined": 14,
    "other": 0,
-   "live_rate": 0.709,
-   "booking_link_rate": 0.718
+   "live_rate": 0.718,
+   "booking_link_rate": 0.726
   }
  ]
 }
