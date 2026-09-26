@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-26T14:47:53.264+00:00",
+ "generated": "2026-09-26T17:18:42.174+00:00",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data.",
  "groups": {
   "total": 266,
@@ -9,28 +9,28 @@
  },
  "all_time": {
   "posts": 447,
-  "live": 322,
-  "pending": 91,
-  "declined": 26,
+  "live": 326,
+  "pending": 76,
+  "declined": 37,
   "other": 8,
-  "live_rate": 0.72,
-  "booking_link_rate": 0.638
+  "live_rate": 0.729,
+  "booking_link_rate": 0.649
  },
  "last_30_days": {
   "posts": 277,
-  "live": 188,
-  "pending": 63,
-  "declined": 26,
+  "live": 192,
+  "pending": 48,
+  "declined": 37,
   "other": 0,
-  "live_rate": 0.679,
-  "booking_link_rate": 0.686
+  "live_rate": 0.693,
+  "booking_link_rate": 0.704
  },
  "by_location": {
   "Aberfoyle": {
    "posts": 1,
    "live": 0,
-   "pending": 1,
-   "declined": 0,
+   "pending": 0,
+   "declined": 1,
    "other": 0,
    "live_rate": 0.0,
    "booking_link_rate": 0.0
@@ -83,8 +83,8 @@
   "Bridge of Allan": {
    "posts": 1,
    "live": 0,
-   "pending": 1,
-   "declined": 0,
+   "pending": 0,
+   "declined": 1,
    "other": 0,
    "live_rate": 0.0,
    "booking_link_rate": 0.0
@@ -118,12 +118,12 @@
   },
   "Dundee": {
    "posts": 89,
-   "live": 65,
-   "pending": 20,
-   "declined": 4,
+   "live": 67,
+   "pending": 17,
+   "declined": 5,
    "other": 0,
-   "live_rate": 0.73,
-   "booking_link_rate": 0.494
+   "live_rate": 0.753,
+   "booking_link_rate": 0.517
   },
   "Errol": {
    "posts": 1,
@@ -136,12 +136,12 @@
   },
   "Falkirk": {
    "posts": 26,
-   "live": 17,
-   "pending": 6,
-   "declined": 1,
+   "live": 18,
+   "pending": 4,
+   "declined": 2,
    "other": 2,
-   "live_rate": 0.654,
-   "booking_link_rate": 0.654
+   "live_rate": 0.692,
+   "booking_link_rate": 0.692
   },
   "Fife": {
    "posts": 76,
@@ -155,8 +155,8 @@
   "Forfar": {
    "posts": 17,
    "live": 9,
-   "pending": 6,
-   "declined": 2,
+   "pending": 4,
+   "declined": 4,
    "other": 0,
    "live_rate": 0.529,
    "booking_link_rate": 0.529
@@ -181,12 +181,12 @@
   },
   "Larbert": {
    "posts": 1,
-   "live": 0,
-   "pending": 1,
+   "live": 1,
+   "pending": 0,
    "declined": 0,
    "other": 0,
-   "live_rate": 0.0,
-   "booking_link_rate": 0.0
+   "live_rate": 1.0,
+   "booking_link_rate": 1.0
   },
   "Letham": {
    "posts": 1,
@@ -218,8 +218,8 @@
   "Milngavie": {
    "posts": 1,
    "live": 0,
-   "pending": 1,
-   "declined": 0,
+   "pending": 0,
+   "declined": 1,
    "other": 0,
    "live_rate": 0.0,
    "booking_link_rate": 0.0
@@ -227,8 +227,8 @@
   "Montrose": {
    "posts": 1,
    "live": 0,
-   "pending": 1,
-   "declined": 0,
+   "pending": 0,
+   "declined": 1,
    "other": 0,
    "live_rate": 0.0,
    "booking_link_rate": 0.0
@@ -244,18 +244,18 @@
   },
   "Perth": {
    "posts": 103,
-   "live": 88,
+   "live": 87,
    "pending": 12,
-   "declined": 2,
+   "declined": 3,
    "other": 1,
-   "live_rate": 0.854,
+   "live_rate": 0.845,
    "booking_link_rate": 0.699
   },
   "Pitlochry": {
    "posts": 16,
    "live": 5,
-   "pending": 4,
-   "declined": 6,
+   "pending": 3,
+   "declined": 7,
    "other": 1,
    "live_rate": 0.312,
    "booking_link_rate": 0.312
@@ -272,40 +272,40 @@
   "Stirling": {
    "posts": 54,
    "live": 43,
-   "pending": 5,
-   "declined": 3,
+   "pending": 4,
+   "declined": 4,
    "other": 3,
    "live_rate": 0.796,
    "booking_link_rate": 0.796
   },
   "Unassigned": {
    "posts": 1,
-   "live": 0,
-   "pending": 1,
+   "live": 1,
+   "pending": 0,
    "declined": 0,
    "other": 0,
-   "live_rate": 0.0,
-   "booking_link_rate": 0.0
+   "live_rate": 1.0,
+   "booking_link_rate": 1.0
   }
  },
  "by_profile": {
   "Mark Scott": {
    "posts": 328,
-   "live": 237,
-   "pending": 65,
-   "declined": 21,
+   "live": 239,
+   "pending": 55,
+   "declined": 29,
    "other": 5,
-   "live_rate": 0.723,
-   "booking_link_rate": 0.655
+   "live_rate": 0.729,
+   "booking_link_rate": 0.665
   },
   "Torus Tree": {
    "posts": 119,
-   "live": 85,
-   "pending": 26,
-   "declined": 5,
+   "live": 87,
+   "pending": 21,
+   "declined": 8,
    "other": 3,
-   "live_rate": 0.714,
-   "booking_link_rate": 0.588
+   "live_rate": 0.731,
+   "booking_link_rate": 0.605
   }
  },
  "by_week": [
@@ -362,12 +362,12 @@
   {
    "week_starting": "2026-09-21",
    "posts": 117,
-   "live": 79,
-   "pending": 36,
-   "declined": 2,
+   "live": 83,
+   "pending": 21,
+   "declined": 13,
    "other": 0,
-   "live_rate": 0.675,
-   "booking_link_rate": 0.675
+   "live_rate": 0.709,
+   "booking_link_rate": 0.718
   }
  ]
 }
