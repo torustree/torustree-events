@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-27T10:26:44.866+00:00",
+ "generated": "2026-09-27T17:50:09.532Z",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data.",
  "groups": {
   "total": 267,
@@ -8,22 +8,22 @@
   "blocked": 59
  },
  "all_time": {
-  "posts": 450,
-  "live": 329,
+  "posts": 451,
+  "live": 330,
   "pending": 74,
   "declined": 39,
   "other": 8,
-  "live_rate": 0.731,
-  "booking_link_rate": 0.651
+  "live_rate": 0.732,
+  "booking_link_rate": 0.652
  },
  "last_30_days": {
-  "posts": 280,
-  "live": 195,
+  "posts": 278,
+  "live": 193,
   "pending": 46,
   "declined": 39,
   "other": 0,
-  "live_rate": 0.696,
-  "booking_link_rate": 0.707
+  "live_rate": 0.694,
+  "booking_link_rate": 0.705
  },
  "by_location": {
   "Aberfoyle": {
@@ -153,13 +153,13 @@
    "booking_link_rate": 0.829
   },
   "Forfar": {
-   "posts": 17,
+   "posts": 18,
    "live": 9,
-   "pending": 4,
+   "pending": 5,
    "declined": 4,
    "other": 0,
-   "live_rate": 0.529,
-   "booking_link_rate": 0.529
+   "live_rate": 0.5,
+   "booking_link_rate": 0.5
   },
   "Kelty": {
    "posts": 1,
@@ -271,12 +271,12 @@
   },
   "Stirling": {
    "posts": 55,
-   "live": 45,
-   "pending": 3,
+   "live": 46,
+   "pending": 2,
    "declined": 4,
    "other": 3,
-   "live_rate": 0.818,
-   "booking_link_rate": 0.818
+   "live_rate": 0.836,
+   "booking_link_rate": 0.836
   },
   "Unassigned": {
    "posts": 1,
@@ -290,22 +290,22 @@
  },
  "by_profile": {
   "Mark Scott": {
-   "posts": 333,
-   "live": 243,
+   "posts": 335,
+   "live": 245,
    "pending": 54,
    "declined": 31,
    "other": 5,
-   "live_rate": 0.73,
-   "booking_link_rate": 0.667
+   "live_rate": 0.731,
+   "booking_link_rate": 0.669
   },
   "Torus Tree": {
-   "posts": 117,
-   "live": 86,
+   "posts": 116,
+   "live": 85,
    "pending": 20,
    "declined": 8,
    "other": 3,
-   "live_rate": 0.735,
-   "booking_link_rate": 0.607
+   "live_rate": 0.733,
+   "booking_link_rate": 0.603
   }
  },
  "by_week": [
@@ -361,13 +361,13 @@
   },
   {
    "week_starting": "2026-09-21",
-   "posts": 120,
-   "live": 86,
+   "posts": 121,
+   "live": 87,
    "pending": 19,
    "declined": 15,
    "other": 0,
-   "live_rate": 0.717,
-   "booking_link_rate": 0.725
+   "live_rate": 0.719,
+   "booking_link_rate": 0.727
   }
  ]
 }
