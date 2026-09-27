@@ -17,13 +17,13 @@
   "booking_link_rate": 0.652
  },
  "last_30_days": {
-  "posts": 278,
-  "live": 193,
+  "posts": 277,
+  "live": 192,
   "pending": 46,
   "declined": 39,
   "other": 0,
-  "live_rate": 0.694,
-  "booking_link_rate": 0.705
+  "live_rate": 0.693,
+  "booking_link_rate": 0.704
  },
  "by_location": {
   "Aberfoyle": {
