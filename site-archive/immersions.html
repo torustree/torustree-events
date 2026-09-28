@@ -23,7 +23,90 @@ fbq('track', 'PageView');
 <div class="trust-item">🌿 <strong tt-stat="breathersGuided">1,000+</strong> breathers guided</div>
 <div class="trust-item">👥 Max <strong>10 people</strong></div><div class="trust-item">💳 <strong>Klarna</strong> available</div>
 <div class="trust-item">🏡 Private venue · <strong>Dunkeld</strong></div><div class="trust-item">✓ No experience <strong>needed</strong></div>
-</div></div><hr class="divider"><div class="intro"><div class="wrap"><p class="section-eyebrow">What Is a Full Day Immersion?</p><h2 class="section-title">A different depth of experience.</h2><div class="intro-grid"><img src="https://www.torustree.com/tipi%20immersion%20day%20dunkeld.jpg" alt="Full day breathwork immersion at Upper Hatton Dunkeld — Torus Tree"><div class="intro-text"><p class="large">A Signature Journey gives you a powerful single session. An Immersion gives you a full day — and nothing about it is left to chance.</p><p>You arrive to tea, fresh coffee, herbal teas and biscuits waiting from the moment you walk in. The day itself is small by design — a maximum of ten people, with Mark and Sadie holding the whole thing together, all day. That's one facilitator to every five of you, so you're genuinely seen, not one of a crowd.</p><p>Two 9D Breathwork journeys run through the day, each with its own intention, alongside shamanic ceremony, ceremonial cacao and a bioresonance harmonisation programme. Lunch is fresh, nourishing and honest food, cooked on site, and the day closes with qi gong and movement — a proper close, not an abrupt end. You leave with a workbook for the day's theme, and a few little surprises to take with you.</p><p>Bought separately, everything in the day comes to over £300.</p><p>Each immersion has a specific theme — ancestral healing, the mother wound, quieting the mind, reclaiming your power, or the firewalk and ceremony. Choose the one that feels most alive for where you are right now. You don't need experience. You just need to show up.</p></div>
+</div></div><hr class="divider"><!-- UPCOMING IMMERSIONS — live from events.json, tag "immersion" --><div style="background:rgb(28, 26, 22);padding:52px 20px;"><div class="wrap"><p class="section-eyebrow">Book Straight In</p><h2 style="font-size:clamp(1.5rem, 4.5vw, 2.2rem);font-weight:300;line-height:1.2;margin-bottom:24px;color:rgb(250, 248, 243);">Upcoming Immersions</h2><div class="tt-live-dates" id="tt-imm-live" data-tags="immersion" data-match="any" data-limit="8"><div class="tt-live-rows"><p class="tt-live-loading" style="font-size:0.9rem;color:rgb(107, 101, 89);">Loading the next immersions…</p></div></div>
+<p style="font-size:0.85rem;color:rgb(107, 101, 89);margin-top:14px;text-align:center;">All dates in one place → <a href="https://bookwhen.com/torustree" target="_blank" rel="noopener" style="color:rgb(184, 149, 90);">view the full calendar</a></p></div></div>
+<script>
+(function(){
+  var EVENTS_URL = 'https://raw.githubusercontent.com/torustree/torustree-events/main/events.json';
+  var ALL_EVENTS = [];
+
+  function fmtDate(iso){
+    try{
+      var d = new Date(iso);
+      var days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+      var months=['January','February','March','April','May','June','July','August','September','October','November','December'];
+      var h=d.getHours(), m=d.getMinutes(), ampm=h>=12?'pm':'am'; h=h%12||12;
+      return days[d.getDay()]+' '+d.getDate()+' '+months[d.getMonth()]+' · '+h+(m?':'+(m<10?'0':'')+m:'')+ampm;
+    }catch(e){ return ''; }
+  }
+
+  function titleCase(s){
+    return String(s||'').toLowerCase().replace(/(^|[\s\-])([a-z])/g, function(_, p, c){ return p + c.toUpperCase(); });
+  }
+
+  function venueName(title, venue){
+    var parts = (title||'').split('|');
+    if (parts.length >= 3) return titleCase(parts[parts.length-1].trim());
+    return (venue||'').trim() || 'Torus Tree';
+  }
+
+  function themeName(title){
+    var parts = (title||'').split('|');
+    return parts.length >= 2 ? parts[1].trim() : (title||'').trim();
+  }
+
+  function filterEvents(events, container){
+    var want = (container.getAttribute('data-tags')||'').toLowerCase().split(',').map(function(s){return s.trim();}).filter(Boolean);
+    var matchAll = container.getAttribute('data-match') === 'all';
+    var titleMatch = (container.getAttribute('data-title-match')||'').toLowerCase();
+    var limit = parseInt(container.getAttribute('data-limit')||'8',10);
+    return events.filter(function(ev){
+      if (titleMatch && String(ev.title||'').toLowerCase().indexOf(titleMatch) === -1) return false;
+      if (!want.length) return true;
+      var tags = (ev.tags||[]).map(function(t){return String(t).toLowerCase();});
+      return matchAll
+        ? want.every(function(w){ return tags.indexOf(w) !== -1; })
+        : want.some(function(w){ return tags.indexOf(w) !== -1; });
+    }).slice(0, limit);
+  }
+
+  function render(container){
+    var rows = container.querySelector('.tt-live-rows');
+    if (!rows) return;
+    var events = filterEvents(ALL_EVENTS, container);
+    if (!events.length){
+      rows.innerHTML = '<p style="font-size:0.9rem;color:#C8C4BC;">New dates are being added — <a href="https://bookwhen.com/torustree" target="_blank" rel="noopener" style="color:#B8955A;">check the full calendar</a> or message us on WhatsApp.</p>';
+      return;
+    }
+    var html = '';
+    events.forEach(function(ev){
+      html += '<a href="'+ev.url+'" target="_blank" rel="noopener" style="background:#2A2820;border:1px solid #B8955A;border-radius:12px;padding:18px 20px;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between;gap:12px;text-decoration:none;" '+
+        'onclick="typeof fbq!==\'undefined\'&&fbq(\'track\',\'InitiateCheckout\',{content_name:\''+themeName(ev.title).replace(/'/g,'')+'\',content_category:\'Immersion\',num_items:1})">'+
+        '<span style="display:flex;flex-direction:column;">'+
+        '<span style="font-size:1rem;font-weight:700;color:#FAF8F3;">'+themeName(ev.title)+' — '+venueName(ev.title, ev.venue)+'</span>'+
+        '<span style="font-size:0.87rem;color:#C8C4BC;margin-top:3px;">'+fmtDate(ev.start)+'</span>'+
+        '<span style="font-size:0.83rem;color:#B8955A;font-weight:700;margin-top:3px;">Book your space →</span>'+
+        '</span><span style="font-size:1.2rem;color:#B8955A;min-width:22px;">→</span></a>';
+    });
+    rows.innerHTML = html;
+  }
+
+  function init(){
+    var containers = document.querySelectorAll('.tt-live-dates');
+    if (!containers.length) return;
+    fetch(EVENTS_URL)
+      .then(function(r){ return r.json(); })
+      .then(function(data){ ALL_EVENTS = data.events || []; containers.forEach(render); })
+      .catch(function(){
+        containers.forEach(function(c){
+          var rows = c.querySelector('.tt-live-rows');
+          if (rows) rows.innerHTML = '<p style="font-size:0.9rem;color:#C8C4BC;">See all upcoming dates on <a href="https://bookwhen.com/torustree" target="_blank" rel="noopener" style="color:#B8955A;">our booking calendar</a>.</p>';
+        });
+      });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+})();
+</script><hr class="divider"><div class="intro"><div class="wrap"><p class="section-eyebrow">What Is a Full Day Immersion?</p><h2 class="section-title">A different depth of experience.</h2><div class="intro-grid"><img src="https://www.torustree.com/tipi%20immersion%20day%20dunkeld.jpg" alt="Full day breathwork immersion at Upper Hatton Dunkeld — Torus Tree"><div class="intro-text"><p class="large">A Signature Journey gives you a powerful single session. An Immersion gives you a full day — and nothing about it is left to chance.</p><p>You arrive to tea, fresh coffee, herbal teas and biscuits waiting from the moment you walk in. The day itself is small by design — a maximum of ten people, with Mark and Sadie holding the whole thing together, all day. That's one facilitator to every five of you, so you're genuinely seen, not one of a crowd.</p><p>Two 9D Breathwork journeys run through the day, each with its own intention, alongside shamanic ceremony, ceremonial cacao and a bioresonance harmonisation programme. Lunch is fresh, nourishing and honest food, cooked on site, and the day closes with qi gong and movement — a proper close, not an abrupt end. You leave with a workbook for the day's theme, and a few little surprises to take with you.</p><p>Bought separately, everything in the day comes to over £300.</p><p>Each immersion has a specific theme — ancestral healing, the mother wound, quieting the mind, reclaiming your power, or the firewalk and ceremony. Choose the one that feels most alive for where you are right now. You don't need experience. You just need to show up.</p></div>
 </div></div></div><hr class="divider"><div class="immersions" id="immersions"><div class="wrap"><div style="background:rgb(42, 40, 32);border:1px solid rgb(184, 149, 90);border-radius:14px;padding:22px 26px;margin-bottom:36px;"><p style="font-size:0.95rem;color:rgb(250, 248, 243);margin-bottom:6px;"><strong style="color:rgb(184, 149, 90);">£145</strong> standard &middot; <strong style="color:rgb(184, 149, 90);">£125</strong> for Tribe members — everything included: full day facilitation, two journeys, shamanic ceremony, ceremonial cacao, bioresonance, lunch and all equipment.</p><p style="font-size:0.85rem;color:rgb(107, 101, 89);margin:0;">Tribe rate applies to anyone currently on or who has completed the 12 Journeys programme. Interest-free payment available through Klarna.</p></div>
 <p class="section-eyebrow">The Immersions</p><h2 class="section-title">Choose your immersion.</h2><p class="section-sub">Five distinct full day experiences — each with its own theme, intention and journey. All held at Upper Hatton, Dunkeld. Each page shows current upcoming dates and availability.</p><div class="immersion-card"><div class="immersion-card-img"><img src="https://www.torustree.com/tipi%20mark%20sitting.jpg" alt="Breaking The Family Pattern — Full Day Immersion Dunkeld"><span class="immersion-card-badge">Runs Regularly</span></div>
 <div class="immersion-card-content"><div><p class="immersion-card-eyebrow">Ancestral Healing</p><h3>Breaking The Family Pattern</h3><p>Release what came before. Choose what continues. A full day exploring inherited patterns — the worry, the people-pleasing, the guilt — that move through families for generations. Two journeys: Blood Memory and Emergence.</p><div class="immersion-meta"><div class="immersion-meta-item">📍 Upper Hatton, Dunkeld</div>

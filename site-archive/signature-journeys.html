@@ -128,6 +128,10 @@ document.addEventListener('click', function(e) {
     }).slice(0, limit);
   }
 
+  function isSignatureEv(ev){
+    return (ev.tags||[]).some(function(t){ return String(t).toLowerCase() === 'signature'; });
+  }
+
   function render(container){
     var rows = container.querySelector('.tt-live-rows');
     if (!rows) return;
@@ -139,7 +143,7 @@ document.addEventListener('click', function(e) {
     var html = '';
     events.forEach(function(ev){
       html += '<a href="'+ev.url+'" target="_blank" rel="noopener" style="background:#2A2820;border:1px solid #B8955A;border-radius:12px;padding:18px 20px;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between;gap:12px;text-decoration:none;" '+
-        'onclick="typeof fbq!==\'undefined\'&&fbq(\'track\',\'InitiateCheckout\',{content_name:\''+themeName(ev.title).replace(/'/g,'')+'\',content_category:\'Live Dates\',num_items:1,value:40.00,currency:\'GBP\'})">'+
+        'onclick="typeof fbq!==\'undefined\'&&fbq(\'track\',\'InitiateCheckout\',{content_name:\''+themeName(ev.title).replace(/'/g,'')+'\',content_category:\'Live Dates\',num_items:1'+(isSignatureEv(ev)?',value:40.00,currency:\'GBP\'':'')+'})">'+
         '<span style="display:flex;flex-direction:column;">'+
         '<span style="font-size:1rem;font-weight:700;color:#FAF8F3;">'+themeName(ev.title)+' — '+venueName(ev.title, ev.venue)+'</span>'+
         '<span style="font-size:0.87rem;color:#C8C4BC;margin-top:3px;">'+fmtDate(ev.start)+'</span>'+
