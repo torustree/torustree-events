@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29T14:12:25.983676Z",
+ "updated": "2026-09-29T19:32:22.331517Z",
  "events": [
   {
    "id": "ev-srwhn-20261001193000",
@@ -288,6 +288,18 @@
     "immersion"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-sz32r-20261128100000"
+  },
+  {
+   "id": "ev-s6iq3-20261213130000",
+   "title": "THE WINTER RESET | Yoga \u00b7 9D Breathwork \u00b7 Sound Healing | PERTH",
+   "start": "2026-12-13T13:00:00.000+00:00",
+   "end": "2026-12-13T18:00:00.000+00:00",
+   "venue": "Perth Yoga Studio - Old Academy Building",
+   "tags": [
+    "immersion",
+    "perth"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-s6iq3-20261213130000"
   },
   {
    "id": "ev-stpw7-20270111183000",
