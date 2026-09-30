@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29T12:29:31.552+00:00",
+ "generated": "2026-09-30T19:29:48.692Z",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data.",
  "groups": {
   "total": 278,
@@ -8,22 +8,22 @@
   "blocked": 58
  },
  "all_time": {
-  "posts": 473,
-  "live": 347,
-  "pending": 79,
+  "posts": 504,
+  "live": 368,
+  "pending": 89,
   "declined": 39,
   "other": 8,
-  "live_rate": 0.734,
-  "booking_link_rate": 0.634
+  "live_rate": 0.73,
+  "booking_link_rate": 0.637
  },
  "last_30_days": {
-  "posts": 278,
-  "live": 194,
-  "pending": 48,
+  "posts": 309,
+  "live": 215,
+  "pending": 58,
   "declined": 36,
   "other": 0,
-  "live_rate": 0.698,
-  "booking_link_rate": 0.669
+  "live_rate": 0.696,
+  "booking_link_rate": 0.67
  },
  "by_location": {
   "Aberfoyle": {
@@ -36,6 +36,15 @@
    "booking_link_rate": 0.0
   },
   "Almondbank": {
+   "posts": 1,
+   "live": 0,
+   "pending": 1,
+   "declined": 0,
+   "other": 0,
+   "live_rate": 0.0,
+   "booking_link_rate": 0.0
+  },
+  "Alyth": {
    "posts": 1,
    "live": 0,
    "pending": 1,
@@ -126,22 +135,22 @@
    "booking_link_rate": 1.0
   },
   "Dundee": {
-   "posts": 92,
-   "live": 69,
-   "pending": 18,
+   "posts": 94,
+   "live": 70,
+   "pending": 19,
    "declined": 5,
    "other": 0,
-   "live_rate": 0.75,
+   "live_rate": 0.745,
    "booking_link_rate": 0.511
   },
   "Errol": {
-   "posts": 1,
+   "posts": 2,
    "live": 1,
-   "pending": 0,
+   "pending": 1,
    "declined": 0,
    "other": 0,
-   "live_rate": 1.0,
-   "booking_link_rate": 1.0
+   "live_rate": 0.5,
+   "booking_link_rate": 0.5
   },
   "Falkirk": {
    "posts": 26,
@@ -180,8 +189,8 @@
    "booking_link_rate": 1.0
   },
   "Kinross": {
-   "posts": 1,
-   "live": 1,
+   "posts": 2,
+   "live": 2,
    "pending": 0,
    "declined": 0,
    "other": 0,
@@ -225,13 +234,13 @@
    "booking_link_rate": 0.0
   },
   "Methven": {
-   "posts": 1,
+   "posts": 2,
    "live": 1,
-   "pending": 0,
+   "pending": 1,
    "declined": 0,
    "other": 0,
-   "live_rate": 1.0,
-   "booking_link_rate": 1.0
+   "live_rate": 0.5,
+   "booking_link_rate": 0.5
   },
   "Milngavie": {
    "posts": 1,
@@ -252,31 +261,31 @@
    "booking_link_rate": 0.0
   },
   "North Fife": {
-   "posts": 4,
-   "live": 4,
+   "posts": 5,
+   "live": 5,
    "pending": 0,
    "declined": 0,
    "other": 0,
    "live_rate": 1.0,
-   "booking_link_rate": 0.75
+   "booking_link_rate": 0.8
   },
   "Perth": {
-   "posts": 104,
-   "live": 88,
-   "pending": 12,
+   "posts": 126,
+   "live": 105,
+   "pending": 17,
    "declined": 3,
    "other": 1,
-   "live_rate": 0.846,
-   "booking_link_rate": 0.702
+   "live_rate": 0.833,
+   "booking_link_rate": 0.714
   },
   "Pitlochry": {
-   "posts": 14,
-   "live": 4,
-   "pending": 2,
+   "posts": 16,
+   "live": 5,
+   "pending": 3,
    "declined": 7,
    "other": 1,
-   "live_rate": 0.286,
-   "booking_link_rate": 0.286
+   "live_rate": 0.312,
+   "booking_link_rate": 0.312
   },
   "Scotland-wide": {
    "posts": 4,
@@ -308,22 +317,22 @@
  },
  "by_profile": {
   "Mark Scott": {
-   "posts": 356,
-   "live": 260,
-   "pending": 60,
+   "posts": 381,
+   "live": 278,
+   "pending": 67,
    "declined": 31,
    "other": 5,
    "live_rate": 0.73,
-   "booking_link_rate": 0.64
+   "booking_link_rate": 0.646
   },
   "Torus Tree": {
-   "posts": 117,
-   "live": 87,
-   "pending": 19,
+   "posts": 123,
+   "live": 90,
+   "pending": 22,
    "declined": 8,
    "other": 3,
-   "live_rate": 0.744,
-   "booking_link_rate": 0.615
+   "live_rate": 0.732,
+   "booking_link_rate": 0.61
   }
  },
  "by_week": [
@@ -389,13 +398,13 @@
   },
   {
    "week_starting": "2026-09-28",
-   "posts": 22,
-   "live": 16,
-   "pending": 6,
+   "posts": 53,
+   "live": 37,
+   "pending": 16,
    "declined": 0,
    "other": 0,
-   "live_rate": 0.727,
-   "booking_link_rate": 0.273
+   "live_rate": 0.698,
+   "booking_link_rate": 0.509
   }
  ]
 }
