@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-30T19:29:48.692Z",
+ "generated": "2026-10-01T06:17:40.784Z",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data.",
  "groups": {
   "total": 278,
@@ -8,22 +8,22 @@
   "blocked": 58
  },
  "all_time": {
-  "posts": 504,
-  "live": 368,
-  "pending": 89,
+  "posts": 508,
+  "live": 370,
+  "pending": 91,
   "declined": 39,
   "other": 8,
-  "live_rate": 0.73,
-  "booking_link_rate": 0.637
+  "live_rate": 0.728,
+  "booking_link_rate": 0.636
  },
  "last_30_days": {
-  "posts": 309,
-  "live": 215,
-  "pending": 58,
+  "posts": 313,
+  "live": 217,
+  "pending": 60,
   "declined": 36,
   "other": 0,
-  "live_rate": 0.696,
-  "booking_link_rate": 0.67
+  "live_rate": 0.693,
+  "booking_link_rate": 0.668
  },
  "by_location": {
   "Aberfoyle": {
@@ -99,9 +99,9 @@
    "booking_link_rate": 0.0
   },
   "Carnoustie": {
-   "posts": 2,
+   "posts": 3,
    "live": 0,
-   "pending": 1,
+   "pending": 2,
    "declined": 1,
    "other": 0,
    "live_rate": 0.0,
@@ -135,13 +135,13 @@
    "booking_link_rate": 1.0
   },
   "Dundee": {
-   "posts": 94,
-   "live": 70,
-   "pending": 19,
+   "posts": 97,
+   "live": 72,
+   "pending": 20,
    "declined": 5,
    "other": 0,
-   "live_rate": 0.745,
-   "booking_link_rate": 0.511
+   "live_rate": 0.742,
+   "booking_link_rate": 0.515
   },
   "Errol": {
    "posts": 2,
@@ -317,22 +317,22 @@
  },
  "by_profile": {
   "Mark Scott": {
-   "posts": 381,
-   "live": 278,
-   "pending": 67,
+   "posts": 383,
+   "live": 279,
+   "pending": 68,
    "declined": 31,
    "other": 5,
-   "live_rate": 0.73,
-   "booking_link_rate": 0.646
+   "live_rate": 0.728,
+   "booking_link_rate": 0.645
   },
   "Torus Tree": {
-   "posts": 123,
-   "live": 90,
-   "pending": 22,
+   "posts": 125,
+   "live": 91,
+   "pending": 23,
    "declined": 8,
    "other": 3,
-   "live_rate": 0.732,
-   "booking_link_rate": 0.61
+   "live_rate": 0.728,
+   "booking_link_rate": 0.608
   }
  },
  "by_week": [
@@ -398,12 +398,12 @@
   },
   {
    "week_starting": "2026-09-28",
-   "posts": 53,
-   "live": 37,
-   "pending": 16,
+   "posts": 57,
+   "live": 39,
+   "pending": 18,
    "declined": 0,
    "other": 0,
-   "live_rate": 0.698,
+   "live_rate": 0.684,
    "booking_link_rate": 0.509
   }
  ]
