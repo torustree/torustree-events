@@ -1,9 +1,9 @@
 {
- "updated": "2026-10-01T06:18:48.758520Z",
+ "updated": "2026-10-01T13:41:54.863267Z",
  "events": [
   {
    "id": "ev-srwhn-20261001193000",
-   "title": "INTRO | 9D Breathwork Downregulation | PERTH",
+   "title": "INTRO | 9D Breathwork Downregulation | PERTH 2 for 1",
    "start": "2026-10-01T19:30:00.000+01:00",
    "end": "2026-10-01T21:00:00.000+01:00",
    "venue": "Perth Yoga Studio - Old Academy Building",
@@ -58,7 +58,7 @@
   },
   {
    "id": "ev-scknp-20261008193000",
-   "title": "INTRO | 9D Breathwork | PERTH ",
+   "title": "INTRO | 9D Breathwork 2 for 1 | PERTH ",
    "start": "2026-10-08T19:30:00.000+01:00",
    "end": "2026-10-08T21:00:00.000+01:00",
    "venue": "Perth Yoga Studio - Old Academy Building",
@@ -111,7 +111,7 @@
   },
   {
    "id": "ev-sogpl-20261015193000",
-   "title": "INTRO | 9D Breathwork Down Regulation | PERTH",
+   "title": "INTRO | 9D Breathwork Down Regulation 2 for 1 | PERTH",
    "start": "2026-10-15T19:30:00.000+01:00",
    "end": "2026-10-15T21:00:00.000+01:00",
    "venue": "Perth Yoga Studio - Old Academy Building",
@@ -173,6 +173,21 @@
     "perth"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-svwzf-20261020183000"
+  },
+  {
+   "id": "ev-s64xb-20261022193000",
+   "title": "INTRO | 9D Breathwork - Letting Go | PERTH 2 for 1",
+   "start": "2026-10-22T19:30:00.000+01:00",
+   "end": "2026-10-22T21:00:00.000+01:00",
+   "venue": "Perth Yoga Studio - Old Academy Building",
+   "tags": [
+    "Intro Sessions",
+    "thur_perth",
+    "Intro",
+    "intros",
+    "perth"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-s64xb-20261022193000"
   },
   {
    "id": "ev-syugo-20261024100000",
