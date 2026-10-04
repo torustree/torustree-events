@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-04T08:18:18.847+00:00",
+ "generated": "2026-10-04T18:15:18.589+00:00",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data.",
  "groups": {
   "total": 278,
@@ -9,21 +9,21 @@
  },
  "all_time": {
   "posts": 520,
-  "live": 378,
-  "pending": 95,
+  "live": 379,
+  "pending": 94,
   "declined": 39,
   "other": 8,
-  "live_rate": 0.727,
-  "booking_link_rate": 0.64
+  "live_rate": 0.729,
+  "booking_link_rate": 0.642
  },
  "last_30_days": {
   "posts": 325,
-  "live": 225,
-  "pending": 64,
+  "live": 226,
+  "pending": 63,
   "declined": 36,
   "other": 0,
-  "live_rate": 0.692,
-  "booking_link_rate": 0.674
+  "live_rate": 0.695,
+  "booking_link_rate": 0.677
  },
  "by_location": {
   "Aberfoyle": {
@@ -190,12 +190,12 @@
   },
   "Kelty": {
    "posts": 1,
-   "live": 0,
-   "pending": 1,
+   "live": 1,
+   "pending": 0,
    "declined": 0,
    "other": 0,
-   "live_rate": 0.0,
-   "booking_link_rate": 0.0
+   "live_rate": 1.0,
+   "booking_link_rate": 1.0
   },
   "Kinross": {
    "posts": 2,
@@ -327,12 +327,12 @@
  "by_profile": {
   "Mark Scott": {
    "posts": 391,
-   "live": 284,
-   "pending": 71,
+   "live": 285,
+   "pending": 70,
    "declined": 31,
    "other": 5,
-   "live_rate": 0.726,
-   "booking_link_rate": 0.645
+   "live_rate": 0.729,
+   "booking_link_rate": 0.647
   },
   "Torus Tree": {
    "posts": 129,
@@ -408,12 +408,12 @@
   {
    "week_starting": "2026-09-28",
    "posts": 70,
-   "live": 48,
-   "pending": 22,
+   "live": 49,
+   "pending": 21,
    "declined": 0,
    "other": 0,
-   "live_rate": 0.686,
-   "booking_link_rate": 0.571
+   "live_rate": 0.7,
+   "booking_link_rate": 0.586
   }
  ]
 }
