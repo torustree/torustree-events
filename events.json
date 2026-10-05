@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-05T11:10:19.053067Z",
+ "updated": "2026-10-05T18:42:25.537660Z",
  "events": [
   {
    "id": "ev-scknp-20261008193000",
@@ -159,6 +159,18 @@
     "regulate"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-s3e3a-20261112193000"
+  },
+  {
+   "id": "ev-sv9ge-20261113183000",
+   "title": "SIGNATURE | You Are Enough | FORFAR",
+   "start": "2026-11-13T18:30:00.000+00:00",
+   "end": "2026-11-13T21:00:00.000+00:00",
+   "venue": "East & Old Parish Church",
+   "tags": [
+    "signature",
+    "FORFAR"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-sv9ge-20261113183000"
   },
   {
    "id": "ev-sav74-20261114103000",
