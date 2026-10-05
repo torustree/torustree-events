@@ -86,6 +86,9 @@ SB_KEY = os.environ.get("SUPABASE_KEY", "")
 # are the one part of this data a competitor could actually use.
 INCLUDE_GROUP_NAMES = False
 
+# Below this many posts a rate is printed but flagged as too thin to act on.
+MIN_N = 15
+
 
 def sb(path):
     """Read-only Supabase query. Doubles as the free-tier keep-alive ping."""
@@ -93,53 +96,130 @@ def sb(path):
         f"{SB_URL}/{path}",
         headers={"apikey": SB_KEY, "Authorization": "Bearer " + SB_KEY},
     )
-    with urllib.request.urlopen(req, timeout=30) as r:
+    with urllib.request.urlopen(req, timeout=60) as r:
         return json.load(r)
 
 
-def post_times(row):
-    """campaigns.posts is a jsonb array of {"ts": "...Z"} — newest last."""
-    stamps = []
-    for p in row.get("posts") or []:
-        ts = (p or {}).get("ts") if isinstance(p, dict) else None
-        if ts:
-            stamps.append(ts)
-    return sorted(stamps)
+def sb_optional(path):
+    """Same as sb() but a missing table/column is not fatal."""
+    try:
+        return sb(path)
+    except Exception as e:
+        print(f"  optional query skipped ({path.split('?')[0]}): {e}")
+        return None
+
+
+def post_entries(row):
+    """campaigns.posts is a jsonb array of {"ts": "...Z", ...} — newest last."""
+    return [p for p in (row.get("posts") or []) if isinstance(p, dict) and p.get("ts")]
 
 
 def rate(part, whole):
     return round(part / whole, 3) if whole else None
 
 
+def num(v):
+    try:
+        return int(v)
+    except (TypeError, ValueError):
+        return None
+
+
 def summarise(rows):
     c = collections.Counter(r.get("status") or "unknown" for r in rows)
     n = len(rows)
-    return {
+    out = {
         "posts": n,
         "live": c.get("live", 0),
         "pending": c.get("pending", 0),
         "declined": c.get("declined", 0),
         "other": n - c.get("live", 0) - c.get("pending", 0) - c.get("declined", 0),
+        "booking_links": sum(1 for r in rows if r.get("link_added")),
         "live_rate": rate(c.get("live", 0), n),
         "booking_link_rate": rate(sum(1 for r in rows if r.get("link_added")), n),
+        "thin_sample": n < MIN_N,
     }
+    # Comment counts only if the tracker records them on the row.
+    comments = [num(r.get(COMMENT_FIELD)) for r in rows] if COMMENT_FIELD else []
+    comments = [x for x in comments if x is not None]
+    if comments:
+        out["comments_total"] = sum(comments)
+        out["comments_per_post"] = round(sum(comments) / len(comments), 2)
+        out["comments_n"] = len(comments)
+    kw = [num(r.get(KEYWORD_FIELD)) for r in rows] if KEYWORD_FIELD else []
+    kw = [x for x in kw if x is not None]
+    if kw:
+        out["keyword_comments_total"] = sum(kw)
+        out["keyword_comments_n"] = len(kw)
+    return out
 
 
+def first_key(keys, candidates):
+    for c in candidates:
+        if c in keys:
+            return c
+    return None
+
+
+# Group type is not stored in the tracker, so it is inferred from the group
+# NAME here. Names never leave this script — only the bucket counts do.
+GROUP_TYPE_RULES = [
+    ("buy_sell", ["for sale", "selling", "buy", "sell ", "swap", "marketplace", "items for sale", "facebay", "free advertising"]),
+    ("billboard", ["billboard", "notice board", "noticeboard", "message board", "blether"]),
+    ("business", ["business", "networking", "directory", "high street", "trades", "local business"]),
+    ("whats_on_events", ["what's on", "whats on", "what's going on", "whats going on", "events", "things to do"]),
+    ("wellbeing", ["wellbeing", "well-being", "wellness", "mental health", "holistic", "spiritual", "yoga", "mums", "moms"]),
+]
+
+
+def group_type(name):
+    n = (name or "").lower()
+    for bucket, words in GROUP_TYPE_RULES:
+        if any(w in n for w in words):
+            return bucket
+    return "community"
+
+
+COMMENT_FIELD = None
+KEYWORD_FIELD = None
+
+stats_error = None
 try:
-    campaigns = sb("campaigns?select=id,session_id,group_id,status,link_added,posts,updated_at&limit=5000")
-    groups = sb("groups?select=id,name,locs,post_as,archived,blocked_reason&limit=5000")
+    campaigns = sb("campaigns?select=*&limit=5000")
+    groups = sb("groups?select=*&limit=5000")
+    templates = sb_optional("templates?select=*&limit=2000") or []
+    sessions = sb_optional("sessions?select=*&limit=2000") or []
+    # session_images holds multi-MB base64 — never select=* on it.
+    images = sb_optional("session_images?select=session_id,orientation,width,height,filename,updated_at&limit=2000")
+    if images is None:
+        images = sb_optional("session_images?select=session_id,updated_at&limit=2000") or []
+
+    camp_cols = sorted({k for r in campaigns for k in r.keys()})
+    post_keys = sorted({k for r in campaigns for p in post_entries(r) for k in p.keys()})
+    COMMENT_FIELD = first_key(camp_cols, ["comments", "comment_count", "comments_count"])
+    KEYWORD_FIELD = first_key(camp_cols, ["keyword_comments", "breathe_count", "breathe_comments"])
+    tpl_col = first_key(camp_cols, ["template_id", "template", "template_name", "tpl"])
+    tpl_post_key = first_key(post_keys, ["template_id", "template", "tpl", "template_name"])
+    img_col = first_key(camp_cols, ["image_id", "image", "image_name", "photo"])
+    img_post_key = first_key(post_keys, ["image_id", "image", "photo", "image_name"])
 
     gmap = {g["id"]: g for g in groups}
+    tmap = {t.get("id"): t for t in templates}
+    smap = {s.get("id"): s for s in sessions}
+    imap = {i.get("session_id"): i for i in images}
+
     now = datetime.datetime.now(datetime.timezone.utc)
     cutoff = now - datetime.timedelta(days=30)
 
     posted, latest_seen = [], ""
     for r in campaigns:
-        stamps = post_times(r)
-        if not stamps:
+        entries = post_entries(r)
+        if not entries:
             continue          # a row that was never actually posted
+        stamps = sorted(p["ts"] for p in entries)
         r["_last"] = stamps[-1]
         r["_first"] = stamps[0]
+        r["_last_entry"] = max(entries, key=lambda p: p["ts"])
         latest_seen = max(latest_seen, stamps[-1], r.get("updated_at") or "")
         posted.append(r)
 
@@ -152,20 +232,58 @@ try:
 
     recent = [r for r in posted if within_30(r)]
 
-    # by location — a group's primary location is the first entry in locs
-    by_loc = collections.defaultdict(list)
-    for r in posted:
-        g = gmap.get(r.get("group_id")) or {}
-        locs = g.get("locs") or []
-        by_loc[(locs[0] if locs else "Unassigned")].append(r)
+    def bucket(rows, keyfn):
+        d = collections.defaultdict(list)
+        for r in rows:
+            d[keyfn(r)].append(r)
+        return {k: summarise(v) for k, v in sorted(d.items(), key=lambda kv: (-len(kv[1]), str(kv[0])))}
 
-    # by profile — which account the post went out as
-    by_profile = collections.defaultdict(list)
-    for r in posted:
-        g = gmap.get(r.get("group_id")) or {}
-        by_profile[g.get("post_as") or "Unknown"].append(r)
+    def loc_of(r):
+        locs = (gmap.get(r.get("group_id")) or {}).get("locs") or []
+        return locs[0] if locs else "Unassigned"
 
-    # by week — last 12 ISO weeks, keyed by the Monday
+    def profile_of(r):
+        return (gmap.get(r.get("group_id")) or {}).get("post_as") or "Unknown"
+
+    def template_of(r):
+        tid = r.get(tpl_col) if tpl_col else None
+        if tid in (None, "") and tpl_post_key:
+            tid = r["_last_entry"].get(tpl_post_key)
+        if tid in (None, ""):
+            return "(not recorded)"
+        t = tmap.get(tid) or {}
+        return t.get("name") or t.get("title") or str(tid)
+
+    def session_of(r):
+        s = smap.get(r.get("session_id")) or {}
+        label = s.get("name") or s.get("title") or s.get("loc") or ""
+        date = s.get("date") or s.get("event_date") or ""
+        return (f"{label} {date}".strip()) or str(r.get("session_id") or "(none)")
+
+    def image_of(r):
+        iid = r.get(img_col) if img_col else None
+        if iid in (None, "") and img_post_key:
+            iid = r["_last_entry"].get(img_post_key)
+        if iid not in (None, ""):
+            return str(iid)
+        # Fallback: the tracker stores ONE image per session card, overwritten
+        # when it changes. So this is "the session's current image", a proxy.
+        return "session:" + session_of(r)
+
+    def orientation_of(r):
+        img = imap.get(r.get("session_id")) or {}
+        if img.get("orientation"):
+            return img["orientation"]
+        w, h = num(img.get("width")), num(img.get("height"))
+        if w and h:
+            return "portrait" if h > w else "landscape" if w > h else "square"
+        return "unknown"
+
+    by_image = {}
+    for k, v in bucket(posted, image_of).items():
+        sample = next(r for r in posted if image_of(r) == k)
+        by_image[k] = {"orientation": orientation_of(sample), **v}
+
     by_week = collections.defaultdict(list)
     for r in posted:
         try:
@@ -175,22 +293,45 @@ try:
         by_week[(d - datetime.timedelta(days=d.weekday())).isoformat()].append(r)
 
     stats = {
-        "generated": latest_seen or now.isoformat(),
-        "note": "Aggregate Facebook group posting performance. No group names, no customer data.",
+        "generated": now.isoformat().replace("+00:00", "Z"),
+        "latest_post_at": latest_seen or None,
+        "note": "Aggregate Facebook group posting performance. No group names, no customer data. "
+                "'posts' counts group x session rows; a repost into the same group for the same session is one row.",
+        "min_n_for_rates": MIN_N,
         "groups": {
             "total": len(groups),
             "active": sum(1 for g in groups if not g.get("archived") and not g.get("blocked_reason")),
             "archived": sum(1 for g in groups if g.get("archived")),
             "blocked": sum(1 for g in groups if g.get("blocked_reason")),
+            "by_type": dict(collections.Counter(group_type(g.get("name")) for g in groups)),
         },
         "all_time": summarise(posted),
         "last_30_days": summarise(recent),
-        "by_location": {k: summarise(v) for k, v in sorted(by_loc.items())},
-        "by_profile": {k: summarise(v) for k, v in sorted(by_profile.items())},
+        "by_location": bucket(posted, loc_of),
+        "by_profile": bucket(posted, profile_of),
+        "by_template": bucket(posted, template_of),
+        "by_session": bucket(posted, session_of),
+        "by_image": by_image,
+        "by_orientation": bucket(posted, orientation_of),
+        "by_group_type": bucket(posted, lambda r: group_type((gmap.get(r.get("group_id")) or {}).get("name"))),
         "by_week": [
             {"week_starting": w, **summarise(by_week[w])}
             for w in sorted(by_week)[-12:]
         ],
+        "data_sources": {
+            "template": f"campaigns.{tpl_col}" if tpl_col else (f"campaigns.posts[].{tpl_post_key}" if tpl_post_key else "NOT RECORDED by tracker"),
+            "image": f"campaigns.{img_col}" if img_col else (f"campaigns.posts[].{img_post_key}" if img_post_key else "session card image (one per session, overwritten on change) — proxy only"),
+            "group_type": "inferred from group name keywords (" + ", ".join(b for b, _ in GROUP_TYPE_RULES) + ", else community)",
+            "comments": f"campaigns.{COMMENT_FIELD}" if COMMENT_FIELD else "NOT RECORDED by tracker",
+            "keyword_comments": f"campaigns.{KEYWORD_FIELD}" if KEYWORD_FIELD else "NOT RECORDED by tracker",
+        },
+        "schema": {
+            "campaigns": camp_cols,
+            "campaigns_posts_entry": post_keys,
+            "groups": sorted({k for g in groups for k in g.keys()}),
+            "templates": sorted({k for t in templates for k in t.keys()}),
+            "sessions": sorted({k for s in sessions for k in s.keys()}),
+        },
     }
 
     if INCLUDE_GROUP_NAMES:
@@ -208,5 +349,10 @@ try:
     print(f"Wrote posting-stats.json — {stats['all_time']['posts']} posts across {stats['groups']['total']} groups")
 
 except Exception as e:
-    # Never fail the events job because the stats add-on had a bad day
-    print("Posting stats skipped:", e)
+    stats_error = e
+    print("POSTING STATS FAILED:", e, file=sys.stderr)
+
+# events.json is already written above. Exit non-zero AFTER that so the commit
+# step can still run (if: always()) but the run shows red and GitHub emails.
+if stats_error:
+    sys.exit(1)
