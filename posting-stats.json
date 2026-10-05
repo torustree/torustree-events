@@ -1,11 +1,21 @@
 {
- "generated": "2026-10-04T18:15:18.589+00:00",
- "note": "Aggregate Facebook group posting performance. No group names, no customer data.",
+ "generated": "2026-10-05T09:24:54.181821Z",
+ "latest_post_at": "2026-10-04T18:15:18.589+00:00",
+ "note": "Aggregate Facebook group posting performance. No group names, no customer data. 'posts' counts group x session rows; a repost into the same group for the same session is one row.",
+ "min_n_for_rates": 15,
  "groups": {
   "total": 278,
   "active": 219,
   "archived": 2,
-  "blocked": 58
+  "blocked": 58,
+  "by_type": {
+   "billboard": 61,
+   "community": 114,
+   "whats_on_events": 29,
+   "business": 40,
+   "buy_sell": 24,
+   "wellbeing": 10
+  }
  },
  "all_time": {
   "posts": 520,
@@ -13,8 +23,10 @@
   "pending": 94,
   "declined": 39,
   "other": 8,
+  "booking_links": 334,
   "live_rate": 0.729,
-  "booking_link_rate": 0.642
+  "booking_link_rate": 0.642,
+  "thin_sample": false
  },
  "last_30_days": {
   "posts": 325,
@@ -22,126 +34,22 @@
   "pending": 63,
   "declined": 36,
   "other": 0,
+  "booking_links": 220,
   "live_rate": 0.695,
-  "booking_link_rate": 0.677
+  "booking_link_rate": 0.677,
+  "thin_sample": false
  },
  "by_location": {
-  "Aberfoyle": {
-   "posts": 1,
-   "live": 0,
-   "pending": 0,
-   "declined": 1,
-   "other": 0,
-   "live_rate": 0.0,
-   "booking_link_rate": 0.0
-  },
-  "Almondbank": {
-   "posts": 1,
-   "live": 0,
-   "pending": 1,
-   "declined": 0,
-   "other": 0,
-   "live_rate": 0.0,
-   "booking_link_rate": 0.0
-  },
-  "Alyth": {
-   "posts": 1,
-   "live": 0,
-   "pending": 1,
-   "declined": 0,
-   "other": 0,
-   "live_rate": 0.0,
-   "booking_link_rate": 0.0
-  },
-  "Anstruther": {
-   "posts": 1,
-   "live": 1,
-   "pending": 0,
-   "declined": 0,
-   "other": 0,
-   "live_rate": 1.0,
-   "booking_link_rate": 1.0
-  },
-  "Bathgate": {
-   "posts": 1,
-   "live": 0,
-   "pending": 1,
-   "declined": 0,
-   "other": 0,
-   "live_rate": 0.0,
-   "booking_link_rate": 0.0
-  },
-  "Bearsden": {
-   "posts": 4,
-   "live": 4,
-   "pending": 0,
-   "declined": 0,
-   "other": 0,
-   "live_rate": 1.0,
-   "booking_link_rate": 1.0
-  },
-  "Bishopbriggs": {
-   "posts": 4,
-   "live": 0,
-   "pending": 4,
-   "declined": 0,
-   "other": 0,
-   "live_rate": 0.0,
-   "booking_link_rate": 0.0
-  },
-  "Bonnybridge": {
-   "posts": 2,
-   "live": 2,
-   "pending": 0,
-   "declined": 0,
-   "other": 0,
-   "live_rate": 1.0,
-   "booking_link_rate": 1.0
-  },
-  "Bridge of Allan": {
-   "posts": 1,
-   "live": 0,
-   "pending": 0,
-   "declined": 1,
-   "other": 0,
-   "live_rate": 0.0,
-   "booking_link_rate": 0.0
-  },
-  "Carnoustie": {
-   "posts": 3,
-   "live": 0,
-   "pending": 2,
-   "declined": 1,
-   "other": 0,
-   "live_rate": 0.0,
-   "booking_link_rate": 0.0
-  },
-  "Central Scotland": {
-   "posts": 33,
-   "live": 16,
-   "pending": 12,
-   "declined": 5,
-   "other": 0,
-   "live_rate": 0.485,
-   "booking_link_rate": 0.485
-  },
-  "Cumbernauld": {
-   "posts": 2,
-   "live": 1,
-   "pending": 1,
-   "declined": 0,
-   "other": 0,
-   "live_rate": 0.5,
-   "booking_link_rate": 0.5
-  },
-  "Cupar": {
-   "posts": 1,
-   "live": 1,
-   "pending": 0,
-   "declined": 0,
-   "other": 0,
-   "live_rate": 1.0,
-   "booking_link_rate": 1.0
+  "Perth": {
+   "posts": 128,
+   "live": 105,
+   "pending": 19,
+   "declined": 3,
+   "other": 1,
+   "booking_links": 91,
+   "live_rate": 0.82,
+   "booking_link_rate": 0.711,
+   "thin_sample": false
   },
   "Dundee": {
    "posts": 105,
@@ -149,26 +57,10 @@
    "pending": 21,
    "declined": 5,
    "other": 0,
+   "booking_links": 58,
    "live_rate": 0.752,
-   "booking_link_rate": 0.552
-  },
-  "Errol": {
-   "posts": 2,
-   "live": 1,
-   "pending": 1,
-   "declined": 0,
-   "other": 0,
-   "live_rate": 0.5,
-   "booking_link_rate": 0.5
-  },
-  "Falkirk": {
-   "posts": 26,
-   "live": 18,
-   "pending": 4,
-   "declined": 2,
-   "other": 2,
-   "live_rate": 0.692,
-   "booking_link_rate": 0.692
+   "booking_link_rate": 0.552,
+   "thin_sample": false
   },
   "Fife": {
    "posts": 82,
@@ -176,134 +68,10 @@
    "pending": 11,
    "declined": 4,
    "other": 1,
+   "booking_links": 67,
    "live_rate": 0.805,
-   "booking_link_rate": 0.817
-  },
-  "Forfar": {
-   "posts": 18,
-   "live": 9,
-   "pending": 5,
-   "declined": 4,
-   "other": 0,
-   "live_rate": 0.5,
-   "booking_link_rate": 0.5
-  },
-  "Kelty": {
-   "posts": 1,
-   "live": 1,
-   "pending": 0,
-   "declined": 0,
-   "other": 0,
-   "live_rate": 1.0,
-   "booking_link_rate": 1.0
-  },
-  "Kinross": {
-   "posts": 2,
-   "live": 2,
-   "pending": 0,
-   "declined": 0,
-   "other": 0,
-   "live_rate": 1.0,
-   "booking_link_rate": 1.0
-  },
-  "Larbert": {
-   "posts": 1,
-   "live": 1,
-   "pending": 0,
-   "declined": 0,
-   "other": 0,
-   "live_rate": 1.0,
-   "booking_link_rate": 1.0
-  },
-  "Letham": {
-   "posts": 1,
-   "live": 1,
-   "pending": 0,
-   "declined": 0,
-   "other": 0,
-   "live_rate": 1.0,
-   "booking_link_rate": 1.0
-  },
-  "Linlithgow": {
-   "posts": 1,
-   "live": 0,
-   "pending": 1,
-   "declined": 0,
-   "other": 0,
-   "live_rate": 0.0,
-   "booking_link_rate": 0.0
-  },
-  "Livingston": {
-   "posts": 1,
-   "live": 0,
-   "pending": 1,
-   "declined": 0,
-   "other": 0,
-   "live_rate": 0.0,
-   "booking_link_rate": 0.0
-  },
-  "Methven": {
-   "posts": 2,
-   "live": 1,
-   "pending": 1,
-   "declined": 0,
-   "other": 0,
-   "live_rate": 0.5,
-   "booking_link_rate": 0.5
-  },
-  "Milngavie": {
-   "posts": 1,
-   "live": 0,
-   "pending": 0,
-   "declined": 1,
-   "other": 0,
-   "live_rate": 0.0,
-   "booking_link_rate": 0.0
-  },
-  "Montrose": {
-   "posts": 1,
-   "live": 0,
-   "pending": 0,
-   "declined": 1,
-   "other": 0,
-   "live_rate": 0.0,
-   "booking_link_rate": 0.0
-  },
-  "North Fife": {
-   "posts": 5,
-   "live": 5,
-   "pending": 0,
-   "declined": 0,
-   "other": 0,
-   "live_rate": 1.0,
-   "booking_link_rate": 0.8
-  },
-  "Perth": {
-   "posts": 128,
-   "live": 105,
-   "pending": 19,
-   "declined": 3,
-   "other": 1,
-   "live_rate": 0.82,
-   "booking_link_rate": 0.711
-  },
-  "Pitlochry": {
-   "posts": 16,
-   "live": 5,
-   "pending": 3,
-   "declined": 7,
-   "other": 1,
-   "live_rate": 0.312,
-   "booking_link_rate": 0.312
-  },
-  "Scotland-wide": {
-   "posts": 4,
-   "live": 2,
-   "pending": 2,
-   "declined": 0,
-   "other": 0,
-   "live_rate": 0.5,
-   "booking_link_rate": 0.5
+   "booking_link_rate": 0.817,
+   "thin_sample": false
   },
   "Stirling": {
    "posts": 56,
@@ -311,8 +79,54 @@
    "pending": 2,
    "declined": 4,
    "other": 3,
+   "booking_links": 47,
    "live_rate": 0.839,
-   "booking_link_rate": 0.839
+   "booking_link_rate": 0.839,
+   "thin_sample": false
+  },
+  "Central Scotland": {
+   "posts": 33,
+   "live": 16,
+   "pending": 12,
+   "declined": 5,
+   "other": 0,
+   "booking_links": 16,
+   "live_rate": 0.485,
+   "booking_link_rate": 0.485,
+   "thin_sample": false
+  },
+  "Falkirk": {
+   "posts": 26,
+   "live": 18,
+   "pending": 4,
+   "declined": 2,
+   "other": 2,
+   "booking_links": 18,
+   "live_rate": 0.692,
+   "booking_link_rate": 0.692,
+   "thin_sample": false
+  },
+  "Forfar": {
+   "posts": 18,
+   "live": 9,
+   "pending": 5,
+   "declined": 4,
+   "other": 0,
+   "booking_links": 9,
+   "live_rate": 0.5,
+   "booking_link_rate": 0.5,
+   "thin_sample": false
+  },
+  "Pitlochry": {
+   "posts": 16,
+   "live": 5,
+   "pending": 3,
+   "declined": 7,
+   "other": 1,
+   "booking_links": 5,
+   "live_rate": 0.312,
+   "booking_link_rate": 0.312,
+   "thin_sample": false
   },
   "Unassigned": {
    "posts": 12,
@@ -320,8 +134,274 @@
    "pending": 1,
    "declined": 0,
    "other": 0,
+   "booking_links": 1,
    "live_rate": 0.917,
-   "booking_link_rate": 0.083
+   "booking_link_rate": 0.083,
+   "thin_sample": true
+  },
+  "North Fife": {
+   "posts": 5,
+   "live": 5,
+   "pending": 0,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 4,
+   "live_rate": 1.0,
+   "booking_link_rate": 0.8,
+   "thin_sample": true
+  },
+  "Bearsden": {
+   "posts": 4,
+   "live": 4,
+   "pending": 0,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 4,
+   "live_rate": 1.0,
+   "booking_link_rate": 1.0,
+   "thin_sample": true
+  },
+  "Bishopbriggs": {
+   "posts": 4,
+   "live": 0,
+   "pending": 4,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 0,
+   "live_rate": 0.0,
+   "booking_link_rate": 0.0,
+   "thin_sample": true
+  },
+  "Scotland-wide": {
+   "posts": 4,
+   "live": 2,
+   "pending": 2,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 2,
+   "live_rate": 0.5,
+   "booking_link_rate": 0.5,
+   "thin_sample": true
+  },
+  "Carnoustie": {
+   "posts": 3,
+   "live": 0,
+   "pending": 2,
+   "declined": 1,
+   "other": 0,
+   "booking_links": 0,
+   "live_rate": 0.0,
+   "booking_link_rate": 0.0,
+   "thin_sample": true
+  },
+  "Bonnybridge": {
+   "posts": 2,
+   "live": 2,
+   "pending": 0,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 2,
+   "live_rate": 1.0,
+   "booking_link_rate": 1.0,
+   "thin_sample": true
+  },
+  "Cumbernauld": {
+   "posts": 2,
+   "live": 1,
+   "pending": 1,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 1,
+   "live_rate": 0.5,
+   "booking_link_rate": 0.5,
+   "thin_sample": true
+  },
+  "Errol": {
+   "posts": 2,
+   "live": 1,
+   "pending": 1,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 1,
+   "live_rate": 0.5,
+   "booking_link_rate": 0.5,
+   "thin_sample": true
+  },
+  "Kinross": {
+   "posts": 2,
+   "live": 2,
+   "pending": 0,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 2,
+   "live_rate": 1.0,
+   "booking_link_rate": 1.0,
+   "thin_sample": true
+  },
+  "Methven": {
+   "posts": 2,
+   "live": 1,
+   "pending": 1,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 1,
+   "live_rate": 0.5,
+   "booking_link_rate": 0.5,
+   "thin_sample": true
+  },
+  "Aberfoyle": {
+   "posts": 1,
+   "live": 0,
+   "pending": 0,
+   "declined": 1,
+   "other": 0,
+   "booking_links": 0,
+   "live_rate": 0.0,
+   "booking_link_rate": 0.0,
+   "thin_sample": true
+  },
+  "Almondbank": {
+   "posts": 1,
+   "live": 0,
+   "pending": 1,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 0,
+   "live_rate": 0.0,
+   "booking_link_rate": 0.0,
+   "thin_sample": true
+  },
+  "Alyth": {
+   "posts": 1,
+   "live": 0,
+   "pending": 1,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 0,
+   "live_rate": 0.0,
+   "booking_link_rate": 0.0,
+   "thin_sample": true
+  },
+  "Anstruther": {
+   "posts": 1,
+   "live": 1,
+   "pending": 0,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 1,
+   "live_rate": 1.0,
+   "booking_link_rate": 1.0,
+   "thin_sample": true
+  },
+  "Bathgate": {
+   "posts": 1,
+   "live": 0,
+   "pending": 1,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 0,
+   "live_rate": 0.0,
+   "booking_link_rate": 0.0,
+   "thin_sample": true
+  },
+  "Bridge of Allan": {
+   "posts": 1,
+   "live": 0,
+   "pending": 0,
+   "declined": 1,
+   "other": 0,
+   "booking_links": 0,
+   "live_rate": 0.0,
+   "booking_link_rate": 0.0,
+   "thin_sample": true
+  },
+  "Cupar": {
+   "posts": 1,
+   "live": 1,
+   "pending": 0,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 1,
+   "live_rate": 1.0,
+   "booking_link_rate": 1.0,
+   "thin_sample": true
+  },
+  "Kelty": {
+   "posts": 1,
+   "live": 1,
+   "pending": 0,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 1,
+   "live_rate": 1.0,
+   "booking_link_rate": 1.0,
+   "thin_sample": true
+  },
+  "Larbert": {
+   "posts": 1,
+   "live": 1,
+   "pending": 0,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 1,
+   "live_rate": 1.0,
+   "booking_link_rate": 1.0,
+   "thin_sample": true
+  },
+  "Letham": {
+   "posts": 1,
+   "live": 1,
+   "pending": 0,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 1,
+   "live_rate": 1.0,
+   "booking_link_rate": 1.0,
+   "thin_sample": true
+  },
+  "Linlithgow": {
+   "posts": 1,
+   "live": 0,
+   "pending": 1,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 0,
+   "live_rate": 0.0,
+   "booking_link_rate": 0.0,
+   "thin_sample": true
+  },
+  "Livingston": {
+   "posts": 1,
+   "live": 0,
+   "pending": 1,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 0,
+   "live_rate": 0.0,
+   "booking_link_rate": 0.0,
+   "thin_sample": true
+  },
+  "Milngavie": {
+   "posts": 1,
+   "live": 0,
+   "pending": 0,
+   "declined": 1,
+   "other": 0,
+   "booking_links": 0,
+   "live_rate": 0.0,
+   "booking_link_rate": 0.0,
+   "thin_sample": true
+  },
+  "Montrose": {
+   "posts": 1,
+   "live": 0,
+   "pending": 0,
+   "declined": 1,
+   "other": 0,
+   "booking_links": 0,
+   "live_rate": 0.0,
+   "booking_link_rate": 0.0,
+   "thin_sample": true
   }
  },
  "by_profile": {
@@ -331,8 +411,10 @@
    "pending": 70,
    "declined": 31,
    "other": 5,
+   "booking_links": 253,
    "live_rate": 0.729,
-   "booking_link_rate": 0.647
+   "booking_link_rate": 0.647,
+   "thin_sample": false
   },
   "Torus Tree": {
    "posts": 129,
@@ -340,8 +422,499 @@
    "pending": 24,
    "declined": 8,
    "other": 3,
+   "booking_links": 81,
    "live_rate": 0.729,
-   "booking_link_rate": 0.628
+   "booking_link_rate": 0.628,
+   "thin_sample": false
+  }
+ },
+ "by_template": {
+  "(not recorded)": {
+   "posts": 520,
+   "live": 379,
+   "pending": 94,
+   "declined": 39,
+   "other": 8,
+   "booking_links": 334,
+   "live_rate": 0.729,
+   "booking_link_rate": 0.642,
+   "thin_sample": false
+  }
+ },
+ "by_session": {
+  "ev-sp1ol-20260919093000": {
+   "posts": 65,
+   "live": 42,
+   "pending": 14,
+   "declined": 9,
+   "other": 0,
+   "booking_links": 42,
+   "live_rate": 0.646,
+   "booking_link_rate": 0.646,
+   "thin_sample": false
+  },
+  "ev-szlpl-20261004143000": {
+   "posts": 55,
+   "live": 34,
+   "pending": 13,
+   "declined": 8,
+   "other": 0,
+   "booking_links": 24,
+   "live_rate": 0.618,
+   "booking_link_rate": 0.436,
+   "thin_sample": false
+  },
+  "ev-s6iq3-20261213130000": {
+   "posts": 46,
+   "live": 31,
+   "pending": 15,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 33,
+   "live_rate": 0.674,
+   "booking_link_rate": 0.717,
+   "thin_sample": false
+  },
+  "ev-sikve-20260905103000": {
+   "posts": 36,
+   "live": 22,
+   "pending": 11,
+   "declined": 0,
+   "other": 3,
+   "booking_links": 22,
+   "live_rate": 0.611,
+   "booking_link_rate": 0.611,
+   "thin_sample": false
+  },
+  "ev-syu6r-20260919143000": {
+   "posts": 36,
+   "live": 25,
+   "pending": 4,
+   "declined": 7,
+   "other": 0,
+   "booking_links": 25,
+   "live_rate": 0.694,
+   "booking_link_rate": 0.694,
+   "thin_sample": false
+  },
+  "ev-s3j6l-20261017093000": {
+   "posts": 34,
+   "live": 23,
+   "pending": 6,
+   "declined": 5,
+   "other": 0,
+   "booking_links": 23,
+   "live_rate": 0.676,
+   "booking_link_rate": 0.676,
+   "thin_sample": false
+  },
+  "ev-s4w1a-20261017143000": {
+   "posts": 34,
+   "live": 27,
+   "pending": 4,
+   "declined": 3,
+   "other": 0,
+   "booking_links": 27,
+   "live_rate": 0.794,
+   "booking_link_rate": 0.794,
+   "thin_sample": false
+  },
+  "ev-szyyz-20260903193000": {
+   "posts": 32,
+   "live": 24,
+   "pending": 6,
+   "declined": 0,
+   "other": 2,
+   "booking_links": 24,
+   "live_rate": 0.75,
+   "booking_link_rate": 0.75,
+   "thin_sample": false
+  },
+  "ev-su6nu-20260815093000": {
+   "posts": 29,
+   "live": 23,
+   "pending": 6,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 1,
+   "live_rate": 0.793,
+   "booking_link_rate": 0.034,
+   "thin_sample": false
+  },
+  "ev-swxhw-20260905150000": {
+   "posts": 27,
+   "live": 22,
+   "pending": 3,
+   "declined": 0,
+   "other": 2,
+   "booking_links": 22,
+   "live_rate": 0.815,
+   "booking_link_rate": 0.815,
+   "thin_sample": false
+  },
+  "ev-so0ui-20260815143000": {
+   "posts": 26,
+   "live": 25,
+   "pending": 1,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 8,
+   "live_rate": 0.962,
+   "booking_link_rate": 0.308,
+   "thin_sample": false
+  },
+  "ev-slc1z-20261004103000": {
+   "posts": 25,
+   "live": 19,
+   "pending": 2,
+   "declined": 4,
+   "other": 0,
+   "booking_links": 19,
+   "live_rate": 0.76,
+   "booking_link_rate": 0.76,
+   "thin_sample": false
+  },
+  "ev-spsfw-20260912103000": {
+   "posts": 23,
+   "live": 20,
+   "pending": 3,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 22,
+   "live_rate": 0.87,
+   "booking_link_rate": 0.957,
+   "thin_sample": false
+  },
+  "ev-s5n86-20260913103000": {
+   "posts": 18,
+   "live": 16,
+   "pending": 1,
+   "declined": 0,
+   "other": 1,
+   "booking_links": 16,
+   "live_rate": 0.889,
+   "booking_link_rate": 0.889,
+   "thin_sample": false
+  },
+  "ev-siimt-20261011150000": {
+   "posts": 13,
+   "live": 12,
+   "pending": 1,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 12,
+   "live_rate": 0.923,
+   "booking_link_rate": 0.923,
+   "thin_sample": true
+  },
+  "ev-s5ocs-20261011103000": {
+   "posts": 11,
+   "live": 7,
+   "pending": 3,
+   "declined": 1,
+   "other": 0,
+   "booking_links": 7,
+   "live_rate": 0.636,
+   "booking_link_rate": 0.636,
+   "thin_sample": true
+  },
+  "ev-su0y8-20261004103000": {
+   "posts": 10,
+   "live": 7,
+   "pending": 1,
+   "declined": 2,
+   "other": 0,
+   "booking_links": 7,
+   "live_rate": 0.7,
+   "booking_link_rate": 0.7,
+   "thin_sample": true
+  }
+ },
+ "by_image": {
+  "session:ev-sp1ol-20260919093000": {
+   "orientation": "unknown",
+   "posts": 65,
+   "live": 42,
+   "pending": 14,
+   "declined": 9,
+   "other": 0,
+   "booking_links": 42,
+   "live_rate": 0.646,
+   "booking_link_rate": 0.646,
+   "thin_sample": false
+  },
+  "session:ev-szlpl-20261004143000": {
+   "orientation": "unknown",
+   "posts": 55,
+   "live": 34,
+   "pending": 13,
+   "declined": 8,
+   "other": 0,
+   "booking_links": 24,
+   "live_rate": 0.618,
+   "booking_link_rate": 0.436,
+   "thin_sample": false
+  },
+  "session:ev-s6iq3-20261213130000": {
+   "orientation": "unknown",
+   "posts": 46,
+   "live": 31,
+   "pending": 15,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 33,
+   "live_rate": 0.674,
+   "booking_link_rate": 0.717,
+   "thin_sample": false
+  },
+  "session:ev-sikve-20260905103000": {
+   "orientation": "unknown",
+   "posts": 36,
+   "live": 22,
+   "pending": 11,
+   "declined": 0,
+   "other": 3,
+   "booking_links": 22,
+   "live_rate": 0.611,
+   "booking_link_rate": 0.611,
+   "thin_sample": false
+  },
+  "session:ev-syu6r-20260919143000": {
+   "orientation": "unknown",
+   "posts": 36,
+   "live": 25,
+   "pending": 4,
+   "declined": 7,
+   "other": 0,
+   "booking_links": 25,
+   "live_rate": 0.694,
+   "booking_link_rate": 0.694,
+   "thin_sample": false
+  },
+  "session:ev-s3j6l-20261017093000": {
+   "orientation": "unknown",
+   "posts": 34,
+   "live": 23,
+   "pending": 6,
+   "declined": 5,
+   "other": 0,
+   "booking_links": 23,
+   "live_rate": 0.676,
+   "booking_link_rate": 0.676,
+   "thin_sample": false
+  },
+  "session:ev-s4w1a-20261017143000": {
+   "orientation": "unknown",
+   "posts": 34,
+   "live": 27,
+   "pending": 4,
+   "declined": 3,
+   "other": 0,
+   "booking_links": 27,
+   "live_rate": 0.794,
+   "booking_link_rate": 0.794,
+   "thin_sample": false
+  },
+  "session:ev-szyyz-20260903193000": {
+   "orientation": "unknown",
+   "posts": 32,
+   "live": 24,
+   "pending": 6,
+   "declined": 0,
+   "other": 2,
+   "booking_links": 24,
+   "live_rate": 0.75,
+   "booking_link_rate": 0.75,
+   "thin_sample": false
+  },
+  "session:ev-su6nu-20260815093000": {
+   "orientation": "unknown",
+   "posts": 29,
+   "live": 23,
+   "pending": 6,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 1,
+   "live_rate": 0.793,
+   "booking_link_rate": 0.034,
+   "thin_sample": false
+  },
+  "session:ev-swxhw-20260905150000": {
+   "orientation": "unknown",
+   "posts": 27,
+   "live": 22,
+   "pending": 3,
+   "declined": 0,
+   "other": 2,
+   "booking_links": 22,
+   "live_rate": 0.815,
+   "booking_link_rate": 0.815,
+   "thin_sample": false
+  },
+  "session:ev-so0ui-20260815143000": {
+   "orientation": "unknown",
+   "posts": 26,
+   "live": 25,
+   "pending": 1,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 8,
+   "live_rate": 0.962,
+   "booking_link_rate": 0.308,
+   "thin_sample": false
+  },
+  "session:ev-slc1z-20261004103000": {
+   "orientation": "unknown",
+   "posts": 25,
+   "live": 19,
+   "pending": 2,
+   "declined": 4,
+   "other": 0,
+   "booking_links": 19,
+   "live_rate": 0.76,
+   "booking_link_rate": 0.76,
+   "thin_sample": false
+  },
+  "session:ev-spsfw-20260912103000": {
+   "orientation": "unknown",
+   "posts": 23,
+   "live": 20,
+   "pending": 3,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 22,
+   "live_rate": 0.87,
+   "booking_link_rate": 0.957,
+   "thin_sample": false
+  },
+  "session:ev-s5n86-20260913103000": {
+   "orientation": "unknown",
+   "posts": 18,
+   "live": 16,
+   "pending": 1,
+   "declined": 0,
+   "other": 1,
+   "booking_links": 16,
+   "live_rate": 0.889,
+   "booking_link_rate": 0.889,
+   "thin_sample": false
+  },
+  "session:ev-siimt-20261011150000": {
+   "orientation": "unknown",
+   "posts": 13,
+   "live": 12,
+   "pending": 1,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 12,
+   "live_rate": 0.923,
+   "booking_link_rate": 0.923,
+   "thin_sample": true
+  },
+  "session:ev-s5ocs-20261011103000": {
+   "orientation": "unknown",
+   "posts": 11,
+   "live": 7,
+   "pending": 3,
+   "declined": 1,
+   "other": 0,
+   "booking_links": 7,
+   "live_rate": 0.636,
+   "booking_link_rate": 0.636,
+   "thin_sample": true
+  },
+  "session:ev-su0y8-20261004103000": {
+   "orientation": "unknown",
+   "posts": 10,
+   "live": 7,
+   "pending": 1,
+   "declined": 2,
+   "other": 0,
+   "booking_links": 7,
+   "live_rate": 0.7,
+   "booking_link_rate": 0.7,
+   "thin_sample": true
+  }
+ },
+ "by_orientation": {
+  "unknown": {
+   "posts": 520,
+   "live": 379,
+   "pending": 94,
+   "declined": 39,
+   "other": 8,
+   "booking_links": 334,
+   "live_rate": 0.729,
+   "booking_link_rate": 0.642,
+   "thin_sample": false
+  }
+ },
+ "by_group_type": {
+  "community": {
+   "posts": 200,
+   "live": 120,
+   "pending": 46,
+   "declined": 27,
+   "other": 7,
+   "booking_links": 107,
+   "live_rate": 0.6,
+   "booking_link_rate": 0.535,
+   "thin_sample": false
+  },
+  "billboard": {
+   "posts": 160,
+   "live": 140,
+   "pending": 17,
+   "declined": 3,
+   "other": 0,
+   "booking_links": 122,
+   "live_rate": 0.875,
+   "booking_link_rate": 0.762,
+   "thin_sample": false
+  },
+  "business": {
+   "posts": 75,
+   "live": 62,
+   "pending": 11,
+   "declined": 2,
+   "other": 0,
+   "booking_links": 56,
+   "live_rate": 0.827,
+   "booking_link_rate": 0.747,
+   "thin_sample": false
+  },
+  "whats_on_events": {
+   "posts": 46,
+   "live": 25,
+   "pending": 14,
+   "declined": 6,
+   "other": 1,
+   "booking_links": 21,
+   "live_rate": 0.543,
+   "booking_link_rate": 0.457,
+   "thin_sample": false
+  },
+  "buy_sell": {
+   "posts": 36,
+   "live": 30,
+   "pending": 5,
+   "declined": 1,
+   "other": 0,
+   "booking_links": 26,
+   "live_rate": 0.833,
+   "booking_link_rate": 0.722,
+   "thin_sample": false
+  },
+  "wellbeing": {
+   "posts": 3,
+   "live": 2,
+   "pending": 1,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 2,
+   "live_rate": 0.667,
+   "booking_link_rate": 0.667,
+   "thin_sample": true
   }
  },
  "by_week": [
@@ -352,8 +925,10 @@
    "pending": 7,
    "declined": 0,
    "other": 0,
+   "booking_links": 9,
    "live_rate": 0.873,
-   "booking_link_rate": 0.164
+   "booking_link_rate": 0.164,
+   "thin_sample": false
   },
   {
    "week_starting": "2026-08-17",
@@ -362,8 +937,10 @@
    "pending": 21,
    "declined": 0,
    "other": 8,
+   "booking_links": 86,
    "live_rate": 0.748,
-   "booking_link_rate": 0.748
+   "booking_link_rate": 0.748,
+   "thin_sample": false
   },
   {
    "week_starting": "2026-08-24",
@@ -372,8 +949,10 @@
    "pending": 3,
    "declined": 3,
    "other": 0,
+   "booking_links": 19,
    "live_rate": 0.76,
-   "booking_link_rate": 0.76
+   "booking_link_rate": 0.76,
+   "thin_sample": false
   },
   {
    "week_starting": "2026-09-07",
@@ -382,8 +961,10 @@
    "pending": 5,
    "declined": 1,
    "other": 0,
+   "booking_links": 38,
    "live_rate": 0.857,
-   "booking_link_rate": 0.905
+   "booking_link_rate": 0.905,
+   "thin_sample": false
   },
   {
    "week_starting": "2026-09-14",
@@ -392,8 +973,10 @@
    "pending": 19,
    "declined": 20,
    "other": 0,
+   "booking_links": 53,
    "live_rate": 0.576,
-   "booking_link_rate": 0.576
+   "booking_link_rate": 0.576,
+   "thin_sample": false
   },
   {
    "week_starting": "2026-09-21",
@@ -402,8 +985,10 @@
    "pending": 18,
    "declined": 15,
    "other": 0,
+   "booking_links": 88,
    "live_rate": 0.727,
-   "booking_link_rate": 0.727
+   "booking_link_rate": 0.727,
+   "thin_sample": false
   },
   {
    "week_starting": "2026-09-28",
@@ -412,8 +997,61 @@
    "pending": 21,
    "declined": 0,
    "other": 0,
+   "booking_links": 41,
    "live_rate": 0.7,
-   "booking_link_rate": 0.586
+   "booking_link_rate": 0.586,
+   "thin_sample": false
   }
- ]
+ ],
+ "data_sources": {
+  "template": "NOT RECORDED by tracker",
+  "image": "session card image (one per session, overwritten on change) \u2014 proxy only",
+  "group_type": "inferred from group name keywords (buy_sell, billboard, business, whats_on_events, wellbeing, else community)",
+  "comments": "NOT RECORDED by tracker",
+  "keyword_comments": "NOT RECORDED by tracker"
+ },
+ "schema": {
+  "campaigns": [
+   "group_id",
+   "id",
+   "link_added",
+   "posts",
+   "session_id",
+   "status",
+   "updated_at",
+   "verified_on_fb"
+  ],
+  "campaigns_posts_entry": [
+   "templateId",
+   "ts",
+   "url"
+  ],
+  "groups": [
+   "archived",
+   "blocked_reason",
+   "catchment_locs",
+   "created_at",
+   "id",
+   "locs",
+   "name",
+   "notes",
+   "post_as",
+   "post_day",
+   "pref_session",
+   "rating",
+   "recheck_after",
+   "updated_at",
+   "url"
+  ],
+  "templates": [
+   "archived",
+   "body",
+   "created_at",
+   "expiry_date",
+   "id",
+   "name",
+   "updated_at"
+  ],
+  "sessions": []
+ }
 }
