@@ -199,9 +199,9 @@ try:
     COMMENT_FIELD = first_key(camp_cols, ["comments", "comment_count", "comments_count"])
     KEYWORD_FIELD = first_key(camp_cols, ["keyword_comments", "breathe_count", "breathe_comments"])
     tpl_col = first_key(camp_cols, ["template_id", "template", "template_name", "tpl"])
-    tpl_post_key = first_key(post_keys, ["template_id", "template", "tpl", "template_name"])
+    tpl_post_key = first_key(post_keys, ["templateId", "template_id", "template", "tpl", "template_name"])
     img_col = first_key(camp_cols, ["image_id", "image", "image_name", "photo"])
-    img_post_key = first_key(post_keys, ["image_id", "image", "photo", "image_name"])
+    img_post_key = first_key(post_keys, ["imageId", "image_id", "image", "photo", "image_name"])
 
     gmap = {g["id"]: g for g in groups}
     tmap = {t.get("id"): t for t in templates}
@@ -279,6 +279,7 @@ try:
             return "portrait" if h > w else "landscape" if w > h else "square"
         return "unknown"
 
+    tpl_recorded = sum(1 for r in posted if template_of(r) != "(not recorded)")
     by_image = {}
     for k, v in bucket(posted, image_of).items():
         sample = next(r for r in posted if image_of(r) == k)
@@ -310,6 +311,7 @@ try:
         "by_location": bucket(posted, loc_of),
         "by_profile": bucket(posted, profile_of),
         "by_template": bucket(posted, template_of),
+        "template_coverage": {"posts_with_template": tpl_recorded, "posts": len(posted), "share": rate(tpl_recorded, len(posted))},
         "by_session": bucket(posted, session_of),
         "by_image": by_image,
         "by_orientation": bucket(posted, orientation_of),
