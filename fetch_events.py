@@ -164,6 +164,7 @@ def first_key(keys, candidates):
 # Group type is not stored in the tracker, so it is inferred from the group
 # NAME here. Names never leave this script — only the bucket counts do.
 GROUP_TYPE_RULES = [
+    ("egg", [" egg ", "egg "]),  # EGG groups: own campaign, first-Monday posting window
     ("buy_sell", ["for sale", "selling", "buy", "sell ", "swap", "marketplace", "items for sale", "facebay", "free advertising"]),
     ("billboard", ["billboard", "notice board", "noticeboard", "message board", "blether"]),
     ("business", ["business", "networking", "directory", "high street", "trades", "local business"]),
@@ -173,7 +174,7 @@ GROUP_TYPE_RULES = [
 
 
 def group_type(name):
-    n = (name or "").lower()
+    n = " " + (name or "").lower() + " "
     for bucket, words in GROUP_TYPE_RULES:
         if any(w in n for w in words):
             return bucket
