@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-05T10:57:13.013912Z",
+ "generated": "2026-10-05T11:10:21.672775Z",
  "latest_post_at": "2026-10-04T18:15:18.589+00:00",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data. 'posts' counts group x session rows; a repost into the same group for the same session is one row.",
  "min_n_for_rates": 15,
@@ -1143,7 +1143,7 @@
  "data_sources": {
   "template": "campaigns.posts[].templateId",
   "image": "session card image (one per session, overwritten on change) \u2014 proxy only",
-  "group_type": "inferred from group name keywords (buy_sell, billboard, business, whats_on_events, wellbeing, else community)",
+  "group_type": "inferred from group name keywords (egg, buy_sell, billboard, business, whats_on_events, wellbeing, else community)",
   "comments": "NOT RECORDED by tracker",
   "keyword_comments": "NOT RECORDED by tracker"
  },
