@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-05T09:24:54.181821Z",
+ "generated": "2026-10-05T10:57:13.013912Z",
  "latest_post_at": "2026-10-04T18:15:18.589+00:00",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data. 'posts' counts group x session rows; a repost into the same group for the same session is one row.",
  "min_n_for_rates": 15,
@@ -430,16 +430,153 @@
  },
  "by_template": {
   "(not recorded)": {
-   "posts": 520,
-   "live": 379,
-   "pending": 94,
-   "declined": 39,
-   "other": 8,
-   "booking_links": 334,
-   "live_rate": 0.729,
-   "booking_link_rate": 0.642,
+   "posts": 398,
+   "live": 285,
+   "pending": 74,
+   "declined": 37,
+   "other": 2,
+   "booking_links": 242,
+   "live_rate": 0.716,
+   "booking_link_rate": 0.608,
    "thin_sample": false
+  },
+  "The Origin \u2014 Perth \u2014 17 Oct 2026": {
+   "posts": 26,
+   "live": 22,
+   "pending": 3,
+   "declined": 1,
+   "other": 0,
+   "booking_links": 22,
+   "live_rate": 0.846,
+   "booking_link_rate": 0.846,
+   "thin_sample": false
+  },
+  "Calm the Fire Within \u2014 Dunfermline \u2014 5 Sept": {
+   "posts": 25,
+   "live": 21,
+   "pending": 3,
+   "declined": 0,
+   "other": 1,
+   "booking_links": 21,
+   "live_rate": 0.84,
+   "booking_link_rate": 0.84,
+   "thin_sample": false
+  },
+  "2 for 1 First-Timer \u2014 Perth \u2014 Sept": {
+   "posts": 13,
+   "live": 9,
+   "pending": 3,
+   "declined": 0,
+   "other": 1,
+   "booking_links": 9,
+   "live_rate": 0.692,
+   "booking_link_rate": 0.692,
+   "thin_sample": true
+  },
+  "The Origin \u2014 Dundee \u2014 17 Oct 2026": {
+   "posts": 13,
+   "live": 11,
+   "pending": 2,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 11,
+   "live_rate": 0.846,
+   "booking_link_rate": 0.846,
+   "thin_sample": true
+  },
+  "Letting Go \u2014 Stirling \u2014 5 Sept": {
+   "posts": 12,
+   "live": 8,
+   "pending": 2,
+   "declined": 0,
+   "other": 2,
+   "booking_links": 8,
+   "live_rate": 0.667,
+   "booking_link_rate": 0.667,
+   "thin_sample": true
+  },
+  "Full System Reset \u2014 Grangemouth \u2014 13 Sept": {
+   "posts": 11,
+   "live": 10,
+   "pending": 0,
+   "declined": 0,
+   "other": 1,
+   "booking_links": 10,
+   "live_rate": 0.909,
+   "booking_link_rate": 0.909,
+   "thin_sample": true
+  },
+  "The Origin \u2014 Stirling \u2014 4 Oct 2026": {
+   "posts": 8,
+   "live": 5,
+   "pending": 3,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 4,
+   "live_rate": 0.625,
+   "booking_link_rate": 0.5,
+   "thin_sample": true
+  },
+  "Full System Reset \u2014 Dundee \u2014 19 Sept 2026": {
+   "posts": 4,
+   "live": 2,
+   "pending": 2,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 2,
+   "live_rate": 0.5,
+   "booking_link_rate": 0.5,
+   "thin_sample": true
+  },
+  "Full System Reset \u2014 Perth \u2014 19 Sept 2026": {
+   "posts": 4,
+   "live": 4,
+   "pending": 0,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 4,
+   "live_rate": 1.0,
+   "booking_link_rate": 1.0,
+   "thin_sample": true
+  },
+  "Letting Go \u2014 Cupar \u2014 12 Sept": {
+   "posts": 3,
+   "live": 1,
+   "pending": 1,
+   "declined": 0,
+   "other": 1,
+   "booking_links": 1,
+   "live_rate": 0.333,
+   "booking_link_rate": 0.333,
+   "thin_sample": true
+  },
+  "The Origin \u2014 Grangemouth \u2014 4 Oct 2026": {
+   "posts": 2,
+   "live": 0,
+   "pending": 1,
+   "declined": 1,
+   "other": 0,
+   "booking_links": 0,
+   "live_rate": 0.0,
+   "booking_link_rate": 0.0,
+   "thin_sample": true
+  },
+  "Letting Go \u2014 Dundee first \u2014 15 Aug \u2014 A": {
+   "posts": 1,
+   "live": 1,
+   "pending": 0,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 0,
+   "live_rate": 1.0,
+   "booking_link_rate": 0.0,
+   "thin_sample": true
   }
+ },
+ "template_coverage": {
+  "posts_with_template": 122,
+  "posts": 520,
+  "share": 0.235
  },
  "by_session": {
   "ev-sp1ol-20260919093000": {
@@ -1004,7 +1141,7 @@
   }
  ],
  "data_sources": {
-  "template": "NOT RECORDED by tracker",
+  "template": "campaigns.posts[].templateId",
   "image": "session card image (one per session, overwritten on change) \u2014 proxy only",
   "group_type": "inferred from group name keywords (buy_sell, billboard, business, whats_on_events, wellbeing, else community)",
   "comments": "NOT RECORDED by tracker",
