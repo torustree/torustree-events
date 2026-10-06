@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-06T19:40:03.263444Z",
+ "generated": "2026-10-06T23:31:56.061635Z",
  "latest_post_at": "2026-10-05T14:43:05.359+00:00",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data. 'posts' counts group x session rows; a repost into the same group for the same session is one row.",
  "min_n_for_rates": 15,
