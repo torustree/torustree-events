@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-06T07:08:32.488766Z",
+ "updated": "2026-10-06T14:20:58.063216Z",
  "events": [
   {
    "id": "ev-scknp-20261008193000",
@@ -260,6 +260,18 @@
     "immersion"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-sz32r-20261128100000"
+  },
+  {
+   "id": "ev-seq8x-20261205140000",
+   "title": "SIGNATURE | The Sovereign Breath | MONIFIETH",
+   "start": "2026-12-05T14:00:00.000+00:00",
+   "end": "2026-12-05T16:30:00.000+00:00",
+   "venue": "MAC Monifieth Activity Centre",
+   "tags": [
+    "signature",
+    "grangemouth"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-seq8x-20261205140000"
   },
   {
    "id": "ev-segzy-20261206103000",
