@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-05T18:42:25.537660Z",
+ "updated": "2026-10-06T00:33:38.893320Z",
  "events": [
   {
    "id": "ev-scknp-20261008193000",
@@ -260,6 +260,42 @@
     "immersion"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-sz32r-20261128100000"
+  },
+  {
+   "id": "ev-segzy-20261206103000",
+   "title": "SIGNATURE | The Sovereign Breath | GRANGEMOUTH",
+   "start": "2026-12-06T10:30:00.000+00:00",
+   "end": "2026-12-06T13:00:00.000+00:00",
+   "venue": "Yoga Flow Studio",
+   "tags": [
+    "signature",
+    "grangemouth"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-segzy-20261206103000"
+  },
+  {
+   "id": "ev-sqgrm-20261212103000",
+   "title": "SIGNATURE | The Sovereign Breath | STIRLING",
+   "start": "2026-12-12T10:30:00.000+00:00",
+   "end": "2026-12-12T13:00:00.000+00:00",
+   "venue": "Logie Kirk Hall",
+   "tags": [
+    "signature",
+    "grangemouth"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-sqgrm-20261212103000"
+  },
+  {
+   "id": "ev-swper-20261212143000",
+   "title": "SIGNATURE | The Sovereign Breath | DUNFERMLINE",
+   "start": "2026-12-12T14:30:00.000+00:00",
+   "end": "2026-12-12T17:00:00.000+00:00",
+   "venue": "Trench Boxing & Fitness",
+   "tags": [
+    "signature",
+    "grangemouth"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-swper-20261212143000"
   },
   {
    "id": "ev-s6iq3-20261213130000",
