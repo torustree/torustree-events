@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-15T11:52:45.675834Z",
- "latest_post_at": "2026-10-15T09:03:35.693Z",
+ "generated": "2026-10-15T16:13:28.810782Z",
+ "latest_post_at": "2026-10-15T15:13:40.765+00:00",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data. 'posts' counts group x session rows; a repost into the same group for the same session is one row.",
  "min_n_for_rates": 15,
  "groups": {
@@ -19,24 +19,24 @@
  },
  "all_time": {
   "posts": 563,
-  "live": 416,
-  "pending": 82,
+  "live": 417,
+  "pending": 81,
   "declined": 56,
   "other": 9,
-  "booking_links": 368,
-  "live_rate": 0.739,
-  "booking_link_rate": 0.654,
+  "booking_links": 369,
+  "live_rate": 0.741,
+  "booking_link_rate": 0.655,
   "thin_sample": false
  },
  "last_30_days": {
-  "posts": 323,
-  "live": 227,
-  "pending": 43,
-  "declined": 52,
+  "posts": 280,
+  "live": 211,
+  "pending": 31,
+  "declined": 37,
   "other": 1,
-  "booking_links": 216,
-  "live_rate": 0.703,
-  "booking_link_rate": 0.669,
+  "booking_links": 200,
+  "live_rate": 0.754,
+  "booking_link_rate": 0.714,
   "thin_sample": false
  },
  "by_location": {
@@ -97,13 +97,13 @@
   },
   "Forfar": {
    "posts": 28,
-   "live": 17,
-   "pending": 6,
+   "live": 18,
+   "pending": 5,
    "declined": 5,
    "other": 0,
-   "booking_links": 17,
-   "live_rate": 0.607,
-   "booking_link_rate": 0.607,
+   "booking_links": 18,
+   "live_rate": 0.643,
+   "booking_link_rate": 0.643,
    "thin_sample": false
   },
   "Falkirk": {
@@ -451,13 +451,13 @@
  "by_profile": {
   "Mark Scott": {
    "posts": 423,
-   "live": 311,
-   "pending": 63,
+   "live": 312,
+   "pending": 62,
    "declined": 43,
    "other": 6,
-   "booking_links": 278,
-   "live_rate": 0.735,
-   "booking_link_rate": 0.657,
+   "booking_links": 279,
+   "live_rate": 0.738,
+   "booking_link_rate": 0.66,
    "thin_sample": false
   },
   "Torus Tree": {
@@ -475,13 +475,13 @@
  "by_template": {
   "(not recorded)": {
    "posts": 455,
-   "live": 335,
-   "pending": 67,
+   "live": 336,
+   "pending": 66,
    "declined": 50,
    "other": 3,
-   "booking_links": 288,
-   "live_rate": 0.736,
-   "booking_link_rate": 0.633,
+   "booking_links": 289,
+   "live_rate": 0.738,
+   "booking_link_rate": 0.635,
    "thin_sample": false
   },
   "Calm the Fire Within \u2014 Dunfermline \u2014 5 Sept": {
@@ -779,13 +779,13 @@
   },
   "ev-sv9ge-20261113183000": {
    "posts": 25,
-   "live": 21,
-   "pending": 4,
+   "live": 22,
+   "pending": 3,
    "declined": 0,
    "other": 0,
-   "booking_links": 21,
-   "live_rate": 0.84,
-   "booking_link_rate": 0.84,
+   "booking_links": 22,
+   "live_rate": 0.88,
+   "booking_link_rate": 0.88,
    "thin_sample": false
   },
   "ev-spsfw-20260912103000": {
@@ -884,13 +884,13 @@
   "origin-facilitator-portrait.jpg": {
    "orientation": "unknown",
    "posts": 39,
-   "live": 31,
-   "pending": 4,
+   "live": 32,
+   "pending": 3,
    "declined": 3,
    "other": 1,
-   "booking_links": 31,
-   "live_rate": 0.795,
-   "booking_link_rate": 0.795,
+   "booking_links": 32,
+   "live_rate": 0.821,
+   "booking_link_rate": 0.821,
    "thin_sample": false
   },
   "session:ev-sikve-20260905103000": {
@@ -1089,26 +1089,26 @@
  "by_orientation": {
   "unknown": {
    "posts": 563,
-   "live": 416,
-   "pending": 82,
+   "live": 417,
+   "pending": 81,
    "declined": 56,
    "other": 9,
-   "booking_links": 368,
-   "live_rate": 0.739,
-   "booking_link_rate": 0.654,
+   "booking_links": 369,
+   "live_rate": 0.741,
+   "booking_link_rate": 0.655,
    "thin_sample": false
   }
  },
  "by_group_type": {
   "community": {
    "posts": 217,
-   "live": 133,
-   "pending": 38,
+   "live": 134,
+   "pending": 37,
    "declined": 38,
    "other": 8,
-   "booking_links": 119,
-   "live_rate": 0.613,
-   "booking_link_rate": 0.548,
+   "booking_links": 120,
+   "live_rate": 0.618,
+   "booking_link_rate": 0.553,
    "thin_sample": false
   },
   "billboard": {
@@ -1267,13 +1267,13 @@
   {
    "week_starting": "2026-10-12",
    "posts": 48,
-   "live": 41,
-   "pending": 5,
+   "live": 42,
+   "pending": 4,
    "declined": 2,
    "other": 0,
-   "booking_links": 40,
-   "live_rate": 0.854,
-   "booking_link_rate": 0.833,
+   "booking_links": 41,
+   "live_rate": 0.875,
+   "booking_link_rate": 0.854,
    "thin_sample": false
   }
  ],
