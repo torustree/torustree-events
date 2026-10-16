@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T11:43:39.373386Z",
+ "updated": "2026-10-16T15:59:44.391607Z",
  "events": [
   {
    "id": "ev-s3j6l-20261017093000",
@@ -81,18 +81,6 @@
    "url": "https://bookwhen.com/torustree/e/ev-syugo-20261024100000"
   },
   {
-   "id": "ev-s3e3a-20261112193000",
-   "title": "REGULATE | Reset, Reconnect & Restore | PERTH",
-   "start": "2026-11-12T19:30:00.000+00:00",
-   "end": "2026-11-12T21:00:00.000+00:00",
-   "venue": "Perth Yoga Studio - Old Academy Building",
-   "tags": [
-    "perth",
-    "regulate"
-   ],
-   "url": "https://bookwhen.com/torustree/e/ev-s3e3a-20261112193000"
-  },
-  {
    "id": "ev-sv9ge-20261113183000",
    "title": "SIGNATURE | You Are Enough | FORFAR",
    "start": "2026-11-13T18:30:00.000+00:00",
@@ -129,19 +117,19 @@
    "url": "https://bookwhen.com/torustree/e/ev-sei1r-20261114150000"
   },
   {
-   "id": "ev-s7zk6-20261119193000",
-   "title": "INTRO | 9D Breathwork - Letting Go | PERTH 2 for 1",
+   "id": "ev-stknf-20261119193000",
+   "title": "INTRO | Reset, Reconnect & Restore | PERTH 2 for 1",
    "start": "2026-11-19T19:30:00.000+00:00",
    "end": "2026-11-19T21:00:00.000+00:00",
    "venue": "Perth Yoga Studio - Old Academy Building",
    "tags": [
-    "Intro Sessions",
-    "thur_perth",
     "Intro",
     "intros",
+    "Intro Sessions",
+    "thur_perth",
     "perth"
    ],
-   "url": "https://bookwhen.com/torustree/e/ev-s7zk6-20261119193000"
+   "url": "https://bookwhen.com/torustree/e/ev-stknf-20261119193000"
   },
   {
    "id": "ev-s5wet-20261121103000",
@@ -180,16 +168,19 @@
    "url": "https://bookwhen.com/torustree/e/ev-s2hif-20261122103000"
   },
   {
-   "id": "ev-sueru-20261126193000",
-   "title": "REGULATE | Reset, Reconnect & Restore | PERTH",
+   "id": "ev-ss4de-20261126193000",
+   "title": "INTRO | 9D Breathwork - Letting Go | PERTH 2 for 1",
    "start": "2026-11-26T19:30:00.000+00:00",
    "end": "2026-11-26T21:00:00.000+00:00",
    "venue": "Perth Yoga Studio - Old Academy Building",
    "tags": [
-    "perth",
-    "regulate"
+    "Intro Sessions",
+    "thur_perth",
+    "Intro",
+    "intros",
+    "perth"
    ],
-   "url": "https://bookwhen.com/torustree/e/ev-sueru-20261126193000"
+   "url": "https://bookwhen.com/torustree/e/ev-ss4de-20261126193000"
   },
   {
    "id": "ev-sz32r-20261128100000",
