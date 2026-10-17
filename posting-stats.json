@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-17T09:33:58.088974Z",
- "latest_post_at": "2026-10-17T09:17:10.587812+00:00",
+ "generated": "2026-10-17T13:25:54.280174Z",
+ "latest_post_at": "2026-10-17T12:31:11.0651+00:00",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data. 'posts' counts group x session rows; a repost into the same group for the same session is one row.",
  "min_n_for_rates": 15,
  "groups": {
@@ -18,25 +18,25 @@
   }
  },
  "all_time": {
-  "posts": 604,
-  "live": 459,
+  "posts": 608,
+  "live": 463,
   "pending": 79,
   "declined": 56,
   "other": 10,
-  "booking_links": 411,
-  "live_rate": 0.76,
-  "booking_link_rate": 0.68,
+  "booking_links": 415,
+  "live_rate": 0.762,
+  "booking_link_rate": 0.683,
   "thin_sample": false
  },
  "last_30_days": {
-  "posts": 288,
-  "live": 227,
-  "pending": 27,
+  "posts": 290,
+  "live": 230,
+  "pending": 26,
   "declined": 32,
   "other": 2,
-  "booking_links": 216,
-  "live_rate": 0.788,
-  "booking_link_rate": 0.75,
+  "booking_links": 219,
+  "live_rate": 0.793,
+  "booking_link_rate": 0.755,
   "thin_sample": false
  },
  "by_location": {
@@ -74,14 +74,14 @@
    "thin_sample": false
   },
   "Stirling": {
-   "posts": 86,
-   "live": 77,
+   "posts": 88,
+   "live": 79,
    "pending": 2,
    "declined": 4,
    "other": 3,
-   "booking_links": 77,
-   "live_rate": 0.895,
-   "booking_link_rate": 0.895,
+   "booking_links": 79,
+   "live_rate": 0.898,
+   "booking_link_rate": 0.898,
    "thin_sample": false
   },
   "Central Scotland": {
@@ -96,14 +96,14 @@
    "thin_sample": false
   },
   "Falkirk": {
-   "posts": 32,
-   "live": 24,
+   "posts": 34,
+   "live": 26,
    "pending": 4,
    "declined": 2,
    "other": 2,
-   "booking_links": 24,
-   "live_rate": 0.75,
-   "booking_link_rate": 0.75,
+   "booking_links": 26,
+   "live_rate": 0.765,
+   "booking_link_rate": 0.765,
    "thin_sample": false
   },
   "Forfar": {
@@ -450,14 +450,14 @@
  },
  "by_profile": {
   "Mark Scott": {
-   "posts": 462,
-   "live": 352,
+   "posts": 466,
+   "live": 356,
    "pending": 60,
    "declined": 43,
    "other": 7,
-   "booking_links": 319,
-   "live_rate": 0.762,
-   "booking_link_rate": 0.69,
+   "booking_links": 323,
+   "live_rate": 0.764,
+   "booking_link_rate": 0.693,
    "thin_sample": false
   },
   "Torus Tree": {
@@ -474,14 +474,14 @@
  },
  "by_template": {
   "(not recorded)": {
-   "posts": 496,
-   "live": 378,
+   "posts": 500,
+   "live": 382,
    "pending": 64,
    "declined": 50,
    "other": 4,
-   "booking_links": 331,
-   "live_rate": 0.762,
-   "booking_link_rate": 0.667,
+   "booking_links": 335,
+   "live_rate": 0.764,
+   "booking_link_rate": 0.67,
    "thin_sample": false
   },
   "Calm the Fire Within \u2014 Dunfermline \u2014 5 Sept": {
@@ -641,8 +641,8 @@
  },
  "template_coverage": {
   "posts_with_template": 108,
-  "posts": 604,
-  "share": 0.179
+  "posts": 608,
+  "share": 0.178
  },
  "by_session": {
   "ev-sp1ol-20260919093000": {
@@ -799,6 +799,28 @@
    "booking_link_rate": 0.957,
    "thin_sample": false
   },
+  "ev-s5wet-20261121103000": {
+   "posts": 22,
+   "live": 22,
+   "pending": 0,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 22,
+   "live_rate": 1.0,
+   "booking_link_rate": 1.0,
+   "thin_sample": false
+  },
+  "ev-sav74-20261114103000": {
+   "posts": 22,
+   "live": 22,
+   "pending": 0,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 22,
+   "live_rate": 1.0,
+   "booking_link_rate": 1.0,
+   "thin_sample": false
+  },
   "ev-siimt-20261011150000": {
    "posts": 21,
    "live": 19,
@@ -808,28 +830,6 @@
    "booking_links": 17,
    "live_rate": 0.905,
    "booking_link_rate": 0.81,
-   "thin_sample": false
-  },
-  "ev-s5wet-20261121103000": {
-   "posts": 20,
-   "live": 20,
-   "pending": 0,
-   "declined": 0,
-   "other": 0,
-   "booking_links": 20,
-   "live_rate": 1.0,
-   "booking_link_rate": 1.0,
-   "thin_sample": false
-  },
-  "ev-sav74-20261114103000": {
-   "posts": 20,
-   "live": 20,
-   "pending": 0,
-   "declined": 0,
-   "other": 0,
-   "booking_links": 20,
-   "live_rate": 1.0,
-   "booking_link_rate": 1.0,
    "thin_sample": false
   },
   "ev-s5n86-20260913103000": {
@@ -905,12 +905,12 @@
   },
   "stirling-grangemouth-9d.jpg": {
    "orientation": "unknown",
-   "posts": 40,
-   "live": 40,
+   "posts": 44,
+   "live": 44,
    "pending": 0,
    "declined": 0,
    "other": 0,
-   "booking_links": 40,
+   "booking_links": 44,
    "live_rate": 1.0,
    "booking_link_rate": 1.0,
    "thin_sample": false
@@ -1134,14 +1134,14 @@
  },
  "by_orientation": {
   "unknown": {
-   "posts": 604,
-   "live": 459,
+   "posts": 608,
+   "live": 463,
    "pending": 79,
    "declined": 56,
    "other": 10,
-   "booking_links": 411,
-   "live_rate": 0.76,
-   "booking_link_rate": 0.68,
+   "booking_links": 415,
+   "live_rate": 0.762,
+   "booking_link_rate": 0.683,
    "thin_sample": false
   }
  },
@@ -1169,14 +1169,14 @@
    "thin_sample": false
   },
   "business": {
-   "posts": 88,
-   "live": 75,
+   "posts": 90,
+   "live": 77,
    "pending": 10,
    "declined": 3,
    "other": 0,
-   "booking_links": 69,
-   "live_rate": 0.852,
-   "booking_link_rate": 0.784,
+   "booking_links": 71,
+   "live_rate": 0.856,
+   "booking_link_rate": 0.789,
    "thin_sample": false
   },
   "whats_on_events": {
@@ -1191,14 +1191,14 @@
    "thin_sample": false
   },
   "buy_sell": {
-   "posts": 44,
-   "live": 38,
+   "posts": 46,
+   "live": 40,
    "pending": 4,
    "declined": 2,
    "other": 0,
-   "booking_links": 34,
-   "live_rate": 0.864,
-   "booking_link_rate": 0.773,
+   "booking_links": 36,
+   "live_rate": 0.87,
+   "booking_link_rate": 0.783,
    "thin_sample": false
   },
   "wellbeing": {
@@ -1312,14 +1312,14 @@
   },
   {
    "week_starting": "2026-10-12",
-   "posts": 89,
-   "live": 84,
+   "posts": 93,
+   "live": 88,
    "pending": 2,
    "declined": 2,
    "other": 1,
-   "booking_links": 83,
-   "live_rate": 0.944,
-   "booking_link_rate": 0.933,
+   "booking_links": 87,
+   "live_rate": 0.946,
+   "booking_link_rate": 0.935,
    "thin_sample": false
   }
  ],
