@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T06:18:40.440085Z",
+ "generated": "2026-10-18T11:31:46.539804Z",
  "latest_post_at": "2026-10-17T16:50:10.700687+00:00",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data. 'posts' counts group x session rows; a repost into the same group for the same session is one row.",
  "min_n_for_rates": 15,
@@ -29,14 +29,14 @@
   "thin_sample": false
  },
  "last_30_days": {
-  "posts": 298,
+  "posts": 297,
   "live": 238,
-  "pending": 26,
+  "pending": 25,
   "declined": 32,
   "other": 2,
   "booking_links": 227,
-  "live_rate": 0.799,
-  "booking_link_rate": 0.762,
+  "live_rate": 0.801,
+  "booking_link_rate": 0.764,
   "thin_sample": false
  },
  "by_location": {
