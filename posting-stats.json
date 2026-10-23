@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T18:35:18.214155Z",
+ "generated": "2026-10-23T21:49:09.110374Z",
  "latest_post_at": "2026-10-17T16:50:10.700687+00:00",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data. 'posts' counts group x session rows; a repost into the same group for the same session is one row.",
  "min_n_for_rates": 15,
@@ -53,13 +53,13 @@
   },
   "Dundee": {
    "posts": 117,
-   "live": 88,
-   "pending": 20,
+   "live": 89,
+   "pending": 19,
    "declined": 8,
    "other": 1,
-   "booking_links": 67,
-   "live_rate": 0.752,
-   "booking_link_rate": 0.573,
+   "booking_links": 68,
+   "live_rate": 0.761,
+   "booking_link_rate": 0.581,
    "thin_sample": false
   },
   "Fife": {
@@ -108,13 +108,13 @@
   },
   "Forfar": {
    "posts": 28,
-   "live": 18,
-   "pending": 5,
+   "live": 17,
+   "pending": 6,
    "declined": 5,
    "other": 0,
-   "booking_links": 18,
-   "live_rate": 0.643,
-   "booking_link_rate": 0.643,
+   "booking_links": 17,
+   "live_rate": 0.607,
+   "booking_link_rate": 0.607,
    "thin_sample": false
   },
   "Pitlochry": {
