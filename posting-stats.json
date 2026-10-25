@@ -1,19 +1,19 @@
 {
- "generated": "2026-10-25T17:22:41.618689Z",
+ "generated": "2026-10-25T19:50:34.105890Z",
  "latest_post_at": "2026-10-17T16:50:10.700687+00:00",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data. 'posts' counts group x session rows; a repost into the same group for the same session is one row.",
  "min_n_for_rates": 15,
  "groups": {
-  "total": 278,
-  "active": 219,
+  "total": 296,
+  "active": 234,
   "archived": 2,
-  "blocked": 58,
+  "blocked": 61,
   "by_type": {
    "billboard": 61,
-   "community": 114,
-   "whats_on_events": 29,
+   "community": 128,
+   "whats_on_events": 30,
    "business": 40,
-   "buy_sell": 24,
+   "buy_sell": 27,
    "wellbeing": 10
   }
  },
@@ -29,14 +29,14 @@
   "thin_sample": false
  },
  "last_30_days": {
-  "posts": 290,
-  "live": 236,
+  "posts": 288,
+  "live": 235,
   "pending": 23,
-  "declined": 29,
+  "declined": 28,
   "other": 2,
-  "booking_links": 225,
-  "live_rate": 0.814,
-  "booking_link_rate": 0.776,
+  "booking_links": 224,
+  "live_rate": 0.816,
+  "booking_link_rate": 0.778,
   "thin_sample": false
  },
  "by_location": {
