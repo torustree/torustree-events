@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T14:46:31.125686Z",
+ "updated": "2026-10-27T19:47:35.576784Z",
  "events": [
   {
    "id": "ev-sv9ge-20261113183000",
@@ -33,7 +33,8 @@
    "venue": "Trench Boxing & Fitness",
    "tags": [
     "signature",
-    "dunfermline"
+    "dunfermline",
+    "fife"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-sei1r-20261114150000"
   },
@@ -96,7 +97,8 @@
    "venue": "Corn Exchange",
    "tags": [
     "signature",
-    "cupar"
+    "cupar",
+    "fife"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-s2hif-20261122103000"
   },
@@ -173,7 +175,8 @@
    "venue": "Trench Boxing & Fitness",
    "tags": [
     "signature",
-    "grangemouth"
+    "dunfermline",
+    "fife"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-swper-20261212143000"
   },
