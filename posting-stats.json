@@ -1,13 +1,13 @@
 {
- "generated": "2026-10-27T02:16:01.818913Z",
- "latest_post_at": "2026-10-26T20:13:09.763+00:00",
+ "generated": "2026-10-27T08:09:56.379383Z",
+ "latest_post_at": "2026-10-27T07:58:57.626+00:00",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data. 'posts' counts group x session rows; a repost into the same group for the same session is one row.",
  "min_n_for_rates": 15,
  "groups": {
   "total": 296,
-  "active": 229,
+  "active": 228,
   "archived": 2,
-  "blocked": 66,
+  "blocked": 67,
   "by_type": {
    "billboard": 61,
    "community": 128,
@@ -29,14 +29,14 @@
   "thin_sample": false
  },
  "last_30_days": {
-  "posts": 233,
-  "live": 200,
+  "posts": 231,
+  "live": 198,
   "pending": 17,
   "declined": 14,
   "other": 2,
-  "booking_links": 188,
-  "live_rate": 0.858,
-  "booking_link_rate": 0.807,
+  "booking_links": 186,
+  "live_rate": 0.857,
+  "booking_link_rate": 0.805,
   "thin_sample": false
  },
  "by_location": {
@@ -982,12 +982,12 @@
   },
   "stirling-grangemouth-9d.jpg": {
    "orientation": "unknown",
-   "posts": 41,
-   "live": 41,
+   "posts": 40,
+   "live": 40,
    "pending": 0,
    "declined": 0,
    "other": 0,
-   "booking_links": 41,
+   "booking_links": 40,
    "live_rate": 1.0,
    "booking_link_rate": 1.0,
    "thin_sample": false
@@ -1136,6 +1136,18 @@
    "booking_link_rate": 0.889,
    "thin_sample": false
   },
+  "session:ev-s5wet-20261121103000": {
+   "orientation": "unknown",
+   "posts": 18,
+   "live": 16,
+   "pending": 2,
+   "declined": 0,
+   "other": 0,
+   "booking_links": 16,
+   "live_rate": 0.889,
+   "booking_link_rate": 0.889,
+   "thin_sample": false
+  },
   "session:ev-s5ocs-20261011103000": {
    "orientation": "unknown",
    "posts": 17,
@@ -1146,18 +1158,6 @@
    "booking_links": 13,
    "live_rate": 0.824,
    "booking_link_rate": 0.765,
-   "thin_sample": false
-  },
-  "session:ev-s5wet-20261121103000": {
-   "orientation": "unknown",
-   "posts": 17,
-   "live": 15,
-   "pending": 2,
-   "declined": 0,
-   "other": 0,
-   "booking_links": 15,
-   "live_rate": 0.882,
-   "booking_link_rate": 0.882,
    "thin_sample": false
   },
   "session:ev-s3j6l-20261017093000": {
@@ -1437,26 +1437,26 @@
   },
   {
    "week_starting": "2026-10-12",
-   "posts": 90,
-   "live": 84,
+   "posts": 89,
+   "live": 83,
    "pending": 3,
    "declined": 2,
    "other": 1,
-   "booking_links": 83,
+   "booking_links": 82,
    "live_rate": 0.933,
-   "booking_link_rate": 0.922,
+   "booking_link_rate": 0.921,
    "thin_sample": false
   },
   {
    "week_starting": "2026-10-26",
-   "posts": 24,
-   "live": 22,
+   "posts": 25,
+   "live": 23,
    "pending": 2,
    "declined": 0,
    "other": 0,
-   "booking_links": 22,
-   "live_rate": 0.917,
-   "booking_link_rate": 0.917,
+   "booking_links": 23,
+   "live_rate": 0.92,
+   "booking_link_rate": 0.92,
    "thin_sample": false
   }
  ],
