@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T09:32:46.124323Z",
+ "updated": "2026-10-30T16:30:21.837393Z",
  "events": [
   {
    "id": "ev-sv9ge-20261113183000",
@@ -52,7 +52,7 @@
   },
   {
    "id": "ev-stknf-20261119193000",
-   "title": "INTRO | Reset, Reconnect & Restore | PERTH 2 for 1",
+   "title": "INTRO | Stuck in a rut | PERTH 2 for 1",
    "start": "2026-11-19T19:30:00.000+00:00",
    "end": "2026-11-19T21:00:00.000+00:00",
    "venue": "Perth Yoga Studio - Old Academy Building",
@@ -61,7 +61,8 @@
     "intros",
     "Intro Sessions",
     "thur_perth",
-    "perth"
+    "perth",
+    "tayside"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-stknf-20261119193000"
   },
@@ -139,7 +140,8 @@
    "venue": "MAC Monifieth Activity Centre",
    "tags": [
     "signature",
-    "grangemouth"
+    "dundee",
+    "tayside"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-seq8x-20261205140000"
   },
@@ -154,6 +156,22 @@
     "grangemouth"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-segzy-20261206103000"
+  },
+  {
+   "id": "ev-sdpie-20261210193000",
+   "title": "INTRO | Stuck in a rut | PERTH 2 for 1",
+   "start": "2026-12-10T19:30:00.000+00:00",
+   "end": "2026-12-10T21:00:00.000+00:00",
+   "venue": "Perth Yoga Studio - Old Academy Building",
+   "tags": [
+    "Intro",
+    "intros",
+    "Intro Sessions",
+    "thur_perth",
+    "perth",
+    "tayside"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-sdpie-20261210193000"
   },
   {
    "id": "ev-sqgrm-20261212103000",
