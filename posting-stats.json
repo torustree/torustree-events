@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-07T16:57:22.344337Z",
- "latest_post_at": "2026-11-07T16:18:51.966+00:00",
+ "generated": "2026-11-07T20:41:39.246865Z",
+ "latest_post_at": "2026-11-07T18:19:18.367+00:00",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data. 'posts' counts group x session rows; a repost into the same group for the same session is one row.",
  "min_n_for_rates": 15,
  "groups": {
@@ -18,25 +18,25 @@
   }
  },
  "all_time": {
-  "posts": 723,
-  "live": 563,
+  "posts": 724,
+  "live": 564,
   "pending": 88,
   "declined": 62,
   "other": 10,
   "booking_links": 502,
   "live_rate": 0.779,
-  "booking_link_rate": 0.694,
+  "booking_link_rate": 0.693,
   "thin_sample": false
  },
  "last_30_days": {
-  "posts": 232,
-  "live": 207,
+  "posts": 233,
+  "live": 208,
   "pending": 12,
   "declined": 11,
   "other": 2,
   "booking_links": 193,
-  "live_rate": 0.892,
-  "booking_link_rate": 0.832,
+  "live_rate": 0.893,
+  "booking_link_rate": 0.828,
   "thin_sample": false
  },
  "by_location": {
@@ -52,14 +52,14 @@
    "thin_sample": false
   },
   "Dundee": {
-   "posts": 130,
-   "live": 101,
+   "posts": 131,
+   "live": 102,
    "pending": 19,
    "declined": 9,
    "other": 1,
    "booking_links": 74,
-   "live_rate": 0.777,
-   "booking_link_rate": 0.569,
+   "live_rate": 0.779,
+   "booking_link_rate": 0.565,
    "thin_sample": false
   },
   "Fife": {
@@ -538,27 +538,27 @@
    "thin_sample": false
   },
   "Torus Tree": {
-   "posts": 166,
-   "live": 126,
+   "posts": 167,
+   "live": 127,
    "pending": 22,
    "declined": 15,
    "other": 3,
    "booking_links": 109,
-   "live_rate": 0.759,
-   "booking_link_rate": 0.657,
+   "live_rate": 0.76,
+   "booking_link_rate": 0.653,
    "thin_sample": false
   }
  },
  "by_template": {
   "(not recorded)": {
-   "posts": 615,
-   "live": 482,
+   "posts": 616,
+   "live": 483,
    "pending": 73,
    "declined": 56,
    "other": 4,
    "booking_links": 422,
    "live_rate": 0.784,
-   "booking_link_rate": 0.686,
+   "booking_link_rate": 0.685,
    "thin_sample": false
   },
   "Calm the Fire Within \u2014 Dunfermline \u2014 5 Sept": {
@@ -718,19 +718,19 @@
  },
  "template_coverage": {
   "posts_with_template": 108,
-  "posts": 723,
+  "posts": 724,
   "share": 0.149
  },
  "by_session": {
   "ev-s5wet-20261121103000": {
-   "posts": 70,
-   "live": 65,
+   "posts": 71,
+   "live": 66,
    "pending": 2,
    "declined": 3,
    "other": 0,
    "booking_links": 50,
-   "live_rate": 0.929,
-   "booking_link_rate": 0.714,
+   "live_rate": 0.93,
+   "booking_link_rate": 0.704,
    "thin_sample": false
   },
   "ev-sp1ol-20260919093000": {
@@ -990,14 +990,14 @@
  "by_image": {
   "session:ev-s5wet-20261121103000": {
    "orientation": "unknown",
-   "posts": 70,
-   "live": 65,
+   "posts": 71,
+   "live": 66,
    "pending": 2,
    "declined": 3,
    "other": 0,
    "booking_links": 50,
-   "live_rate": 0.929,
-   "booking_link_rate": 0.714,
+   "live_rate": 0.93,
+   "booking_link_rate": 0.704,
    "thin_sample": false
   },
   "session:ev-sp1ol-20260919093000": {
@@ -1327,27 +1327,27 @@
  },
  "by_orientation": {
   "unknown": {
-   "posts": 723,
-   "live": 563,
+   "posts": 724,
+   "live": 564,
    "pending": 88,
    "declined": 62,
    "other": 10,
    "booking_links": 502,
    "live_rate": 0.779,
-   "booking_link_rate": 0.694,
+   "booking_link_rate": 0.693,
    "thin_sample": false
   }
  },
  "by_group_type": {
   "community": {
-   "posts": 286,
-   "live": 194,
+   "posts": 287,
+   "live": 195,
    "pending": 39,
    "declined": 44,
    "other": 9,
    "booking_links": 175,
-   "live_rate": 0.678,
-   "booking_link_rate": 0.612,
+   "live_rate": 0.679,
+   "booking_link_rate": 0.61,
    "thin_sample": false
   },
   "billboard": {
@@ -1529,26 +1529,26 @@
   },
   {
    "week_starting": "2026-10-26",
-   "posts": 98,
-   "live": 84,
+   "posts": 97,
+   "live": 83,
    "pending": 8,
    "declined": 6,
    "other": 0,
-   "booking_links": 81,
-   "live_rate": 0.857,
-   "booking_link_rate": 0.827,
+   "booking_links": 80,
+   "live_rate": 0.856,
+   "booking_link_rate": 0.825,
    "thin_sample": false
   },
   {
    "week_starting": "2026-11-02",
-   "posts": 44,
-   "live": 43,
+   "posts": 46,
+   "live": 45,
    "pending": 1,
    "declined": 0,
    "other": 0,
-   "booking_links": 33,
-   "live_rate": 0.977,
-   "booking_link_rate": 0.75,
+   "booking_links": 34,
+   "live_rate": 0.978,
+   "booking_link_rate": 0.739,
    "thin_sample": false
   }
  ],
