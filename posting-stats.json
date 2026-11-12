@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-12T17:40:58.599880Z",
- "latest_post_at": "2026-11-12T17:06:05.193+00:00",
+ "generated": "2026-11-12T23:09:31.799299Z",
+ "latest_post_at": "2026-11-12T19:31:36.625+00:00",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data. 'posts' counts group x session rows; a repost into the same group for the same session is one row.",
  "min_n_for_rates": 15,
  "groups": {
@@ -1117,18 +1117,6 @@
    "booking_link_rate": 0.034,
    "thin_sample": false
   },
-  "origin-facilitator-portrait.jpg": {
-   "orientation": "unknown",
-   "posts": 27,
-   "live": 22,
-   "pending": 1,
-   "declined": 3,
-   "other": 1,
-   "booking_links": 22,
-   "live_rate": 0.815,
-   "booking_link_rate": 0.815,
-   "thin_sample": false
-  },
   "session:ev-swxhw-20260905150000": {
    "orientation": "unknown",
    "posts": 27,
@@ -1139,6 +1127,18 @@
    "booking_links": 22,
    "live_rate": 0.815,
    "booking_link_rate": 0.815,
+   "thin_sample": false
+  },
+  "origin-facilitator-portrait.jpg": {
+   "orientation": "unknown",
+   "posts": 26,
+   "live": 21,
+   "pending": 1,
+   "declined": 3,
+   "other": 1,
+   "booking_links": 21,
+   "live_rate": 0.808,
+   "booking_link_rate": 0.808,
    "thin_sample": false
   },
   "session:ev-so0ui-20260815143000": {
@@ -1263,14 +1263,14 @@
   },
   "session:ev-sv9ge-20261113183000": {
    "orientation": "unknown",
-   "posts": 16,
-   "live": 14,
+   "posts": 17,
+   "live": 15,
    "pending": 1,
    "declined": 1,
    "other": 0,
-   "booking_links": 15,
-   "live_rate": 0.875,
-   "booking_link_rate": 0.938,
+   "booking_links": 16,
+   "live_rate": 0.882,
+   "booking_link_rate": 0.941,
    "thin_sample": false
   },
   "session:ev-s2hif-20261122103000": {
@@ -1574,14 +1574,14 @@
   },
   {
    "week_starting": "2026-10-12",
-   "posts": 58,
-   "live": 54,
+   "posts": 57,
+   "live": 53,
    "pending": 1,
    "declined": 2,
    "other": 1,
-   "booking_links": 53,
-   "live_rate": 0.931,
-   "booking_link_rate": 0.914,
+   "booking_links": 52,
+   "live_rate": 0.93,
+   "booking_link_rate": 0.912,
    "thin_sample": false
   },
   {
@@ -1598,14 +1598,14 @@
   },
   {
    "week_starting": "2026-10-26",
-   "posts": 69,
-   "live": 56,
+   "posts": 68,
+   "live": 55,
    "pending": 8,
    "declined": 5,
    "other": 0,
-   "booking_links": 55,
-   "live_rate": 0.812,
-   "booking_link_rate": 0.797,
+   "booking_links": 54,
+   "live_rate": 0.809,
+   "booking_link_rate": 0.794,
    "thin_sample": false
   },
   {
@@ -1622,14 +1622,14 @@
   },
   {
    "week_starting": "2026-11-09",
-   "posts": 70,
-   "live": 62,
+   "posts": 72,
+   "live": 64,
    "pending": 4,
    "declined": 3,
    "other": 1,
-   "booking_links": 45,
-   "live_rate": 0.886,
-   "booking_link_rate": 0.643,
+   "booking_links": 47,
+   "live_rate": 0.889,
+   "booking_link_rate": 0.653,
    "thin_sample": false
   }
  ],
