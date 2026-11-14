@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T06:50:57.460917Z",
+ "updated": "2026-11-14T13:55:16.698555Z",
  "events": [
   {
    "id": "ev-sav74-20261114103000",
@@ -160,6 +160,19 @@
     "tayside"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-sdpie-20261210193000"
+  },
+  {
+   "id": "ev-s2vw6-20261211183000",
+   "title": "SIGNATURE | Take Back Your Power | FORFAR",
+   "start": "2026-12-11T18:30:00.000+00:00",
+   "end": "2026-12-11T21:00:00.000+00:00",
+   "venue": "East & Old Parish Church",
+   "tags": [
+    "signature",
+    "tayside",
+    "FORFAR"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-s2vw6-20261211183000"
   },
   {
    "id": "ev-sqgrm-20261212103000",
