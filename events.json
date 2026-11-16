@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T08:16:29.884160Z",
+ "updated": "2026-11-16T18:45:17.928567Z",
  "events": [
   {
    "id": "ev-stknf-20261119193000",
@@ -199,6 +199,32 @@
     "perth"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-s3wz5-20270112183000"
+  },
+  {
+   "id": "ev-smzg1-20270301183000",
+   "title": "COURSE | The Power Path: Rise into Freedom | DUNKELD",
+   "start": "2027-03-01T18:30:00.000+00:00",
+   "end": "2027-03-01T21:00:00.000+00:00",
+   "venue": "Torus Tree Ltd",
+   "tags": [
+    "course",
+    "dunkeld",
+    "perth"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-smzg1-20270301183000"
+  },
+  {
+   "id": "ev-s56zh-20270302183000",
+   "title": "COURSE | The Reset Path: Return to Self | DUNKELD",
+   "start": "2027-03-02T18:30:00.000+00:00",
+   "end": "2027-03-02T21:00:00.000+00:00",
+   "venue": "Torus Tree Ltd",
+   "tags": [
+    "course",
+    "dunkeld",
+    "perth"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-s56zh-20270302183000"
   }
  ]
 }
