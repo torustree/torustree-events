@@ -1,13 +1,13 @@
 {
- "generated": "2026-11-16T18:45:21.004154Z",
- "latest_post_at": "2026-11-16T18:36:15.227+00:00",
+ "generated": "2026-11-17T02:16:35.525908Z",
+ "latest_post_at": "2026-11-16T19:23:17.075+00:00",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data. 'posts' counts group x session rows; a repost into the same group for the same session is one row.",
  "min_n_for_rates": 15,
  "groups": {
   "total": 334,
-  "active": 244,
+  "active": 243,
   "archived": 1,
-  "blocked": 90,
+  "blocked": 91,
   "by_type": {
    "community": 145,
    "whats_on_events": 36,
@@ -18,25 +18,25 @@
   }
  },
  "all_time": {
-  "posts": 814,
-  "live": 641,
+  "posts": 815,
+  "live": 642,
   "pending": 95,
   "declined": 67,
   "other": 11,
-  "booking_links": 563,
-  "live_rate": 0.787,
+  "booking_links": 564,
+  "live_rate": 0.788,
   "booking_link_rate": 0.692,
   "thin_sample": false
  },
  "last_30_days": {
-  "posts": 243,
-  "live": 213,
+  "posts": 244,
+  "live": 214,
   "pending": 17,
   "declined": 11,
   "other": 2,
-  "booking_links": 183,
+  "booking_links": 184,
   "live_rate": 0.877,
-  "booking_link_rate": 0.753,
+  "booking_link_rate": 0.754,
   "thin_sample": false
  },
  "by_location": {
@@ -85,14 +85,14 @@
    "thin_sample": false
   },
   "Falkirk": {
-   "posts": 49,
-   "live": 40,
+   "posts": 50,
+   "live": 41,
    "pending": 4,
    "declined": 3,
    "other": 2,
-   "booking_links": 37,
-   "live_rate": 0.816,
-   "booking_link_rate": 0.755,
+   "booking_links": 38,
+   "live_rate": 0.82,
+   "booking_link_rate": 0.76,
    "thin_sample": false
   },
   "Central Scotland": {
@@ -527,12 +527,12 @@
  },
  "by_profile": {
   "Mark Scott": {
-   "posts": 629,
-   "live": 497,
+   "posts": 630,
+   "live": 498,
    "pending": 72,
    "declined": 52,
    "other": 8,
-   "booking_links": 440,
+   "booking_links": 441,
    "live_rate": 0.79,
    "booking_link_rate": 0.7,
    "thin_sample": false
@@ -551,14 +551,14 @@
  },
  "by_template": {
   "(not recorded)": {
-   "posts": 706,
-   "live": 560,
+   "posts": 707,
+   "live": 561,
    "pending": 80,
    "declined": 61,
    "other": 5,
-   "booking_links": 483,
+   "booking_links": 484,
    "live_rate": 0.793,
-   "booking_link_rate": 0.684,
+   "booking_link_rate": 0.685,
    "thin_sample": false
   },
   "Calm the Fire Within \u2014 Dunfermline \u2014 5 Sept": {
@@ -718,7 +718,7 @@
  },
  "template_coverage": {
   "posts_with_template": 108,
-  "posts": 814,
+  "posts": 815,
   "share": 0.133
  },
  "by_session": {
@@ -1031,13 +1031,13 @@
    "thin_sample": true
   },
   "ev-segzy-20261206103000": {
-   "posts": 7,
-   "live": 6,
+   "posts": 8,
+   "live": 7,
    "pending": 1,
    "declined": 0,
    "other": 0,
-   "booking_links": 7,
-   "live_rate": 0.857,
+   "booking_links": 8,
+   "live_rate": 0.875,
    "booking_link_rate": 1.0,
    "thin_sample": true
   }
@@ -1429,40 +1429,40 @@
   },
   "session:ev-segzy-20261206103000": {
    "orientation": "unknown",
-   "posts": 7,
-   "live": 6,
+   "posts": 8,
+   "live": 7,
    "pending": 1,
    "declined": 0,
    "other": 0,
-   "booking_links": 7,
-   "live_rate": 0.857,
+   "booking_links": 8,
+   "live_rate": 0.875,
    "booking_link_rate": 1.0,
    "thin_sample": true
   }
  },
  "by_orientation": {
   "unknown": {
-   "posts": 814,
-   "live": 641,
+   "posts": 815,
+   "live": 642,
    "pending": 95,
    "declined": 67,
    "other": 11,
-   "booking_links": 563,
-   "live_rate": 0.787,
+   "booking_links": 564,
+   "live_rate": 0.788,
    "booking_link_rate": 0.692,
    "thin_sample": false
   }
  },
  "by_group_type": {
   "community": {
-   "posts": 324,
-   "live": 225,
+   "posts": 325,
+   "live": 226,
    "pending": 42,
    "declined": 48,
    "other": 9,
-   "booking_links": 199,
-   "live_rate": 0.694,
-   "booking_link_rate": 0.614,
+   "booking_links": 200,
+   "live_rate": 0.695,
+   "booking_link_rate": 0.615,
    "thin_sample": false
   },
   "billboard": {
@@ -1656,13 +1656,13 @@
   },
   {
    "week_starting": "2026-11-16",
-   "posts": 9,
-   "live": 8,
+   "posts": 10,
+   "live": 9,
    "pending": 1,
    "declined": 0,
    "other": 0,
-   "booking_links": 9,
-   "live_rate": 0.889,
+   "booking_links": 10,
+   "live_rate": 0.9,
    "booking_link_rate": 1.0,
    "thin_sample": true
   }
