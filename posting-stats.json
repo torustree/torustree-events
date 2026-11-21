@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-21T04:07:39.957850Z",
- "latest_post_at": "2026-11-20T19:57:25.037Z",
+ "generated": "2026-11-21T12:53:03.008166Z",
+ "latest_post_at": "2026-11-21T12:08:03.314+00:00",
  "note": "Aggregate Facebook group posting performance. No group names, no customer data. 'posts' counts group x session rows; a repost into the same group for the same session is one row.",
  "min_n_for_rates": 15,
  "groups": {
@@ -11,44 +11,44 @@
   "by_type": {
    "community": 145,
    "whats_on_events": 36,
-   "billboard": 63,
    "business": 48,
+   "billboard": 63,
    "buy_sell": 29,
    "wellbeing": 14
   }
  },
  "all_time": {
-  "posts": 854,
-  "live": 681,
-  "pending": 95,
-  "declined": 67,
+  "posts": 856,
+  "live": 683,
+  "pending": 96,
+  "declined": 66,
   "other": 11,
-  "booking_links": 604,
-  "live_rate": 0.797,
-  "booking_link_rate": 0.707,
+  "booking_links": 606,
+  "live_rate": 0.798,
+  "booking_link_rate": 0.708,
   "thin_sample": false
  },
  "last_30_days": {
-  "posts": 282,
-  "live": 253,
-  "pending": 16,
-  "declined": 11,
+  "posts": 284,
+  "live": 255,
+  "pending": 17,
+  "declined": 10,
   "other": 2,
-  "booking_links": 224,
-  "live_rate": 0.897,
-  "booking_link_rate": 0.794,
+  "booking_links": 226,
+  "live_rate": 0.898,
+  "booking_link_rate": 0.796,
   "thin_sample": false
  },
  "by_location": {
   "Perth": {
-   "posts": 192,
-   "live": 165,
+   "posts": 194,
+   "live": 167,
    "pending": 14,
    "declined": 12,
    "other": 1,
-   "booking_links": 140,
-   "live_rate": 0.859,
-   "booking_link_rate": 0.729,
+   "booking_links": 142,
+   "live_rate": 0.861,
+   "booking_link_rate": 0.732,
    "thin_sample": false
   },
   "Dundee": {
@@ -65,8 +65,8 @@
   "Fife": {
    "posts": 135,
    "live": 113,
-   "pending": 15,
-   "declined": 6,
+   "pending": 16,
+   "declined": 5,
    "other": 1,
    "booking_links": 114,
    "live_rate": 0.837,
@@ -527,14 +527,14 @@
  },
  "by_profile": {
   "Mark Scott": {
-   "posts": 659,
-   "live": 527,
-   "pending": 72,
-   "declined": 52,
+   "posts": 661,
+   "live": 529,
+   "pending": 73,
+   "declined": 51,
    "other": 8,
-   "booking_links": 470,
+   "booking_links": 472,
    "live_rate": 0.8,
-   "booking_link_rate": 0.713,
+   "booking_link_rate": 0.714,
    "thin_sample": false
   },
   "Torus Tree": {
@@ -551,14 +551,14 @@
  },
  "by_template": {
   "(not recorded)": {
-   "posts": 746,
-   "live": 600,
-   "pending": 80,
-   "declined": 61,
+   "posts": 748,
+   "live": 602,
+   "pending": 81,
+   "declined": 60,
    "other": 5,
-   "booking_links": 524,
-   "live_rate": 0.804,
-   "booking_link_rate": 0.702,
+   "booking_links": 526,
+   "live_rate": 0.805,
+   "booking_link_rate": 0.703,
    "thin_sample": false
   },
   "Calm the Fire Within \u2014 Dunfermline \u2014 5 Sept": {
@@ -718,7 +718,7 @@
  },
  "template_coverage": {
   "posts_with_template": 108,
-  "posts": 854,
+  "posts": 856,
   "share": 0.126
  },
  "by_session": {
@@ -857,8 +857,8 @@
   "ev-swper-20261212143000": {
    "posts": 28,
    "live": 24,
-   "pending": 1,
-   "declined": 2,
+   "pending": 2,
+   "declined": 1,
    "other": 1,
    "booking_links": 25,
    "live_rate": 0.857,
@@ -909,6 +909,17 @@
    "booking_link_rate": 0.957,
    "thin_sample": false
   },
+  "ev-ss4de-20261126193000": {
+   "posts": 22,
+   "live": 20,
+   "pending": 1,
+   "declined": 1,
+   "other": 0,
+   "booking_links": 20,
+   "live_rate": 0.909,
+   "booking_link_rate": 0.909,
+   "thin_sample": false
+  },
   "ev-siimt-20261011150000": {
    "posts": 21,
    "live": 19,
@@ -920,26 +931,15 @@
    "booking_link_rate": 0.81,
    "thin_sample": false
   },
-  "ev-ss4de-20261126193000": {
-   "posts": 21,
-   "live": 19,
-   "pending": 1,
-   "declined": 1,
-   "other": 0,
-   "booking_links": 19,
-   "live_rate": 0.905,
-   "booking_link_rate": 0.905,
-   "thin_sample": false
-  },
   "ev-sz32r-20261128100000": {
-   "posts": 19,
-   "live": 18,
+   "posts": 20,
+   "live": 19,
    "pending": 0,
    "declined": 0,
    "other": 1,
-   "booking_links": 12,
-   "live_rate": 0.947,
-   "booking_link_rate": 0.632,
+   "booking_links": 13,
+   "live_rate": 0.95,
+   "booking_link_rate": 0.65,
    "thin_sample": false
   },
   "ev-s5n86-20260913103000": {
@@ -1165,8 +1165,8 @@
    "orientation": "unknown",
    "posts": 28,
    "live": 24,
-   "pending": 1,
-   "declined": 2,
+   "pending": 2,
+   "declined": 1,
    "other": 1,
    "booking_links": 25,
    "live_rate": 0.857,
@@ -1245,6 +1245,18 @@
    "booking_link_rate": 0.864,
    "thin_sample": false
   },
+  "session:ev-ss4de-20261126193000": {
+   "orientation": "unknown",
+   "posts": 22,
+   "live": 20,
+   "pending": 1,
+   "declined": 1,
+   "other": 0,
+   "booking_links": 20,
+   "live_rate": 0.909,
+   "booking_link_rate": 0.909,
+   "thin_sample": false
+  },
   "stirling-grangemouth-9d.jpg": {
    "orientation": "unknown",
    "posts": 22,
@@ -1269,28 +1281,16 @@
    "booking_link_rate": 0.81,
    "thin_sample": false
   },
-  "session:ev-ss4de-20261126193000": {
-   "orientation": "unknown",
-   "posts": 21,
-   "live": 19,
-   "pending": 1,
-   "declined": 1,
-   "other": 0,
-   "booking_links": 19,
-   "live_rate": 0.905,
-   "booking_link_rate": 0.905,
-   "thin_sample": false
-  },
   "session:ev-sz32r-20261128100000": {
    "orientation": "unknown",
-   "posts": 19,
-   "live": 18,
+   "posts": 20,
+   "live": 19,
    "pending": 0,
    "declined": 0,
    "other": 1,
-   "booking_links": 12,
-   "live_rate": 0.947,
-   "booking_link_rate": 0.632,
+   "booking_links": 13,
+   "live_rate": 0.95,
+   "booking_link_rate": 0.65,
    "thin_sample": false
   },
   "session:ev-s5n86-20260913103000": {
@@ -1488,14 +1488,14 @@
  },
  "by_orientation": {
   "unknown": {
-   "posts": 854,
-   "live": 681,
-   "pending": 95,
-   "declined": 67,
+   "posts": 856,
+   "live": 683,
+   "pending": 96,
+   "declined": 66,
    "other": 11,
-   "booking_links": 604,
-   "live_rate": 0.797,
-   "booking_link_rate": 0.707,
+   "booking_links": 606,
+   "live_rate": 0.798,
+   "booking_link_rate": 0.708,
    "thin_sample": false
   }
  },
@@ -1512,25 +1512,25 @@
    "thin_sample": false
   },
   "billboard": {
-   "posts": 236,
-   "live": 212,
-   "pending": 19,
-   "declined": 5,
+   "posts": 237,
+   "live": 213,
+   "pending": 20,
+   "declined": 4,
    "other": 0,
-   "booking_links": 187,
-   "live_rate": 0.898,
-   "booking_link_rate": 0.792,
+   "booking_links": 188,
+   "live_rate": 0.899,
+   "booking_link_rate": 0.793,
    "thin_sample": false
   },
   "business": {
-   "posts": 132,
-   "live": 113,
+   "posts": 133,
+   "live": 114,
    "pending": 16,
    "declined": 3,
    "other": 0,
-   "booking_links": 101,
-   "live_rate": 0.856,
-   "booking_link_rate": 0.765,
+   "booking_links": 102,
+   "live_rate": 0.857,
+   "booking_link_rate": 0.767,
    "thin_sample": false
   },
   "whats_on_events": {
@@ -1690,26 +1690,26 @@
   },
   {
    "week_starting": "2026-11-09",
-   "posts": 111,
+   "posts": 110,
    "live": 97,
    "pending": 6,
-   "declined": 6,
+   "declined": 5,
    "other": 2,
    "booking_links": 81,
-   "live_rate": 0.874,
-   "booking_link_rate": 0.73,
+   "live_rate": 0.882,
+   "booking_link_rate": 0.736,
    "thin_sample": false
   },
   {
    "week_starting": "2026-11-16",
-   "posts": 57,
-   "live": 56,
-   "pending": 1,
+   "posts": 60,
+   "live": 58,
+   "pending": 2,
    "declined": 0,
    "other": 0,
-   "booking_links": 56,
-   "live_rate": 0.982,
-   "booking_link_rate": 0.982,
+   "booking_links": 58,
+   "live_rate": 0.967,
+   "booking_link_rate": 0.967,
    "thin_sample": false
   }
  ],
