@@ -1,30 +1,6 @@
 {
- "updated": "2026-11-21T19:54:32.788135Z",
+ "updated": "2026-11-22T00:03:39.181401Z",
  "events": [
-  {
-   "id": "ev-s5wet-20261121103000",
-   "title": "SIGNATURE | You Are Enough | STIRLING",
-   "start": "2026-11-21T10:30:00.000+00:00",
-   "end": "2026-11-21T13:00:00.000+00:00",
-   "venue": "Logie Kirk Hall",
-   "tags": [
-    "signature",
-    "stirling"
-   ],
-   "url": "https://bookwhen.com/torustree/e/ev-s5wet-20261121103000"
-  },
-  {
-   "id": "ev-sl6oc-20261121150000",
-   "title": "SIGNATURE | You Are Enough | PERTH",
-   "start": "2026-11-21T15:00:00.000+00:00",
-   "end": "2026-11-21T17:30:00.000+00:00",
-   "venue": "Perth Yoga Studio - Old Academy Building",
-   "tags": [
-    "signature",
-    "perth"
-   ],
-   "url": "https://bookwhen.com/torustree/e/ev-sl6oc-20261121150000"
-  },
   {
    "id": "ev-s2hif-20261122103000",
    "title": "SIGNATURE | You Are Enough | CUPAR",
