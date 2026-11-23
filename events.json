@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T10:13:55.214508Z",
+ "updated": "2026-11-23T22:08:46.055011Z",
  "events": [
   {
    "id": "ev-ss4de-20261126193000",
@@ -122,6 +122,30 @@
    "url": "https://bookwhen.com/torustree/e/ev-s6iq3-20261213130000"
   },
   {
+   "id": "ev-s7my2-20270110093000",
+   "title": "SIGNATURE | Letting Go & Moving On | CUPAR",
+   "start": "2027-01-10T09:30:00.000+00:00",
+   "end": "2027-01-10T12:00:00.000+00:00",
+   "venue": "Corn Exchange",
+   "tags": [
+    "signature",
+    "cupar"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-s7my2-20270110093000"
+  },
+  {
+   "id": "ev-s9oc9-20270110140000",
+   "title": "SIGNATURE | Letting Go & Moving On | DUNDEE",
+   "start": "2027-01-10T14:00:00.000+00:00",
+   "end": "2027-01-10T16:30:00.000+00:00",
+   "venue": "Fairfield Community Sports Hub",
+   "tags": [
+    "signature",
+    "dundee"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-s9oc9-20270110140000"
+  },
+  {
    "id": "ev-stpw7-20270111183000",
    "title": "COURSE | The Reset Path: Return to Self | DUNKELD",
    "start": "2027-01-11T18:30:00.000+00:00",
@@ -146,6 +170,54 @@
     "perth"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-s3wz5-20270112183000"
+  },
+  {
+   "id": "ev-s0xr1-20270116100000",
+   "title": "SIGNATURE | Letting Go & Moving On | FALKIRK",
+   "start": "2027-01-16T10:00:00.000+00:00",
+   "end": "2027-01-16T12:30:00.000+00:00",
+   "venue": "Falkirk Trinity Church",
+   "tags": [
+    "signature",
+    "falkirk"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-s0xr1-20270116100000"
+  },
+  {
+   "id": "ev-sg51q-20270116150000",
+   "title": "SIGNATURE | Letting Go & Moving On | DUNFERMLINE",
+   "start": "2027-01-16T15:00:00.000+00:00",
+   "end": "2027-01-16T17:30:00.000+00:00",
+   "venue": "Trench Boxing & Fitness",
+   "tags": [
+    "signature",
+    "dunfermline"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-sg51q-20270116150000"
+  },
+  {
+   "id": "ev-stms2-20270123100000",
+   "title": "SIGNATURE | Letting Go & Moving On | STIRLING",
+   "start": "2027-01-23T10:00:00.000+00:00",
+   "end": "2027-01-23T12:30:00.000+00:00",
+   "venue": "Logie Kirk Hall",
+   "tags": [
+    "signature",
+    "stirling"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-stms2-20270123100000"
+  },
+  {
+   "id": "ev-scszj-20270123150000",
+   "title": "SIGNATURE | Letting Go & Moving On | PERTH",
+   "start": "2027-01-23T15:00:00.000+00:00",
+   "end": "2027-01-23T17:30:00.000+00:00",
+   "venue": "Perth Yoga Studio - Old Academy Building",
+   "tags": [
+    "perth",
+    "signature"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-scszj-20270123150000"
   },
   {
    "id": "ev-smzg1-20270301183000",
