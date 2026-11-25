@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T12:03:02.016774Z",
+ "updated": "2026-11-25T21:53:17.354790Z",
  "events": [
   {
    "id": "ev-ss4de-20261126193000",
@@ -170,6 +170,18 @@
     "perth"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-s3wz5-20270112183000"
+  },
+  {
+   "id": "ev-s3iy1-20270115183000",
+   "title": "SIGNATURE | Letting Go & Moving On | FORFAR",
+   "start": "2027-01-15T18:30:00.000+00:00",
+   "end": "2027-01-15T21:00:00.000+00:00",
+   "venue": "East & Old Parish Church",
+   "tags": [
+    "signature",
+    "FORFAR"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-s3iy1-20270115183000"
   },
   {
    "id": "ev-sg51q-20270116150000",
