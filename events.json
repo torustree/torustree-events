@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T02:41:20.501244Z",
+ "updated": "2026-11-25T12:03:02.016774Z",
  "events": [
   {
    "id": "ev-ss4de-20261126193000",
@@ -194,6 +194,18 @@
     "signature"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-scszj-20270123150000"
+  },
+  {
+   "id": "ev-stms2-20270124103000",
+   "title": "SIGNATURE | Letting Go & Moving On | STIRLING",
+   "start": "2027-01-24T10:30:00.000+00:00",
+   "end": "2027-01-24T13:00:00.000+00:00",
+   "venue": "Logie Kirk Hall",
+   "tags": [
+    "signature",
+    "stirling"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-stms2-20270124103000"
   },
   {
    "id": "ev-smzg1-20270301183000",
