@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T03:55:05.281656Z",
+ "updated": "2026-11-26T13:30:08.117586Z",
  "events": [
   {
    "id": "ev-ss4de-20261126193000",
@@ -182,6 +182,18 @@
     "FORFAR"
    ],
    "url": "https://bookwhen.com/torustree/e/ev-s3iy1-20270115183000"
+  },
+  {
+   "id": "ev-s0xr1-20270116100000",
+   "title": "SIGNATURE | Letting Go & Moving On | FALKIRK",
+   "start": "2027-01-16T10:00:00.000+00:00",
+   "end": "2027-01-16T12:30:00.000+00:00",
+   "venue": "Bo'ness Town Hall",
+   "tags": [
+    "signature",
+    "falkirk"
+   ],
+   "url": "https://bookwhen.com/torustree/e/ev-s0xr1-20270116100000"
   },
   {
    "id": "ev-sg51q-20270116150000",
